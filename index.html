@@ -376,21 +376,21 @@ function dayKey(i){return 'gotham_v5_'+DAYS[i].id;}
 function loadDaySets(i){
   try{
     const prefill=(PREFILL[DAYS[i].id]||[]).map(s=>({...s,logged:true}));
-    const stored=sessionStorage.getItem(dayKey(i));
+    const stored=localStorage.getItem(dayKey(i));
     if(!stored){
       // First load — seed from PREFILL and persist
-      sessionStorage.setItem(dayKey(i),JSON.stringify(prefill));
+      localStorage.setItem(dayKey(i),JSON.stringify(prefill));
       return prefill;
     }
     const parsed=JSON.parse(stored);
-    // Merge: PREFILL is the baseline, sessionStorage additions win for non-prefill keys
+    // Merge: PREFILL is the baseline, localStorage additions win for non-prefill keys
     const prefillKeys=new Set(prefill.map(s=>s.key));
     const extra=parsed.filter(s=>!prefillKeys.has(s.key));
     return [...prefill,...extra];
   }catch{}
   return PREFILL[DAYS[i].id]||[];
 }
-function saveDaySets(i,sets){try{sessionStorage.setItem(dayKey(i),JSON.stringify(sets))}catch{}}
+function saveDaySets(i,sets){try{localStorage.setItem(dayKey(i),JSON.stringify(sets))}catch{}}
 
 function renderDayNav(){
   document.getElementById('day-nav').innerHTML=DAYS.map((d,i)=>{
