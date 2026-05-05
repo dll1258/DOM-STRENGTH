@@ -63,11 +63,29 @@ body{background:#1a1a1a;color:var(--bat-white);font-family:'Share Tech Mono',mon
 
 .plan-card{background:var(–bat-gray);border:1px solid var(–bat-border);border-left:3px solid var(–bat-gold-dim);border-radius:0 6px 6px 0;margin-bottom:12px;overflow:hidden;transition:border-color .2s;}
 .plan-card.card-done{border-left-color:var(–bat-green);border-color:#00dd6625}
-.plan-card-header{display:flex;align-items:center;padding:13px 16px;border-bottom:1px solid var(–bat-border);gap:10px;background:linear-gradient(90deg,#0a0a0f 0%,#111118 100%);}
-.plan-card-name{flex:1;font-family:‘Oswald’,sans-serif;font-weight:600;font-size:15px;color:var(–bat-white);letter-spacing:.08em;}
-.plan-card-note{font-size:10px;color:var(–bat-dim);text-align:right;max-width:170px;line-height:1.5}
+.plan-card-header{padding:12px 16px 0;background:linear-gradient(90deg,#0a0a0f 0%,#111118 100%);}
+.plan-card-row1{display:flex;align-items:center;gap:8px;margin-bottom:6px;}
+.plan-card-name{flex:1;font-family:‘Oswald’,sans-serif;font-weight:600;font-size:15px;color:var(–bat-white);letter-spacing:.08em;line-height:1.2;}
+.plan-card-row2{font-size:10px;color:var(–bat-dim);line-height:1.5;margin-bottom:10px;padding-right:4px;}
+.plan-card-row3{display:flex;align-items:center;justify-content:space-between;padding-bottom:10px;border-bottom:1px solid var(–bat-border);}
 .plan-card-status{font-size:11px;color:var(–bat-dim);white-space:nowrap;font-family:‘Oswald’,sans-serif;letter-spacing:.05em}
 .plan-card-status.done{color:var(–bat-green)}
+.set-ctrl{display:flex;align-items:center;gap:5px;}
+.swap-btn{background:none;border:1px solid #55557a;border-radius:3px;color:#7777aa;font-size:10px;padding:3px 6px;cursor:pointer;font-family:‘Oswald’,sans-serif;letter-spacing:.08em;-webkit-tap-highlight-color:transparent;transition:all .15s;white-space:nowrap;}
+.swap-btn:active,.swap-btn:hover{border-color:var(–bat-gold);color:var(–bat-gold);}
+.swap-picker{display:none;flex-direction:column;background:#0a0a12;border-top:1px solid #22223a;padding:10px 14px 14px;}
+.swap-search{width:100%;background:#1e1e2e;color:#fff;-webkit-text-fill-color:#fff;border:1px solid var(–bat-gold);padding:10px 12px;border-radius:4px;font-family:‘Share Tech Mono’,monospace;font-size:13px;outline:none;caret-color:#c9a227;box-sizing:border-box;margin-bottom:8px;}
+.swap-list{max-height:220px;overflow-y:auto;border:1px solid #22223a;border-radius:4px;background:#13131f;}
+.swap-list-item{padding:10px 14px;font-family:‘Share Tech Mono’,monospace;font-size:12px;color:#ccccdd;border-bottom:1px solid #1e1e2e;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background .1s;}
+.swap-list-item:last-child{border-bottom:none;}
+.swap-list-item:active,.swap-list-item.hovered{background:#1e1e30;color:var(–bat-gold);}
+.swap-list-empty{padding:14px;font-family:‘Share Tech Mono’,monospace;font-size:11px;color:#55556a;text-align:center;}
+.swap-picker-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;}
+.swap-picker-label{font-family:‘Oswald’,sans-serif;font-size:11px;color:#7777aa;letter-spacing:.1em;}
+.swap-picker-close{background:none;border:1px solid #44445a;color:#7777aa;border-radius:3px;padding:4px 10px;font-size:11px;cursor:pointer;font-family:‘Oswald’,sans-serif;-webkit-tap-highlight-color:transparent;}
+.set-ctrl-btn{background:#1a1a2e;color:var(–bat-gold);border:1px solid #c9a22755;border-radius:3px;width:26px;height:26px;font-size:16px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;-webkit-tap-highlight-color:transparent;transition:all .15s;}
+.set-ctrl-btn:active{background:var(–bat-gold);color:#000;}
+.set-ctrl-count{font-size:12px;color:var(–bat-gold);font-family:‘Share Tech Mono’,monospace;min-width:22px;text-align:center;}
 
 .plan-sets{padding:12px 16px}
 .set-row{display:flex;gap:7px;align-items:center;margin-bottom:10px}
@@ -4009,6 +4027,7 @@ const DAYS=[
 ]},
 {id:"mon_may4",label:"MON MAY 4",tag:"Bench Day",completed:true,datePrefix:"Mon May 4 2026",exercises:[
   {exercise:"Comp Bench",sets:3,note:"315x5 @7 / 325x7 @8 / 325x6 @8"},
+  {exercise:"Wrist Extensor Isometric Hold",sets:4,note:"4x15 @ 20lb — elbow rehab"},
   {exercise:"Scap Pull-Up Holds",sets:3,note:"100/120/140lb × 10"},
   {exercise:"NG DB Press",sets:3,note:"3x10 @ 110lb @8-8.5"},
   {exercise:"Flat DB Fly",sets:4,note:"4x10 @ 75lb @6-7.5"},
@@ -4016,14 +4035,14 @@ const DAYS=[
   {exercise:"Iso Hold Hammer Curls",sets:3,note:"3x8 @ 35lb @6"},
   {exercise:"Weighted Crunches",sets:3,note:"3x15 @ 103lb @6"}
 ]},
-{id:"tue_may6",label:"TUE MAY 6",tag:"Squat Day",completed:false,datePrefix:"Tue May 6 2026",exercises:[
+{id:"tue_may5",label:"TUE MAY 5",tag:"Squat Day",completed:false,datePrefix:"Tue May 5 2026",exercises:[
   {exercise:"Comp Squat",sets:6,note:"405x3 @6 / 455x2 @7 / 515x1 @8 / 565x1 @8 (submax — fast, leave 1 in tank) / rest 4-5min / 475x3 @7.5 / 475x3 @8"},
   {exercise:"Reverse Hack Squat",sets:3,note:"810x8 @8 / 860x6 @8.5 / 860x6 @9 — volume up from Apr 21"},
   {exercise:"Leg Extensions",sets:4,note:"4x15 @130lb @7 — up from 120lb"},
   {exercise:"Hamstring Curls",sets:4,note:"4x12 @130lb @7.5 — posterior chain priority per Schoenfeld"},
   {exercise:"GHR",sets:3,note:"3x10 BW @6 — hip extension motor pattern"}
 ]},
-{id:"wed_may7",label:"WED MAY 7",tag:"DL Accessory",completed:false,datePrefix:"Wed May 7 2026",exercises:[
+{id:"wed_may6",label:"WED MAY 6",tag:"DL Accessory",completed:false,datePrefix:"Wed May 6 2026",exercises:[
   {exercise:"Paused Deadlift (Below Knee)",sets:3,note:"365x3 / 405x3 / 435x3"},
   {exercise:"Lat Pulldowns",sets:4,note:"4x12 @175lb @7"},
   {exercise:"Pullups",sets:3,note:"3x8 BW @7.5"},
@@ -4035,7 +4054,7 @@ const DAYS=[
   {exercise:"Ab Wheel",sets:3,note:"3x12-15"},
   {exercise:"Side Bends",sets:3,note:"3x15 each @35lb"}
 ]},
-{id:"thu_may8",label:"THU MAY 8",tag:"Bench Accessory",completed:false,datePrefix:"Thu May 8 2026",exercises:[
+{id:"thu_may7",label:"THU MAY 7",tag:"Bench Accessory",completed:false,datePrefix:"Thu May 7 2026",exercises:[
   {exercise:"Close Grip Floor Press",sets:3,note:"245x5 / 275x5 / 295x5 @7"},
   {exercise:"Neutral Grip Pushup",sets:3,note:"3x20"},
   {exercise:"Flat DB Fly",sets:3,note:"3x12 @70lb"},
@@ -4045,7 +4064,7 @@ const DAYS=[
   {exercise:"Hanging Leg Raises",sets:3,note:"3x12-15"},
   {exercise:"Weighted Crunches",sets:3,note:"3x12 @103lb"}
 ]},
-{id:"sat_may10",label:"SAT MAY 10",tag:"Heavy Deadlift",completed:false,datePrefix:"Sat May 10 2026",exercises:[
+{id:"sat_may9",label:"SAT MAY 9",tag:"Heavy Deadlift",completed:false,datePrefix:"Sat May 9 2026",exercises:[
   {exercise:"Comp Deadlift",sets:3,note:"545x1 / 625x1 / 680x1"},
   {exercise:"Romanian Deadlift",sets:3,note:"3x8 @315lb"},
   {exercise:"Barbell Hip Thrust",sets:3,note:"3x10 @225lb"},
@@ -4198,6 +4217,74 @@ function showScreen(name,btn){
 // Default to first incomplete day, or last day if all complete
 let activeDay=DAYS.findIndex(d=>!d.completed);
 if(activeDay<0) activeDay=DAYS.length-1;
+// Runtime set count overrides: {dayId: {exIdx: count}}
+const SET_OVERRIDE_KEY='gotham_set_overrides_v1';
+let setOverrides=JSON.parse(localStorage.getItem(SET_OVERRIDE_KEY)||'{}');
+function saveSetOverrides(){try{localStorage.setItem(SET_OVERRIDE_KEY,JSON.stringify(setOverrides));}catch{}}
+// Exercise name overrides: {dayId: {exIdx: 'New Name'}}
+const EX_OVERRIDE_KEY='gotham_ex_overrides_v1';
+let exOverrides=JSON.parse(localStorage.getItem(EX_OVERRIDE_KEY)||'{}');
+function saveExOverrides(){try{localStorage.setItem(EX_OVERRIDE_KEY,JSON.stringify(exOverrides));}catch{}}
+function getExName(dayId,ei,defaultName){
+  return(exOverrides[dayId]&&exOverrides[dayId][ei])?exOverrides[dayId][ei]:defaultName;
+}
+// Build unique sorted exercise list from BASE_DATA on first use
+let _exList=null;
+function getExList(){
+  if(!_exList){
+    const seen=new Set();
+    BASE_DATA.forEach(r=>seen.add(r[2]));
+    _exList=[...seen].sort((a,b)=>a.localeCompare(b));
+  }
+  return _exList;
+}
+function confirmSwap(dayId,ei,name){
+  if(!name)return;
+  if(!exOverrides[dayId])exOverrides[dayId]={};
+  exOverrides[dayId][ei]=name;
+  saveExOverrides();
+  renderDayContent();
+}
+function filterSwapList(dayId,ei){
+  const q=(document.getElementById('swap-search-'+dayId+'-'+ei)||{}).value||'';
+  const list=document.getElementById('swap-list-'+dayId+'-'+ei);
+  if(!list)return;
+  const terms=q.toLowerCase().split(' ').filter(Boolean);
+  const matches=getExList().filter(ex=>terms.every(t=>ex.toLowerCase().includes(t)));
+  if(matches.length===0){
+    list.innerHTML='<div class="swap-list-empty">NO MATCHES</div>';
+  }else{
+    list.innerHTML=matches.slice(0,60).map(ex=>
+      `<div class="swap-list-item" ontouchend="confirmSwap('${dayId}',${ei},'${ex.replace(/'/g,"\'")}');event.preventDefault()" onclick="confirmSwap('${dayId}',${ei},'${ex.replace(/'/g,"\'")}')">
+        ${ex}
+      </div>`
+    ).join('');
+  }
+}
+function toggleSwapRow(dayId,ei){
+  const picker=document.getElementById('swap-picker-'+dayId+'-'+ei);
+  if(!picker)return;
+  const open=picker.style.display==='flex';
+  picker.style.display=open?'none':'flex';
+  if(!open){
+    const search=document.getElementById('swap-search-'+dayId+'-'+ei);
+    if(search){search.value='';search.focus();}
+    filterSwapList(dayId,ei);
+  }
+}
+function getSetCount(dayId,ei,defaultCount){
+  return(setOverrides[dayId]&&setOverrides[dayId][ei]!==undefined)?setOverrides[dayId][ei]:defaultCount;
+}
+function adjustSets(dayId,ei,delta){
+  if(!setOverrides[dayId])setOverrides[dayId]={};
+  const day=DAYS.find(d=>d.id===dayId);
+  const ex=day.exercises[ei];
+  const current=getSetCount(dayId,ei,ex.sets);
+  const next=Math.max(1,current+delta);
+  setOverrides[dayId][ei]=next;
+  saveSetOverrides();
+  renderDayContent();
+}
 
 function dayKey(i){return 'gotham_v6_'+DAYS[i].id;}
 function loadDaySets(i){
@@ -4226,6 +4313,7 @@ function renderDayNav(){
   }).join('');
 }
 function switchDay(i){if(i===activeDay)return;activeDay=i;renderDayNav();renderDayContent();}
+
 
 function renderDayContent(){
   const day=DAYS[activeDay];
@@ -4266,9 +4354,10 @@ function renderDayContent(){
 
   day.exercises.forEach((ex,ei)=>{
     const exSets=daySets.filter(s=>s.exIdx===ei&&s.logged);
-    const allDone=exSets.length>=ex.sets;
+    const numSets=getSetCount(day.id,ei,ex.sets);
+    const allDone=exSets.length>=numSets;
     let setsHtml='';
-    for(let si=0;si<ex.sets;si++){
+    for(let si=0;si<numSets;si++){
       const key=ei+'_'+si;
       const found=daySets.find(s=>s.key===key&&s.logged);
       if(found){
@@ -4288,11 +4377,30 @@ function renderDayContent(){
         </div>`;
       }
     }
+    const displayName=getExName(day.id,ei,ex.exercise);
+    const isSwapped=exOverrides[day.id]&&exOverrides[day.id][ei];
     html+=`<div class="plan-card ${allDone?'card-done':''}">
       <div class="plan-card-header">
-        <span class="plan-card-name">${allDone?'✓ ':''}${ex.exercise.toUpperCase()}</span>
-        <span class="plan-card-note">${ex.note}</span>
-        <span class="plan-card-status ${allDone?'done':''}">${exSets.length}/${ex.sets}</span>
+        <div class="plan-card-row1">
+          <span class="plan-card-name">${allDone?'✓ ':''}${displayName.toUpperCase()}</span>
+          <div class="set-ctrl">
+            <button class="set-ctrl-btn" ontouchend="adjustSets('${day.id}',${ei},-1);event.preventDefault()" onclick="adjustSets('${day.id}',${ei},-1)">−</button>
+            <span class="set-ctrl-count">${exSets.length}/${numSets}</span>
+            <button class="set-ctrl-btn" ontouchend="adjustSets('${day.id}',${ei},+1);event.preventDefault()" onclick="adjustSets('${day.id}',${ei},+1)">+</button>
+          </div>
+        </div>
+        <div class="plan-card-row2">${ex.note}</div>
+        <div class="plan-card-row3">
+          <button class="swap-btn" ontouchend="toggleSwapRow('${day.id}',${ei});event.preventDefault()" onclick="toggleSwapRow('${day.id}',${ei})">${isSwapped?'⟳ SWAPPED':'⇄ SWAP EXERCISE'}</button>
+        </div>
+      </div>
+      <div class="swap-picker" id="swap-picker-${day.id}-${ei}">
+        <div class="swap-picker-top">
+          <span class="swap-picker-label">SELECT EXERCISE FROM DATABASE</span>
+          <button class="swap-picker-close" ontouchend="toggleSwapRow('${day.id}',${ei});event.preventDefault()" onclick="toggleSwapRow('${day.id}',${ei})">✕ CLOSE</button>
+        </div>
+        <input class="swap-search" id="swap-search-${day.id}-${ei}" type="text" placeholder="Search exercises..." oninput="filterSwapList('${day.id}',${ei})" ontouchstart="this.focus()">
+        <div class="swap-list" id="swap-list-${day.id}-${ei}"></div>
       </div>
       <div class="plan-sets">${setsHtml}</div>
     </div>`;
