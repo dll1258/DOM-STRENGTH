@@ -3963,6 +3963,25 @@ const BASE_DATA=[
 ["Sat May 2 2026 09:00:00 GMT-0400","strength","Barbell Hip Thrust",225,10,6.0,null],
 ["Sat May 2 2026 09:00:00 GMT-0400","strength","Barbell Hip Thrust",225,10,6.0,null],
 ["Sat May 2 2026 09:00:00 GMT-0400","strength","Barbell Hip Thrust",225,10,6.0,null],
+["Tue May 12 2026 09:00:00 GMT-0400","strength","Comp Squat",405,3,5,null],
+["Tue May 12 2026 09:00:00 GMT-0400","strength","Comp Squat",455,2,5,null],
+["Tue May 12 2026 09:00:00 GMT-0400","strength","Comp Squat",525,1,6,null],
+["Tue May 12 2026 09:00:00 GMT-0400","strength","Comp Squat",575,1,8,null],
+["Tue May 12 2026 09:00:00 GMT-0400","strength","Comp Squat",505,3,7,null],
+["Tue May 12 2026 09:00:00 GMT-0400","strength","Comp Squat",505,3,7,null],
+["Tue May 12 2026 09:00:00 GMT-0400","strength","Reverse Hack Squat",810,8,8.5,null],
+["Tue May 12 2026 09:00:00 GMT-0400","strength","Reverse Hack Squat",900,6,9,null],
+["Tue May 12 2026 09:00:00 GMT-0400","strength","Reverse Hack Squat",900,6,9,null],
+["Tue May 12 2026 09:00:00 GMT-0400","strength","Leg Extensions",120,15,6,null],
+["Tue May 12 2026 09:00:00 GMT-0400","strength","Leg Extensions",120,15,7.5,null],
+["Tue May 12 2026 09:00:00 GMT-0400","strength","Leg Extensions",120,15,7,null],
+["Tue May 12 2026 09:00:00 GMT-0400","strength","GHR",240,6,7,null],
+["Tue May 12 2026 09:00:00 GMT-0400","strength","GHR",240,6,7,null],
+["Tue May 12 2026 09:00:00 GMT-0400","strength","GHR",240,6,7.5,null],
+["Tue May 12 2026 09:00:00 GMT-0400","strength","Hamstring Curls",170,8,7,null],
+["Tue May 12 2026 09:00:00 GMT-0400","strength","Hamstring Curls",170,8,6.5,null],
+["Tue May 12 2026 09:00:00 GMT-0400","strength","Hamstring Curls",170,8,7,null],
+["Tue May 12 2026 09:00:00 GMT-0400","strength","Hamstring Curls",170,8,7,null],
 ["Mon May 11 2026 09:00:00 GMT-0400","strength","Comp Bench",315,3,5,null],
 ["Mon May 11 2026 09:00:00 GMT-0400","strength","Comp Bench",335,2,6,null],
 ["Mon May 11 2026 09:00:00 GMT-0400","strength","Comp Bench",350,1,7,null],
@@ -4192,12 +4211,12 @@ const DAYS=[
   {exercise:"Weighted Crunches",sets:3,note:"100x15 @6/6/7.5"},
   {exercise:"Tyler Twist (Flexbar)",sets:4,note:"Blue Flexbar x15 x4 — week 3 Nirschl, appropriate progression from Red"}
 ]},
-{id:"tue_may12",label:"TUE MAY 12",tag:"Squat Day",completed:false,datePrefix:"Tue May 12 2026",exercises:[
-  {exercise:"Comp Squat",sets:6,note:"405x3 @6 / 455x2 @7 / 525x1 @8 / 575x1 @8.5 (submax — up 10lb from last week) / rest 4-5min / 505x3 @7.5 / 505x3 @8 — volume up 10lb"},
-  {exercise:"Reverse Hack Squat",sets:3,note:"810x8 @8 / 900x6 @8.5 / 900x6 @9 — two top sets at 900 this week"},
-  {exercise:"Leg Extensions",sets:3,note:"3x15 @120lb @7 max — drop to 3 sets, rebuild ceiling per coaching note"},
-  {exercise:"GHR",sets:3,note:"3x6 @240lb @7"},
-  {exercise:"Hamstring Curls",sets:4,note:"4x8 @170lb @7 — hold same load, dial consistency"}
+{id:"tue_may12",label:"TUE MAY 12",tag:"Squat Day",completed:true,datePrefix:"Tue May 12 2026",exercises:[
+  {exercise:"Comp Squat",sets:6,note:"405x3 @5 / 455x2 @5 / 525x1 @6 / 575x1 @8 (submax) / 505x3 @7 / 505x3 @7"},
+  {exercise:"Reverse Hack Squat",sets:3,note:"810x8 @8.5 / 900x6 @9 / 900x6 @9"},
+  {exercise:"Leg Extensions",sets:3,note:"120x15 @6/7.5/7"},
+  {exercise:"GHR",sets:3,note:"240x6 @7/7/7.5"},
+  {exercise:"Hamstring Curls",sets:4,note:"170x8 @7/6.5/7/7"}
 ]},
 {id:"wed_may13",label:"WED MAY 13",tag:"DL Accessory",completed:false,datePrefix:"Wed May 13 2026",exercises:[
   {exercise:"Paused Deadlift (Below Knee)",sets:4,note:"405x3 @6 / 495x3 @7 / 515x3 @7.5 / 515x3 @8 — up 20lb on top sets"},
@@ -4460,6 +4479,27 @@ const PREFILL={
     {key:"7_1",exIdx:7,setIdx:1,weight:100,reps:15,rpe:null,logged:true},
     {key:"7_2",exIdx:7,setIdx:2,weight:100,reps:15,rpe:null,logged:true},
     {key:"7_3",exIdx:7,setIdx:3,weight:100,reps:15,rpe:null,logged:true}
+  ],
+  "tue_may12":[
+    {key:"0_0",exIdx:0,setIdx:0,weight:405,reps:3,rpe:5,logged:true},
+    {key:"0_1",exIdx:0,setIdx:1,weight:455,reps:2,rpe:5,logged:true},
+    {key:"0_2",exIdx:0,setIdx:2,weight:525,reps:1,rpe:6,logged:true},
+    {key:"0_3",exIdx:0,setIdx:3,weight:575,reps:1,rpe:8,logged:true},
+    {key:"0_4",exIdx:0,setIdx:4,weight:505,reps:3,rpe:7,logged:true},
+    {key:"0_5",exIdx:0,setIdx:5,weight:505,reps:3,rpe:7,logged:true},
+    {key:"1_0",exIdx:1,setIdx:0,weight:810,reps:8,rpe:8.5,logged:true},
+    {key:"1_1",exIdx:1,setIdx:1,weight:900,reps:6,rpe:9,logged:true},
+    {key:"1_2",exIdx:1,setIdx:2,weight:900,reps:6,rpe:9,logged:true},
+    {key:"2_0",exIdx:2,setIdx:0,weight:120,reps:15,rpe:6,logged:true},
+    {key:"2_1",exIdx:2,setIdx:1,weight:120,reps:15,rpe:7.5,logged:true},
+    {key:"2_2",exIdx:2,setIdx:2,weight:120,reps:15,rpe:7,logged:true},
+    {key:"3_0",exIdx:3,setIdx:0,weight:240,reps:6,rpe:7,logged:true},
+    {key:"3_1",exIdx:3,setIdx:1,weight:240,reps:6,rpe:7,logged:true},
+    {key:"3_2",exIdx:3,setIdx:2,weight:240,reps:6,rpe:7.5,logged:true},
+    {key:"4_0",exIdx:4,setIdx:0,weight:170,reps:8,rpe:7,logged:true},
+    {key:"4_1",exIdx:4,setIdx:1,weight:170,reps:8,rpe:6.5,logged:true},
+    {key:"4_2",exIdx:4,setIdx:2,weight:170,reps:8,rpe:7,logged:true},
+    {key:"4_3",exIdx:4,setIdx:3,weight:170,reps:8,rpe:7,logged:true}
   ]
 };
 
