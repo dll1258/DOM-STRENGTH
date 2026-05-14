@@ -3963,6 +3963,27 @@ const BASE_DATA=[
 ["Sat May 2 2026 09:00:00 GMT-0400","strength","Barbell Hip Thrust",225,10,6.0,null],
 ["Sat May 2 2026 09:00:00 GMT-0400","strength","Barbell Hip Thrust",225,10,6.0,null],
 ["Sat May 2 2026 09:00:00 GMT-0400","strength","Barbell Hip Thrust",225,10,6.0,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Close Grip Floor Press",225,8,6,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Close Grip Floor Press",265,5,7,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Close Grip Floor Press",265,5,6.5,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Close Grip Floor Press",265,10,9,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Neutral Grip Pushup",0,15,7.5,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Neutral Grip Pushup",0,15,8,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Neutral Grip Pushup",0,15,8,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Pec Deck",150,8,7.5,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Pec Deck",150,8,7.5,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Pec Deck",150,8,8.5,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Band Pull-Aparts",0,25,7,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Band Pull-Aparts",0,25,6,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Band Pull-Aparts",0,25,7,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Band Pull-Aparts",0,25,7,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Band Pull-Aparts",0,25,7,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Barbell Curls",45,25,null,null],
+["Thu May 14 2026 09:00:00 GMT-0400","strength","Barbell Curls",45,25,null,null],
 ["Wed May 13 2026 09:00:00 GMT-0400","strength","Paused Deadlift (Below Knee)",405,3,5,null],
 ["Wed May 13 2026 09:00:00 GMT-0400","strength","Paused Deadlift (Below Knee)",455,3,6,null],
 ["Wed May 13 2026 09:00:00 GMT-0400","strength","Paused Deadlift (Below Knee)",495,3,7.5,null],
@@ -4255,13 +4276,13 @@ const DAYS=[
   {exercise:"Iso Hold Side Laterals",sets:4,note:"25x6 @7 / 25x6 @7.5 / 25x6 @7.5 / 25x6 @8"},
   {exercise:"DB Side Bends",sets:3,note:"55x12 x3"}
 ]},
-{id:"thu_may14",label:"THU MAY 14",tag:"Bench Accessory",completed:false,datePrefix:"Thu May 14 2026",exercises:[
-  {exercise:"Close Grip Floor Press",sets:4,note:"225x8 @6 / 255x5 @7 / 265x5 @7.5 / 225x15 @5 — test 265 for elbow, stay below 4/10 pain"},
-  {exercise:"Neutral Grip Pushup",sets:3,note:"BW x20 @7 / BW x20 @7 / BW x20 @8 — cap at @8, do NOT exceed"},
-  {exercise:"Pec Deck",sets:3,note:"3x8 @155lb @7.5 — up 5lb"},
-  {exercise:"Y-Raise",sets:3,note:"3x12 @25lb @7"},
-  {exercise:"Tyler Twist (Flexbar)",sets:4,note:"4x15 — 3-4 sec eccentric — week 3"},
-  {exercise:"Barbell Curls",sets:3,note:"3x20 @55lb @6 — up 10lb, test elbow tolerance"}
+{id:"thu_may14",label:"THU MAY 14",tag:"Bench Accessory",completed:true,datePrefix:"Thu May 14 2026",exercises:[
+  {exercise:"Tyler Twist (Flexbar)",sets:4,note:"Blue Flexbar x15 x4 — week 4 Nirschl"},
+  {exercise:"Close Grip Floor Press",sets:4,note:"225x8 @6 / 265x5 @7 / 265x5 @6.5 / 265x10 @9"},
+  {exercise:"Neutral Grip Pushup",sets:3,note:"240x15 @7.5 / 240x15 @8 / 240x15 @8 — red band added"},
+  {exercise:"Pec Deck",sets:3,note:"150x8 @7.5 / 150x8 @7.5 / 150x8 @8.5 — red band added"},
+  {exercise:"Band Pull-Aparts",sets:5,note:"Red band x25 @7/6/7/7/7 — subbed for Y-Raise"},
+  {exercise:"Barbell Curls",sets:2,note:"45x25 x2 — elbow friendly volume"}
 ]},
 {id:"sat_may16",label:"SAT MAY 16",tag:"Heavy Deadlift",completed:false,datePrefix:"Sat May 16 2026",exercises:[
   {exercise:"Comp Deadlift",sets:3,note:"605x1 @7.5 / 655x1 @8 / 680x1 @8.5 — repeat the PR but cleaner, lower RPE target"},
@@ -4554,6 +4575,29 @@ const PREFILL={
     {key:"7_0",exIdx:7,setIdx:0,weight:55,reps:12,rpe:null,logged:true},
     {key:"7_1",exIdx:7,setIdx:1,weight:55,reps:12,rpe:null,logged:true},
     {key:"7_2",exIdx:7,setIdx:2,weight:55,reps:12,rpe:null,logged:true}
+  ],
+  "thu_may14":[
+    {key:"0_0",exIdx:0,setIdx:0,weight:100,reps:15,rpe:null,logged:true},
+    {key:"0_1",exIdx:0,setIdx:1,weight:100,reps:15,rpe:null,logged:true},
+    {key:"0_2",exIdx:0,setIdx:2,weight:100,reps:15,rpe:null,logged:true},
+    {key:"0_3",exIdx:0,setIdx:3,weight:100,reps:15,rpe:null,logged:true},
+    {key:"1_0",exIdx:1,setIdx:0,weight:225,reps:8,rpe:6,logged:true},
+    {key:"1_1",exIdx:1,setIdx:1,weight:265,reps:5,rpe:7,logged:true},
+    {key:"1_2",exIdx:1,setIdx:2,weight:265,reps:5,rpe:6.5,logged:true},
+    {key:"1_3",exIdx:1,setIdx:3,weight:265,reps:10,rpe:9,logged:true},
+    {key:"2_0",exIdx:2,setIdx:0,weight:0,reps:15,rpe:7.5,logged:true},
+    {key:"2_1",exIdx:2,setIdx:1,weight:0,reps:15,rpe:8,logged:true},
+    {key:"2_2",exIdx:2,setIdx:2,weight:0,reps:15,rpe:8,logged:true},
+    {key:"3_0",exIdx:3,setIdx:0,weight:150,reps:8,rpe:7.5,logged:true},
+    {key:"3_1",exIdx:3,setIdx:1,weight:150,reps:8,rpe:7.5,logged:true},
+    {key:"3_2",exIdx:3,setIdx:2,weight:150,reps:8,rpe:8.5,logged:true},
+    {key:"4_0",exIdx:4,setIdx:0,weight:0,reps:25,rpe:7,logged:true},
+    {key:"4_1",exIdx:4,setIdx:1,weight:0,reps:25,rpe:6,logged:true},
+    {key:"4_2",exIdx:4,setIdx:2,weight:0,reps:25,rpe:7,logged:true},
+    {key:"4_3",exIdx:4,setIdx:3,weight:0,reps:25,rpe:7,logged:true},
+    {key:"4_4",exIdx:4,setIdx:4,weight:0,reps:25,rpe:7,logged:true},
+    {key:"5_0",exIdx:5,setIdx:0,weight:45,reps:25,rpe:null,logged:true},
+    {key:"5_1",exIdx:5,setIdx:1,weight:45,reps:25,rpe:null,logged:true}
   ]
 };
 
