@@ -2919,9 +2919,15 @@ const BASE_DATA=[
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Back Raises",45,20,6,null],
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Back Raises",45,20,6,null],
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Back Raises",45,20,6,null],
-["Thu May 21 2026 09:00:00 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
-["Thu May 21 2026 09:00:00 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
-["Thu May 21 2026 09:00:00 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
+["Sat May 23 2026 09:00:00 GMT-0400","strength","Comp Deadlift",585,1,7.5,null],
+["Sat May 23 2026 09:00:00 GMT-0400","strength","Comp Deadlift",655,1,8.5,null],
+["Sat May 23 2026 09:00:00 GMT-0400","strength","Comp Deadlift",690,1,9,null],
+["Sat May 23 2026 09:00:00 GMT-0400","strength","Romanian Deadlift",315,8,5,null],
+["Sat May 23 2026 09:00:00 GMT-0400","strength","Romanian Deadlift",335,8,6,null],
+["Sat May 23 2026 09:00:00 GMT-0400","strength","Romanian Deadlift",355,8,7.5,null],
+["Sat May 23 2026 09:00:00 GMT-0400","strength","Back Raises",45,20,5,null],
+["Sat May 23 2026 09:00:00 GMT-0400","strength","Back Raises",45,20,null,null],
+["Sat May 23 2026 09:00:00 GMT-0400","strength","Back Raises",45,20,null,null],
 ["Thu May 21 2026 09:00:00 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
 ["Thu May 21 2026 09:00:00 GMT-0400","strength","Close Grip Floor Press",225,6,5,null],
 ["Thu May 21 2026 09:00:00 GMT-0400","strength","Close Grip Floor Press",255,6,6,null],
@@ -3180,10 +3186,54 @@ const DAYS=[
   {exercise:"Band Pull-Aparts",sets:4,note:"50x25 @5 / 50x25 x3"},
   {exercise:"Barbell Curls",sets:2,note:"45x20 x2"}
 ]},
-{id:"sat_may23",label:"SAT MAY 23",tag:"Heavy Deadlift",completed:false,datePrefix:"Sat May 23 2026",exercises:[
-  {exercise:"Comp Deadlift",sets:3,note:"605x1 @7 / 655x1 @8 / 680x1 @8.5 or 690x1 @9 — 680 at @8 or below triggers 690 attempt"},
-  {exercise:"Romanian Deadlift",sets:3,note:"3x8 @325lb @6.5 — up 10lb"},
-  {exercise:"Barbell Hip Thrust",sets:4,note:"4x8 @335lb @6 — up 20lb"},
+{id:"sat_may23",label:"SAT MAY 23",tag:"Heavy Deadlift",completed:true,datePrefix:"Sat May 23 2026",exercises:[
+  {exercise:"Comp Deadlift",sets:3,note:"585x1 @7.5 / 655x1 @8.5 / 690x1 @9 — NEW ALL-TIME PR +10lb"},
+  {exercise:"Romanian Deadlift",sets:3,note:"315x8 @5 / 335x8 @6 / 355x8 @7.5 — ascending"},
+  {exercise:"Back Raises",sets:3,note:"45x20 @5 / 45x20 / 45x20"}
+]},
+
+// ── WEEK 4 — INTENSIFICATION ────────────────────────────────────────────
+{id:"mon_may25",label:"MON MAY 25",tag:"Bench Day",completed:false,datePrefix:"Mon May 25 2026",exercises:[
+  {exercise:"Comp Bench",sets:5,note:"335x2 @6 / 355x1 @7 / 385x1 @8.5 (submax — up 10lb) / rest 4min / 355x3 @8 / 355x3 @8 — Intensification: load up, volume up"},
+  {exercise:"Scap Pull-Up Holds",sets:3,note:"240x5 / 240x5 / 180x10 — progress top ascending set"},
+  {exercise:"NG DB Press",sets:3,note:"3x8 @115lb — mandatory 3sec eccentric every rep, quality over load"},
+  {exercise:"Flat DB Fly",sets:4,note:"4x8 @90lb @7.5 max — maintain load, enforce full ROM at bottom"},
+  {exercise:"Dips (Chest Emphasis)",sets:3,note:"BW+25lb x10 @7 x3 — add load, pain was zero last week at 3x20 BW"},
+  {exercise:"Tricep Pushdowns",sets:3,note:"40x30 @6 / 40x30 @7 / 40x30 @7 — standardize at 40lb"},
+  {exercise:"Iso Hold Hammer Curls",sets:3,note:"3x10 @30lb @6 — elbow friendly"},
+  {exercise:"DB Side Lateral Raises",sets:3,note:"3x20 @20lb — maintain"},
+  {exercise:"Tyler Twist (Flexbar)",sets:4,note:"Blue Flexbar x15 x4 — week 7 Nirschl"}
+]},
+{id:"tue_may26",label:"TUE MAY 26",tag:"Squat Day",completed:false,datePrefix:"Tue May 26 2026",exercises:[
+  {exercise:"Comp Squat",sets:5,note:"455x2 @6 / 545x1 @7.5 / 595x1 @8.5 (submax — up 10lb) / rest 4-5min / 535x3 @8 / 535x3 @8 — Intensification: both volume and submax up"},
+  {exercise:"Reverse Hack Squat",sets:3,note:"900x8 @8.5 / 900x6 @9 / 900x6 @9 — bump opener to 8 reps"},
+  {exercise:"Leg Extensions",sets:3,note:"120x15 @6.5 max x3 — hold load, monitor L-knee, seat position marked"},
+  {exercise:"GHR",sets:3,note:"3x6 @240lb @7 — returns this week"},
+  {exercise:"Hamstring Curls",sets:4,note:"4x8 @170lb @7 — back to 170, 4 full sets"}
+]},
+{id:"wed_may27",label:"WED MAY 27",tag:"DL Accessory",completed:false,datePrefix:"Wed May 27 2026",exercises:[
+  {exercise:"Paused Deadlift (Below Knee)",sets:3,note:"495x2 @7 / 555x2 @8.5 / 555x2 @8.5 — Intensification: triples become doubles at higher load"},
+  {exercise:"Pendlay Rows",sets:4,note:"264x5 @6 / 264x8 @7.5 / 264x8 @8 / 264x8 @8 — add a rep to working sets"},
+  {exercise:"Lat Pulldowns",sets:4,note:"210x10 @7.5 x4 — establish 210 as standard, no ramp needed"},
+  {exercise:"DB Rows",sets:3,note:"120x12 @7.5 / 120x12 @8 / 120x10 @8 — add reps before adding load"},
+  {exercise:"Single Arm Lat Pulldowns",sets:2,note:"Home gym baseline set — test @7 and note weight for calibration vs other gym"},
+  {exercise:"Face Pulls or Band Pull-Aparts",sets:3,note:"35x30 x3 — standardized"},
+  {exercise:"Ab Wheel",sets:3,note:"3x12 — 3sec eccentric"},
+  {exercise:"DB Side Bends",sets:3,note:"65x12 x3 — up from 55lb, overdue"},
+  {exercise:"Tyler Twist (Flexbar)",sets:4,note:"Blue Flexbar x15 x4 — week 7"}
+]},
+{id:"thu_may28",label:"THU MAY 28",tag:"Bench Accessory",completed:false,datePrefix:"Thu May 28 2026",exercises:[
+  {exercise:"Tyler Twist (Flexbar)",sets:4,note:"Blue Flexbar x15 x4 — week 7 Nirschl"},
+  {exercise:"Close Grip Floor Press",sets:4,note:"225x6 @5 / 265x5 @7 / 290x5 @8 / 225x15 @5-6 — up 5lb on top set, back-off is 225x15 NOT a grinder"},
+  {exercise:"Neutral Grip Pushup",sets:3,note:"BW+band x15 @7.5 / x15 @8 / x15 @8 — cap at @8"},
+  {exercise:"Pec Deck",sets:3,note:"3x6 @160lb @7.5 — consolidate 3 clean sets before going to 170"},
+  {exercise:"Band Pull-Aparts",sets:4,note:"Red band x25 @6 x4"},
+  {exercise:"Barbell Curls",sets:2,note:"55x15 @6 — test 55lb for elbow tolerance. Stay at 45 if any response"}
+]},
+{id:"sat_may30",label:"SAT MAY 30",tag:"Heavy Deadlift",completed:false,datePrefix:"Sat May 30 2026",exercises:[
+  {exercise:"Comp Deadlift",sets:3,note:"615x1 @7.5 / 665x1 @8.5 / 700x1 @9 — compressed ramp, 700 is the target. If 665 moves at @8 or below, go 700. If @9, still go — it earned"},
+  {exercise:"Romanian Deadlift",sets:3,note:"3x8 @365lb @7 — up 10lb, ascending if feels good"},
+  {exercise:"Barbell Hip Thrust",sets:4,note:"4x8 @335lb @6 — returns after skip last week"},
   {exercise:"Back Raises",sets:3,note:"3x20 @55lb @6 — up 10lb"}
 ]}];
 
@@ -3617,6 +3667,17 @@ const PREFILL={
     {key:"4_3",exIdx:4,setIdx:3,weight:0,reps:25,rpe:null,logged:true},
     {key:"5_0",exIdx:5,setIdx:0,weight:45,reps:20,rpe:null,logged:true},
     {key:"5_1",exIdx:5,setIdx:1,weight:45,reps:20,rpe:null,logged:true}
+  ],
+  "sat_may23":[
+    {key:"0_0",exIdx:0,setIdx:0,weight:585,reps:1,rpe:7.5,logged:true},
+    {key:"0_1",exIdx:0,setIdx:1,weight:655,reps:1,rpe:8.5,logged:true},
+    {key:"0_2",exIdx:0,setIdx:2,weight:690,reps:1,rpe:9,logged:true},
+    {key:"1_0",exIdx:1,setIdx:0,weight:315,reps:8,rpe:5,logged:true},
+    {key:"1_1",exIdx:1,setIdx:1,weight:335,reps:8,rpe:6,logged:true},
+    {key:"1_2",exIdx:1,setIdx:2,weight:355,reps:8,rpe:7.5,logged:true},
+    {key:"2_0",exIdx:2,setIdx:0,weight:45,reps:20,rpe:5,logged:true},
+    {key:"2_1",exIdx:2,setIdx:1,weight:45,reps:20,rpe:null,logged:true},
+    {key:"2_2",exIdx:2,setIdx:2,weight:45,reps:20,rpe:null,logged:true}
   ]
 };
 
