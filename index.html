@@ -2919,6 +2919,21 @@ const BASE_DATA=[
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Back Raises",45,20,6,null],
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Back Raises",45,20,6,null],
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Back Raises",45,20,6,null],
+["Fri May 29 2026 09:00:00 GMT-0400","strength","Comp Deadlift",585,1,7,null],
+["Fri May 29 2026 09:00:00 GMT-0400","strength","Comp Deadlift",655,1,8.5,null],
+["Fri May 29 2026 09:00:00 GMT-0400","strength","Comp Deadlift",700,1,9.5,null],
+["Fri May 29 2026 09:00:00 GMT-0400","strength","Romanian Deadlift",315,6,5.5,null],
+["Fri May 29 2026 09:00:00 GMT-0400","strength","Romanian Deadlift",315,6,null,null],
+["Fri May 29 2026 09:00:00 GMT-0400","strength","Romanian Deadlift",315,6,null,null],
+["Fri May 29 2026 09:00:00 GMT-0400","strength","Romanian Deadlift",315,6,null,null],
+["Fri May 29 2026 09:00:00 GMT-0400","strength","Romanian Deadlift",315,6,null,null],
+["Fri May 29 2026 09:00:00 GMT-0400","strength","Barbell Hip Thrust",225,10,null,null],
+["Fri May 29 2026 09:00:00 GMT-0400","strength","Barbell Hip Thrust",225,10,null,null],
+["Fri May 29 2026 09:00:00 GMT-0400","strength","Barbell Hip Thrust",225,10,null,null],
+["Fri May 29 2026 09:00:00 GMT-0400","strength","Barbell Hip Thrust",225,10,null,null],
+["Fri May 29 2026 09:00:00 GMT-0400","strength","Back Raises (45 degree)",240,20,null,null],
+["Fri May 29 2026 09:00:00 GMT-0400","strength","Back Raises (45 degree)",240,20,null,null],
+["Fri May 29 2026 09:00:00 GMT-0400","strength","Back Raises (45 degree)",240,20,null,null],
 ["Thu May 28 2026 09:00:00 GMT-0400","strength","Pendlay Rows",275,7,7.5,null],
 ["Thu May 28 2026 09:00:00 GMT-0400","strength","Pendlay Rows",275,7,7.5,null],
 ["Thu May 28 2026 09:00:00 GMT-0400","strength","Pendlay Rows",275,7,8,null],
@@ -3282,11 +3297,62 @@ const DAYS=[
   {exercise:"Hammer Strength Machine Rows (High Handles)",sets:3,note:"150x10 @7.5 / 180x10 @7.5 / 240x10 @8 — swapped for DB Rows"},
   {exercise:"Single Arm Lat Pulldowns",sets:2,note:"180x12 @7.5 / 180x12 @7 — HOME GYM BASELINE: 180lb = @7 on home cable"}
 ]},
-{id:"fri_may29",label:"FRI MAY 29",tag:"Heavy Deadlift",completed:false,datePrefix:"Fri May 29 2026",exercises:[
-  {exercise:"Comp Deadlift",sets:3,note:"615x1 @7.5 / 665x1 @8.5 / 700x1 @9 — compressed ramp, 700 is the target. If 665 moves at @8 or below, go 700. If @9, still go — it earned"},
-  {exercise:"Romanian Deadlift",sets:3,note:"3x8 @365lb @7 — up 10lb, ascending if feels good"},
-  {exercise:"Barbell Hip Thrust",sets:4,note:"4x8 @335lb @6 — returns after skip last week"},
-  {exercise:"Back Raises",sets:3,note:"3x20 @55lb @6 — up 10lb"}
+{id:"fri_may29",label:"FRI MAY 29",tag:"Heavy Deadlift",completed:true,datePrefix:"Fri May 29 2026",exercises:[
+  {exercise:"Comp Deadlift",sets:3,note:"585x1 @7 / 655x1 @8.5 / 700x1 @9.5 — 700LB ALL-TIME PR"},
+  {exercise:"Romanian Deadlift",sets:5,note:"5x6 @315lb @5.5"},
+  {exercise:"Barbell Hip Thrust",sets:4,note:"4x10 @225lb"},
+  {exercise:"Back Raises (45 degree)",sets:3,note:"3x20 @240lb — 45 degree back extension"}
+]},
+
+// ── WEEK 5 — TRANSITION / NEW SPLIT ────────────────────────────────────
+{id:"mon_jun1",label:"MON JUN 1",tag:"Bench + Back + Triceps",completed:false,datePrefix:"Mon Jun 1 2026",exercises:[
+  {exercise:"Comp Bench",sets:4,note:"315x3 @6 / 335x2 @6.5 / 355x1 @7.5 / 340x3 @7.5 — transition week, RPE ceiling @8"},
+  {exercise:"Scap Pull-Up Holds",sets:3,note:"240x5 / 240x5 / 160x8 — upper back density"},
+  {exercise:"NG DB Press",sets:3,note:"3x8 @115lb — 3sec eccentric mandatory"},
+  {exercise:"Pendlay Rows",sets:4,note:"264x5 @6 / 275x7 @7.5 / 275x7 @7.5 / 275x7 @8 — horizontal pull after bench"},
+  {exercise:"Lat Pulldowns",sets:3,note:"210x10 @7.5 x3 — vertical pull"},
+  {exercise:"Flat DB Fly",sets:3,note:"3x8 @80lb @7 — drop a set, maintain ROM"},
+  {exercise:"Tricep Pushdowns",sets:3,note:"40x25 @6 x3 — volume tricep finisher"},
+  {exercise:"JM Press",sets:3,note:"185x10 @7.5 / 195x10 @8 / 195x10 @8 — tricep strength, history up to 215lb"},
+  {exercise:"Tyler Twist (Flexbar)",sets:4,note:"Blue/Black Flexbar x15 x4 — week 8, test Black if Blue effortless"}
+]},
+{id:"tue_jun2",label:"TUE JUN 2",tag:"Squat + Legs + RDL",completed:false,datePrefix:"Tue Jun 2 2026",exercises:[
+  {exercise:"Comp Squat",sets:4,note:"455x2 @6 / 495x1 @7 / 545x1 @8 / 515x3 @7.5 — transition: submax dropped ~55lb, one volume set"},
+  {exercise:"Reverse Hack Squat",sets:3,note:"860x8 @8.5 / 900x6 @8.5 / 900x6 @9 — maintain quad volume"},
+  {exercise:"Romanian Deadlift",sets:4,note:"315x8 @6 / 335x8 @7 / 355x8 @7.5 / 355x8 @8 — ascending, history up to 355x8 @7.5"},
+  {exercise:"Leg Extensions",sets:3,note:"140x12 @6 x3 — pain-free seat position, no load increase"},
+  {exercise:"GHR",sets:3,note:"3x6 @240lb @7"},
+  {exercise:"Hamstring Curls",sets:4,note:"4x8 @170lb @7"}
+]},
+{id:"wed_jun3",label:"WED JUN 3",tag:"Back + Biceps + Shoulders",completed:false,datePrefix:"Wed Jun 3 2026",exercises:[
+  {exercise:"Pendlay Rows",sets:4,note:"264x5 @6 / 275x8 @7.5 / 275x8 @8 / 275x8 @8 — primary back strength"},
+  {exercise:"Hammer Strength Machine Rows (High Handles)",sets:3,note:"180x10 @7.5 / 240x10 @8 / 240x10 @8 — ascending, continue from last session"},
+  {exercise:"Single Arm Lat Pulldowns",sets:3,note:"180x12 @7 / 180x12 @7.5 / 180x12 @7.5 — home gym baseline established at 180"},
+  {exercise:"DB Rows",sets:3,note:"120x12 @7.5 x3 — unilateral back density"},
+  {exercise:"Face Pulls or Band Pull-Aparts",sets:3,note:"35x30 x3 — rear delt / rotator cuff"},
+  {exercise:"DB Side Lateral Raises",sets:4,note:"20x20 x4 — lateral delt volume"},
+  {exercise:"Iso Hold Side Laterals",sets:3,note:"25x6 @8 x3 — isometric delt work"},
+  {exercise:"Barbell Curls",sets:3,note:"55x15 @6 / 55x15 @6.5 / 55x12 @7 — history up to 85lb, test 55 for elbow"},
+  {exercise:"Iso Hold Hammer Curls",sets:3,note:"35x12 @6 x3 — elbow-friendly, drop from 45lb"}
+]},
+{id:"thu_jun4",label:"THU JUN 4",tag:"Deadlift + Legs + Abs",completed:false,datePrefix:"Thu Jun 4 2026",exercises:[
+  {exercise:"Comp Deadlift",sets:3,note:"495x1 @6 / 545x1 @7 / 585x1 @7.5 — submaximal pulls only, bar speed and technique, NO PR attempt"},
+  {exercise:"Barbell Hip Thrust",sets:4,note:"4x8 @315lb @6 — glute strength, history up to 315x8 @6"},
+  {exercise:"Back Raises (45 degree)",sets:3,note:"3x20 @240lb — erector endurance, same as last session"},
+  {exercise:"Leg Press/Hack Squat",sets:3,note:"315x10 @7 / 365x10 @7.5 / 405x10 @8 — quad volume variation, history up to 405x10"},
+  {exercise:"Weighted Crunches",sets:3,note:"3x15 @100lb @6.5 — anterior core"},
+  {exercise:"Ab Wheel",sets:3,note:"3x12 — 3sec eccentric, anti-extension core"},
+  {exercise:"DB Side Bends",sets:3,note:"65x12 x3 — lateral core, up from 55lb"}
+]},
+{id:"fri_jun5",label:"FRI JUN 5",tag:"CG Floor Press + Bench Assistance + Shoulders",completed:false,datePrefix:"Fri Jun 5 2026",exercises:[
+  {exercise:"Close Grip Floor Press",sets:4,note:"225x6 @5 / 265x5 @7 / 285x5 @8 / 225x15 @5-6 — down 5lb from last top set, back-off strict @5-6"},
+  {exercise:"Dips (Chest Emphasis)",sets:3,note:"BW+25lb x12 @7.5 x3 — consolidate 3x12 before advancing to 35lb"},
+  {exercise:"Neutral Grip Pushup",sets:3,note:"BW x15 @7 / x15 @7.5 / x15 @8 — remove band, base pattern"},
+  {exercise:"Pec Deck",sets:3,note:"3x6 @160lb @7.5 — consolidate before 170"},
+  {exercise:"DB Military Press",sets:3,note:"55x10 @7.5 / 60x8 @8 / 60x8 @8 — shoulder pressing, history up to 70lb DB"},
+  {exercise:"Y-Raise",sets:4,note:"25x12 @7 x4 — lower trap / posterior shoulder"},
+  {exercise:"Band Pull-Aparts",sets:4,note:"Red band x25 x4 — rotator cuff"},
+  {exercise:"Tyler Twist (Flexbar)",sets:4,note:"Blue/Black Flexbar x15 x4 — week 8"}
 ]}];
 
 // PREFILL — completed sessions pre-loaded
@@ -3798,6 +3864,23 @@ const PREFILL={
     {key:"2_2",exIdx:2,setIdx:2,weight:240,reps:10,rpe:8,logged:true},
     {key:"3_0",exIdx:3,setIdx:0,weight:180,reps:12,rpe:7.5,logged:true},
     {key:"3_1",exIdx:3,setIdx:1,weight:180,reps:12,rpe:7,logged:true}
+  ],
+  "fri_may29":[
+    {key:"0_0",exIdx:0,setIdx:0,weight:585,reps:1,rpe:7,logged:true},
+    {key:"0_1",exIdx:0,setIdx:1,weight:655,reps:1,rpe:8.5,logged:true},
+    {key:"0_2",exIdx:0,setIdx:2,weight:700,reps:1,rpe:9.5,logged:true},
+    {key:"1_0",exIdx:1,setIdx:0,weight:315,reps:6,rpe:5.5,logged:true},
+    {key:"1_1",exIdx:1,setIdx:1,weight:315,reps:6,rpe:null,logged:true},
+    {key:"1_2",exIdx:1,setIdx:2,weight:315,reps:6,rpe:null,logged:true},
+    {key:"1_3",exIdx:1,setIdx:3,weight:315,reps:6,rpe:null,logged:true},
+    {key:"1_4",exIdx:1,setIdx:4,weight:315,reps:6,rpe:null,logged:true},
+    {key:"2_0",exIdx:2,setIdx:0,weight:225,reps:10,rpe:null,logged:true},
+    {key:"2_1",exIdx:2,setIdx:1,weight:225,reps:10,rpe:null,logged:true},
+    {key:"2_2",exIdx:2,setIdx:2,weight:225,reps:10,rpe:null,logged:true},
+    {key:"2_3",exIdx:2,setIdx:3,weight:225,reps:10,rpe:null,logged:true},
+    {key:"3_0",exIdx:3,setIdx:0,weight:240,reps:20,rpe:null,logged:true},
+    {key:"3_1",exIdx:3,setIdx:1,weight:240,reps:20,rpe:null,logged:true},
+    {key:"3_2",exIdx:3,setIdx:2,weight:240,reps:20,rpe:null,logged:true}
   ]
 };
 
