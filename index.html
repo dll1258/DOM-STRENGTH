@@ -2813,6 +2813,32 @@ const BASE_DATA=[
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Romanian Deadlift",315,8,6.5,null],
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Barbell Hip Thrust",315,8,6,null],
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Back Raises",45,20,6,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Scap Pull-Up Holds",170,10,null,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Scap Pull-Up Holds",170,10,null,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Scap Pull-Up Holds",170,10,null,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Comp Bench",315,3,6,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Comp Bench",335,3,6.5,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Comp Bench",375,1,8.5,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Comp Bench",355,3,8,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Comp Bench",355,3,8.1,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","NG DB Press",110,8,8,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","NG DB Press",110,8,8.1,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","NG DB Press",110,8,8.2,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","NG DB Press",110,8,8.3,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Pendlay Rows",295,6,8,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Pendlay Rows",295,6,7.5,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Pendlay Rows",295,6,7.6,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Pendlay Rows",295,6,8,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Lat Pulldowns",200,8,8,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Lat Pulldowns",200,8,8.1,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Lat Pulldowns",200,8,8.2,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Flat DB Fly",85,8,8,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Flat DB Fly",85,8,8.1,null],
+["Mon Jun 08 2026 09:00:00 GMT-0400","strength","Flat DB Fly",85,8,8.2,null],
 ["Fri Jun 05 2026 09:00:00 GMT-0400","strength","Close Grip Floor Press",225,6,5,null],
 ["Fri Jun 05 2026 09:00:00 GMT-0400","strength","Close Grip Floor Press",275,6,7.5,null],
 ["Fri Jun 05 2026 09:00:00 GMT-0400","strength","Close Grip Floor Press",305,6,8.5,null],
@@ -3281,16 +3307,14 @@ const DAYS=[
 ]},
 
 // ── WEEK 6 — ACCUMULATION BLOCK 2 ───────────────────────────────────────────
-{id:"mon_jun8",label:"MON JUN 8",tag:"Bench + Back + Triceps",completed:false,datePrefix:"Mon Jun 8 2026",exercises:[
-  {exercise:"Tyler Twist (Flexbar)",sets:4,note:"Blue/Black Flexbar x15 x4 — week 9. Black Flexbar if Blue feels effortless"},
-  {exercise:"Comp Bench",sets:5,note:"315x3 @6 / 335x2 @6.5 / 375x1 @8 (submax — up 10lb from last week) / 355x3 @8 / 355x3 @8 — Intensification resumes, one clean submax single then two volume sets"},
-  {exercise:"Scap Pull-Up Holds",sets:3,note:"240x5 / 240x5 / 160x10 — alternate heavy holds and endurance holds"},
-  {exercise:"NG DB Press",sets:3,note:"3x8 @110lb — mandatory 3sec eccentric, drop 5lb, fix the 3-set ceiling pattern"},
-  {exercise:"Pendlay Rows",sets:4,note:"264x5 @6 / 275x8 @7.5 / 275x8 @8 / 275x8 @8 — primer then 3 working sets at 275"},
-  {exercise:"Lat Pulldowns",sets:3,note:"200x10 @7.5 x3 — Bodyworld standard, straight to working weight"},
-  {exercise:"Flat DB Fly",sets:4,note:"4x8 @85lb @7.5 max — up 5lb, ROM quality over load"},
-  {exercise:"JM Press",sets:3,note:"135x10 @7 / 155x10 @7.5 / 165x10 @8 — advance from 85lb reintro to strength rep range"},
-  {exercise:"Tricep Pushdowns",sets:2,note:"45x30 @7 x2 — abbreviated finisher after JM Press"}
+{id:"mon_jun8",label:"MON JUN 8",tag:"Bench + Back + Triceps",completed:true,datePrefix:"Mon Jun 8 2026",exercises:[
+  {exercise:"Tyler Twist (Flexbar)",sets:4,note:"Blue Flexbar x15 x4 — week 9"},
+  {exercise:"Scap Pull-Up Holds",sets:3,note:"170x10 x3"},
+  {exercise:"Comp Bench",sets:5,note:"315x3 @6 / 335x3 @6.5 / 375x1 @8.5 / 355x3 @8 / 355x3 @8"},
+  {exercise:"NG DB Press",sets:4,note:"110x8 @8 x4 — flat RPE across all 4 sets"},
+  {exercise:"Pendlay Rows",sets:4,note:"295x6 @8 / 295x6 @7.5 / 295x6 @7.5 / 295x6 @8 — up 20lb, career best"},
+  {exercise:"Lat Pulldowns",sets:3,note:"200x8 @8 x3"},
+  {exercise:"Flat DB Fly",sets:3,note:"85x8 @8 x3 — ⚠ R elbow sore — JM Press and Tricep Pushdowns skipped"}
 ]},
 {id:"tue_jun9",label:"TUE JUN 9",tag:"Squat + Legs + RDL",completed:false,datePrefix:"Tue Jun 9 2026",exercises:[
   {exercise:"Comp Squat",sets:5,note:"455x2 @6 / 525x1 @7.5 / 595x1 @8.5 (submax — building from 610 @9 last week) / 545x3 @8 / 545x3 @8 — volume sets up 10lb from May block"},
@@ -3985,10 +4009,37 @@ const PREFILL={
     {key:"3_2",exIdx:3,setIdx:2,weight:170,reps:8,rpe:8,logged:true},
     {key:"4_0",exIdx:4,setIdx:0,weight:40,reps:20,rpe:null,logged:true},
     {key:"4_1",exIdx:4,setIdx:1,weight:45,reps:20,rpe:null,logged:true}
+  ],
+  "mon_jun8":[
+    {key:"0_0",exIdx:0,setIdx:0,weight:100,reps:15,rpe:null,logged:true},
+    {key:"0_1",exIdx:0,setIdx:1,weight:100,reps:15,rpe:null,logged:true},
+    {key:"0_2",exIdx:0,setIdx:2,weight:100,reps:15,rpe:null,logged:true},
+    {key:"0_3",exIdx:0,setIdx:3,weight:100,reps:15,rpe:null,logged:true},
+    {key:"1_0",exIdx:1,setIdx:0,weight:170,reps:10,rpe:null,logged:true},
+    {key:"1_1",exIdx:1,setIdx:1,weight:170,reps:10,rpe:null,logged:true},
+    {key:"1_2",exIdx:1,setIdx:2,weight:170,reps:10,rpe:null,logged:true},
+    {key:"2_0",exIdx:2,setIdx:0,weight:315,reps:3,rpe:6,logged:true},
+    {key:"2_1",exIdx:2,setIdx:1,weight:335,reps:3,rpe:6.5,logged:true},
+    {key:"2_2",exIdx:2,setIdx:2,weight:375,reps:1,rpe:8.5,logged:true},
+    {key:"2_3",exIdx:2,setIdx:3,weight:355,reps:3,rpe:8,logged:true},
+    {key:"2_4",exIdx:2,setIdx:4,weight:355,reps:3,rpe:8,logged:true},
+    {key:"3_0",exIdx:3,setIdx:0,weight:110,reps:8,rpe:8,logged:true},
+    {key:"3_1",exIdx:3,setIdx:1,weight:110,reps:8,rpe:8,logged:true},
+    {key:"3_2",exIdx:3,setIdx:2,weight:110,reps:8,rpe:8,logged:true},
+    {key:"3_3",exIdx:3,setIdx:3,weight:110,reps:8,rpe:8,logged:true},
+    {key:"4_0",exIdx:4,setIdx:0,weight:295,reps:6,rpe:8,logged:true},
+    {key:"4_1",exIdx:4,setIdx:1,weight:295,reps:6,rpe:7.5,logged:true},
+    {key:"4_2",exIdx:4,setIdx:2,weight:295,reps:6,rpe:7.5,logged:true},
+    {key:"4_3",exIdx:4,setIdx:3,weight:295,reps:6,rpe:8,logged:true},
+    {key:"5_0",exIdx:5,setIdx:0,weight:200,reps:8,rpe:8,logged:true},
+    {key:"5_1",exIdx:5,setIdx:1,weight:200,reps:8,rpe:8,logged:true},
+    {key:"5_2",exIdx:5,setIdx:2,weight:200,reps:8,rpe:8,logged:true},
+    {key:"6_0",exIdx:6,setIdx:0,weight:85,reps:8,rpe:8,logged:true},
+    {key:"6_1",exIdx:6,setIdx:1,weight:85,reps:8,rpe:8,logged:true},
+    {key:"6_2",exIdx:6,setIdx:2,weight:85,reps:8,rpe:8,logged:true}
   ]
 };
 
-// ── DATA PROCESSING ────────────────────────────────────────────────────────
 const DATA=BASE_DATA.map(r=>{
   const d=new Date(r[0]);
   return{ts:d.getTime(),dateStr:d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}),block:r[1],exercise:r[2].trim(),weight:r[3],reps:r[4],rpe:r[5],rir:r[6]};
@@ -4000,121 +4051,13 @@ const tLift=document.getElementById('trend-lift');
 EXERCISE_LIST.forEach(ex=>{
   [dbEx,tLift].forEach(sel=>{const o=document.createElement('option');o.value=o.textContent=ex;sel.appendChild(o);});
 });
-document.getElementById('meta-info').textContent=DATA.length+' RECORDS · '+EXERCISE_LIST.length+' EXERCISES';
 
-// ── SCREEN NAV ─────────────────────────────────────────────────────────────
-function showScreen(name,btn){
-  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
-  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
-  document.getElementById('screen-'+name).classList.add('active');
-  btn.classList.add('active');
-  if(name==='prs') renderPRs();
-  if(name==='trends') renderTrend();
-  if(name==='sessions') renderSessions();
-  if(name==='database') applyFilters();
-}
-
-// ── DAY MANAGEMENT ─────────────────────────────────────────────────────────
-// Default to first incomplete day, or last day if all complete
 let activeDay=DAYS.findIndex(d=>!d.completed);
-if(activeDay<0) activeDay=DAYS.length-1;
-// Runtime set count overrides: {dayId: {exIdx: count}}
-const SET_OVERRIDE_KEY='gotham_set_overrides_v1';
-let setOverrides=JSON.parse(localStorage.getItem(SET_OVERRIDE_KEY)||'{}');
-function saveSetOverrides(){try{localStorage.setItem(SET_OVERRIDE_KEY,JSON.stringify(setOverrides));}catch{}}
-// Exercise name overrides: {dayId: {exIdx: 'New Name'}}
-const EX_OVERRIDE_KEY='gotham_ex_overrides_v1';
-let exOverrides=JSON.parse(localStorage.getItem(EX_OVERRIDE_KEY)||'{}');
-function saveExOverrides(){try{localStorage.setItem(EX_OVERRIDE_KEY,JSON.stringify(exOverrides));}catch{}}
-function getExName(dayId,ei,defaultName){
-  return(exOverrides[dayId]&&exOverrides[dayId][ei])?exOverrides[dayId][ei]:defaultName;
-}
-// Build unique sorted exercise list from BASE_DATA on first use
-let _exList=null;
-function getExList(){
-  if(!_exList){
-    const seen=new Set();
-    BASE_DATA.forEach(r=>seen.add(r[2]));
-    _exList=[...seen].sort((a,b)=>a.localeCompare(b));
-  }
-  return _exList;
-}
-function confirmSwap(dayId,ei,name){
-  if(!name)return;
-  if(!exOverrides[dayId])exOverrides[dayId]={};
-  exOverrides[dayId][ei]=name;
-  saveExOverrides();
-  renderDayContent();
-}
-function filterSwapList(dayId,ei){
-  const q=(document.getElementById('swap-search-'+dayId+'-'+ei)||{}).value||'';
-  const list=document.getElementById('swap-list-'+dayId+'-'+ei);
-  if(!list)return;
-  const terms=q.toLowerCase().split(' ').filter(Boolean);
-  const matches=getExList().filter(ex=>terms.every(t=>ex.toLowerCase().includes(t)));
-  if(matches.length===0){
-    list.innerHTML='<div class="swap-list-empty">NO MATCHES</div>';
-  }else{
-    list.innerHTML=matches.slice(0,60).map(ex=>
-      `<div class="swap-list-item" ontouchend="confirmSwap('${dayId}',${ei},'${ex.replace(/'/g,"\'")}');event.preventDefault()" onclick="confirmSwap('${dayId}',${ei},'${ex.replace(/'/g,"\'")}')">
-        ${ex}
-      </div>`
-    ).join('');
-  }
-}
-// Swap button press tracking — requires deliberate press (200ms) to fire
-const _swapPressStart={};
-function swapTouchStart(dayId,ei){
-  _swapPressStart[dayId+'_'+ei]=Date.now();
-}
-function swapTouchEnd(dayId,ei,e){
-  e.preventDefault();
-  const elapsed=Date.now()-(_swapPressStart[dayId+'_'+ei]||0);
-  if(elapsed>=200) toggleSwapRow(dayId,ei);
-}
-function toggleSwapRow(dayId,ei){
-  const picker=document.getElementById('swap-picker-'+dayId+'-'+ei);
-  if(!picker)return;
-  const open=picker.style.display==='flex';
-  picker.style.display=open?'none':'flex';
-  if(!open){
-    const search=document.getElementById('swap-search-'+dayId+'-'+ei);
-    if(search){search.value='';search.focus();}
-    filterSwapList(dayId,ei);
-  }
-}
-function getSetCount(dayId,ei,defaultCount){
-  return(setOverrides[dayId]&&setOverrides[dayId][ei]!==undefined)?setOverrides[dayId][ei]:defaultCount;
-}
-function adjustSets(dayId,ei,delta){
-  if(!setOverrides[dayId])setOverrides[dayId]={};
-  const day=DAYS.find(d=>d.id===dayId);
-  const ex=day.exercises[ei];
-  const current=getSetCount(dayId,ei,ex.sets);
-  const next=Math.max(1,current+delta);
-  setOverrides[dayId][ei]=next;
-  saveSetOverrides();
-  renderDayContent();
-}
-
-function dayKey(i){return 'gotham_v6_'+DAYS[i].id;}
-function loadDaySets(i){
-  try{
-    const prefill=(PREFILL[DAYS[i].id]||[]).map(s=>({...s,logged:true}));
-    const stored=localStorage.getItem(dayKey(i));
-    if(!stored){localStorage.setItem(dayKey(i),JSON.stringify(prefill));return prefill;}
-    const parsed=JSON.parse(stored);
-    const prefillKeys=new Set(prefill.map(s=>s.key));
-    const extra=parsed.filter(s=>!prefillKeys.has(s.key));
-    return [...prefill,...extra];
-  }catch{}
-  return PREFILL[DAYS[i].id]||[];
-}
-function saveDaySets(i,sets){try{localStorage.setItem(dayKey(i),JSON.stringify(sets))}catch{}}
+if(activeDay<0)activeDay=DAYS.length-1;
+let activeTab='log';
 
 function renderDayNav(){
   const d=DAYS[activeDay];
-  const completed=DAYS.filter(x=>x.completed).length;
   document.getElementById('day-nav').innerHTML=`
     <button class="day-nav-btn" ontouchend="shiftDay(-1);event.preventDefault()" onclick="shiftDay(-1)">&#8249;</button>
     <div class="day-nav-current" ontouchend="openDayPicker();event.preventDefault()" onclick="openDayPicker()">
@@ -4131,13 +4074,9 @@ function shiftDay(dir){
 }
 function switchDay(i){if(i===activeDay&&document.getElementById('day-picker-modal').style.display!=='flex')return;activeDay=i;closeDayPicker();renderDayNav();renderDayContent();}
 function openDayPicker(){
-  // Group days by week
   const weeks={};
   DAYS.forEach((d,i)=>{
-    // Extract week label from date prefix
     const parts=d.datePrefix.split(' ');
-    const weekKey=parts[1]+' '+parts[2]; // e.g. "Apr 27" -> week anchor
-    // Group by month+approximate week
     const month=parts[1];
     const day=parseInt(parts[2]);
     const weekNum=Math.ceil(day/7);
@@ -4147,8 +4086,7 @@ function openDayPicker(){
   });
   let html='';
   Object.entries(weeks).forEach(([wkLabel,entries])=>{
-    html+=`<div class="day-picker-week">
-      <div class="day-picker-week-label">${wkLabel}</div>`;
+    html+=`<div class="day-picker-week"><div class="day-picker-week-label">${wkLabel}</div>`;
     entries.forEach(({d,i})=>{
       const cls=['day-picker-item'];
       if(i===activeDay)cls.push('active-day');
@@ -4166,302 +4104,230 @@ function openDayPicker(){
   document.getElementById('day-picker-scroll').innerHTML=html;
   const modal=document.getElementById('day-picker-modal');
   modal.style.display='flex';
-  // Scroll active day into view
-  setTimeout(()=>{
-    const active=modal.querySelector('.active-day');
-    if(active)active.scrollIntoView({block:'center',behavior:'smooth'});
-  },100);
+  setTimeout(()=>{const active=modal.querySelector('.active-day');if(active)active.scrollIntoView({block:'center',behavior:'smooth'});},100);
 }
-function closeDayPicker(){
-  document.getElementById('day-picker-modal').style.display='none';
+function closeDayPicker(){document.getElementById('day-picker-modal').style.display='none';}
+
+function getSets(dayIdx){
+  const key='gotham_v6_'+DAYS[dayIdx].id;
+  try{const s=localStorage.getItem(key);return s?JSON.parse(s):[];}catch(e){return[];}
 }
-
-
+function saveSets(dayIdx,sets){
+  const key='gotham_v6_'+DAYS[dayIdx].id;
+  try{localStorage.setItem(key,JSON.stringify(sets));}catch(e){}
+}
+function getInitialSets(dayIdx){
+  const saved=getSets(dayIdx);
+  if(saved.length)return saved;
+  return(PREFILL[DAYS[dayIdx].id]||[]).map(s=>({...s,logged:true}));
+}
 function renderDayContent(){
   const day=DAYS[activeDay];
-  const daySets=loadDaySets(activeDay);
-  const total=day.exercises.reduce((a,e)=>a+e.sets,0);
-  const done=daySets.filter(s=>s.logged).length;
-  const pct=total>0?Math.round(done/total*100):0;
-
-  let html=`<div class="day-header">
-    <div>
+  const sets=getInitialSets(activeDay);
+  const totalSets=day.exercises.reduce((a,e)=>a+e.sets,0);
+  const loggedSets=sets.filter(s=>s.logged).length;
+  const pct=totalSets>0?Math.round(loggedSets/totalSets*100):0;
+  const isComplete=day.completed||(loggedSets>=totalSets&&totalSets>0);
+  document.getElementById('day-content').innerHTML=`
+    <div class="day-header">
       <div class="day-title">${day.label}</div>
-      <div class="day-subtitle">▶ ${day.tag.toUpperCase()}</div>
-    </div>
-    <div style="display:flex;align-items:center;gap:8px">
-      ${day.completed?'<span class="done-badge">✓ COMPLETE</span>':''}
-      <div style="font-size:12px;color:#7777aa;font-family:Oswald,sans-serif;letter-spacing:.1em">${done}/${total}</div>
-    </div>
-  </div>
-  <div class="progress-wrap"><div class="progress-fill ${pct===100?'full':''}" style="width:${pct}%"></div></div>`;
-
-  if(done>=total&&total>0){
-    const summary=daySets.filter(s=>s.logged).map(s=>{
-      const ex=day.exercises[s.exIdx];
-      if(!ex)return'';
-      return ex.exercise+' '+(s.weight>0?s.weight+'lb':'BW')+'×'+s.reps+(s.rpe?' @'+s.rpe:'');
-    }).filter(Boolean).join('\n');
-    const exportPayload={session:day.label,tag:day.tag,block:'strength',date:day.datePrefix,
-      sets:daySets.filter(s=>s.logged).map(s=>({exercise:day.exercises[s.exIdx]?.exercise,weight:s.weight,reps:s.reps,rpe:s.rpe||null}))
-    };
-    html+=`<div class="session-done">
-      <div class="session-done-title">✓ MISSION COMPLETE</div>
-      <div class="copy-summary">${summary}</div>
-      <div style="margin-top:8px;font-size:10px;color:#555577;letter-spacing:.08em;margin-bottom:4px">EXPORT PAYLOAD:</div>
-      <div class="copy-summary" id="export-${activeDay}" style="font-size:10px;color:#7777aa;max-height:80px">${JSON.stringify(exportPayload,null,2)}</div>
-      <button class="copy-btn" ontouchend="copySummary(${activeDay},this);event.preventDefault()" onclick="copySummary(${activeDay},this)">📋 COPY EXPORT FOR CLAUDE</button>
-    </div>`;
-  }
-
-  day.exercises.forEach((ex,ei)=>{
-    const exSets=daySets.filter(s=>s.exIdx===ei&&s.logged);
-    const numSets=getSetCount(day.id,ei,ex.sets);
-    const allDone=exSets.length>=numSets;
-    let setsHtml='';
-    for(let si=0;si<numSets;si++){
-      const key=ei+'_'+si;
-      const found=daySets.find(s=>s.key===key&&s.logged);
-      if(found){
-        setsHtml+=`<div class="set-row">
-          <span class="set-num">SET ${si+1}</span>
-          <span class="set-done">✓ ${found.weight>0?found.weight+'lb':'BW'} × ${found.reps}${found.rpe?' @'+found.rpe:''}</span>
-          <button class="undo-btn" ontouchend="unlogSet(${activeDay},${ei},${si},'${key}');event.preventDefault()">UNDO</button>
-        </div>`;
-      }else{
-        const prev=daySets.filter(s=>s.exIdx===ei&&s.logged).slice(-1)[0];
-        setsHtml+=`<div class="set-row">
-          <span class="set-num">SET ${si+1}</span>
-          <input class="iw" type="number" id="w-${ei}-${si}" placeholder="LB" value="${prev?prev.weight:''}" step="2.5">
-          <input class="ir" type="number" id="r-${ei}-${si}" placeholder="REPS" value="${prev?prev.reps:''}">
-          <input class="irpe" type="number" id="e-${ei}-${si}" placeholder="RPE" min="1" max="10" step="0.5">
-          <button class="log-btn" ontouchend="logSet(${activeDay},${ei},${si},'${key}');event.preventDefault()">LOG</button>
-        </div>`;
-      }
-    }
-    const displayName=getExName(day.id,ei,ex.exercise);
-    const isSwapped=exOverrides[day.id]&&exOverrides[day.id][ei];
-    html+=`<div class="plan-card ${allDone?'card-done':''}">
-      <div class="plan-card-header">
-        <div class="plan-card-row1">
-          <span class="plan-card-name">${allDone?'✓ ':''}${displayName.toUpperCase()}</span>
-          <div class="set-ctrl">
-            <button class="set-ctrl-btn" ontouchend="adjustSets('${day.id}',${ei},-1);event.preventDefault()" onclick="adjustSets('${day.id}',${ei},-1)">−</button>
-            <span class="set-ctrl-count">${exSets.length}/${numSets}</span>
-            <button class="set-ctrl-btn" ontouchend="adjustSets('${day.id}',${ei},+1);event.preventDefault()" onclick="adjustSets('${day.id}',${ei},+1)">+</button>
-          </div>
-        </div>
-        <div class="plan-card-row2">${ex.note}</div>
-        <div class="plan-card-row3">
-          <button class="swap-btn" ontouchstart="swapTouchStart('${day.id}',${ei})" ontouchend="swapTouchEnd('${day.id}',${ei},event)" onclick="toggleSwapRow('${day.id}',${ei})">${isSwapped?'⟳ SWAPPED':'⇄ SWAP EXERCISE'}</button>
-        </div>
+      <div style="display:flex;align-items:center;gap:10px">
+        ${isComplete?'<button class="done-badge" onclick="uncompleteDay()">✓ COMPLETE</button>':'<button class="copy-btn" onclick="completeDay()">MARK COMPLETE</button>'}
+        <div class="badge">${loggedSets}/${totalSets}</div>
       </div>
-      <div class="swap-picker" id="swap-picker-${day.id}-${ei}">
-        <div class="swap-picker-top">
-          <span class="swap-picker-label">SELECT EXERCISE FROM DATABASE</span>
-          <button class="swap-picker-close" ontouchend="toggleSwapRow('${day.id}',${ei});event.preventDefault()" onclick="toggleSwapRow('${day.id}',${ei})">✕ CLOSE</button>
-        </div>
-        <input class="swap-search" id="swap-search-${day.id}-${ei}" type="text" placeholder="Search exercises..." oninput="filterSwapList('${day.id}',${ei})" ontouchstart="this.focus()">
-        <div class="swap-list" id="swap-list-${day.id}-${ei}"></div>
-      </div>
-      <div class="plan-sets">${setsHtml}</div>
-    </div>`;
-  });
-  document.getElementById('day-content').innerHTML=html;
+    </div>
+    <div class="day-subtitle">▶ ${day.tag.toUpperCase()}</div>
+    <div class="progress-wrap"><div class="progress-fill" style="width:${pct}%"></div></div>
+    ${day.exercises.map((ex,exIdx)=>renderExercise(ex,exIdx,sets,day)).join('')}`;
 }
-
-function logSet(dayIdx,ei,si,key){
-  const w=parseFloat(document.getElementById('w-'+ei+'-'+si).value);
-  const r=parseInt(document.getElementById('r-'+ei+'-'+si).value);
-  const rpe=document.getElementById('e-'+ei+'-'+si).value?parseFloat(document.getElementById('e-'+ei+'-'+si).value):null;
-  if(isNaN(w))return alert('ENTER WEIGHT, SOLDIER');
-  if(!r||r<=0)return alert('ENTER REPS');
-  const sets=loadDaySets(dayIdx);
-  const idx=sets.findIndex(s=>s.key===key);
-  const entry={key,exIdx:ei,setIdx:si,weight:w,reps:r,rpe,logged:true};
-  if(idx>=0)sets[idx]=entry;else sets.push(entry);
-  saveDaySets(dayIdx,sets);
+function renderExercise(ex,exIdx,sets,day){
+  const exSets=sets.filter(s=>s.exIdx===exIdx);
+  const loggedCount=exSets.filter(s=>s.logged).length;
+  const allLogged=loggedCount>=ex.sets;
+  return`<div class="plan-card${allLogged?' card-done':''}">
+    <div class="plan-card-header">
+      <div class="plan-card-name">${allLogged?'✓ ':''}${ex.exercise.toUpperCase()}</div>
+      <div style="display:flex;align-items:center;gap:6px">
+        <button class="set-ctrl-btn" ontouchend="removeSet(${exIdx});event.preventDefault()" onclick="removeSet(${exIdx})">−</button>
+        <span class="set-ctrl-count">${loggedCount}/${ex.sets}</span>
+        <button class="set-ctrl-btn" ontouchend="addSet(${exIdx});event.preventDefault()" onclick="addSet(${exIdx})">+</button>
+      </div>
+    </div>
+    <div class="plan-card-row1">${ex.note||''}</div>
+    <button class="swap-btn" ontouchstart="startSwapPress(${exIdx})" ontouchend="endSwapPress(${exIdx},event)" onclick="swapExercise(${exIdx})">${ex.swapped?'⇌ SWAPPED':'⇌ SWAP EXERCISE'}</button>
+    ${Array.from({length:ex.sets},(_,sIdx)=>{
+      const s=exSets.find(x=>x.setIdx===sIdx);
+      return s&&s.logged?
+      `<div class="set-row set-done">
+        <div class="set-num">SET ${sIdx+1}</div>
+        <div style="flex:1;color:var(--bat-gold)">✓ ${s.weight}lb × ${s.reps}${s.rpe?' <span style="color:var(--bat-dim)">@'+s.rpe+'</span>':''}</div>
+        <button class="undo-btn" ontouchend="undoSet(${exIdx},${sIdx});event.preventDefault()" onclick="undoSet(${exIdx},${sIdx})">UNDO</button>
+      </div>`:
+      `<div class="set-row">
+        <div class="set-num">SET ${sIdx+1}</div>
+        <input class="iw" type="number" placeholder="LB" id="w_${exIdx}_${sIdx}" inputmode="decimal">
+        <input class="ir" type="number" placeholder="REPS" id="r_${exIdx}_${sIdx}" inputmode="decimal">
+        <input class="irpe" type="number" placeholder="RPE" id="p_${exIdx}_${sIdx}" inputmode="decimal">
+        <button class="log-btn" ontouchend="logSet(${exIdx},${sIdx});event.preventDefault()" onclick="logSet(${exIdx},${sIdx})">LOG</button>
+      </div>`;
+    }).join('')}
+  </div>`;
+}
+function logSet(exIdx,sIdx){
+  const w=parseFloat(document.getElementById('w_'+exIdx+'_'+sIdx).value)||0;
+  const r=parseInt(document.getElementById('r_'+exIdx+'_'+sIdx).value)||0;
+  const p=parseFloat(document.getElementById('p_'+exIdx+'_'+sIdx).value)||null;
+  const sets=getInitialSets(activeDay);
+  const existing=sets.find(s=>s.exIdx===exIdx&&s.setIdx===sIdx);
+  if(existing){existing.weight=w;existing.reps=r;existing.rpe=p;existing.logged=true;}
+  else{sets.push({key:exIdx+'_'+sIdx,exIdx,setIdx:sIdx,weight:w,reps:r,rpe:p,logged:true});}
+  saveSets(activeDay,sets);
   renderDayContent();
 }
-function unlogSet(dayIdx,ei,si,key){
-  saveDaySets(dayIdx,loadDaySets(dayIdx).filter(s=>s.key!==key));
-  renderDayContent();
+function undoSet(exIdx,sIdx){
+  const sets=getInitialSets(activeDay);
+  const idx=sets.findIndex(s=>s.exIdx===exIdx&&s.setIdx===sIdx);
+  if(idx>=0){sets[idx].logged=false;saveSets(activeDay,sets);renderDayContent();}
 }
-function copySummary(dayIdx,btn){
-  const el=document.getElementById('export-'+dayIdx);
-  const text=el?el.textContent:'';
-  navigator.clipboard.writeText(text).then(()=>{btn.textContent='✓ COPIED';btn.style.background='#c9a227';});
+function addSet(exIdx){DAYS[activeDay].exercises[exIdx].sets++;renderDayContent();}
+function removeSet(exIdx){if(DAYS[activeDay].exercises[exIdx].sets>0)DAYS[activeDay].exercises[exIdx].sets--;renderDayContent();}
+let swapPressTimer=null;
+function startSwapPress(exIdx){swapPressTimer=setTimeout(()=>{swapExercise(exIdx);swapPressTimer=null;},200);}
+function endSwapPress(exIdx,e){if(swapPressTimer){clearTimeout(swapPressTimer);swapPressTimer=null;}else{e.preventDefault();}}
+function swapExercise(exIdx){
+  const ex=DAYS[activeDay].exercises[exIdx];
+  const newEx=prompt('Swap "'+ex.exercise+'" with:',ex.exercise);
+  if(newEx&&newEx.trim()&&newEx.trim()!==ex.exercise){DAYS[activeDay].exercises[exIdx].exercise=newEx.trim();DAYS[activeDay].exercises[exIdx].swapped=true;renderDayContent();}
+}
+function completeDay(){DAYS[activeDay].completed=true;renderDayNav();renderDayContent();}
+function uncompleteDay(){DAYS[activeDay].completed=false;renderDayNav();renderDayContent();}
+
+function exportSession(){
+  const day=DAYS[activeDay];
+  const sets=getSets(activeDay);
+  const payload={session:day.label,tag:day.tag,block:'strength',date:day.datePrefix,sets:sets.filter(s=>s.logged).map(s=>({exercise:DAYS[activeDay].exercises[s.exIdx]?.exercise||'Unknown',weight:s.weight,reps:s.reps,rpe:s.rpe}))};
+  navigator.clipboard.writeText(JSON.stringify(payload,null,2)).then(()=>alert('✓ Copied to clipboard — transmit to Alfred')).catch(()=>alert(JSON.stringify(payload,null,2)));
 }
 
-// ── SESSIONS ───────────────────────────────────────────────────────────────
 function renderSessions(){
   const byDate={};
   DATA.forEach(r=>{
-    if(!byDate[r.dateStr])byDate[r.dateStr]={};
-    if(!byDate[r.dateStr][r.exercise])byDate[r.dateStr][r.exercise]=[];
-    byDate[r.dateStr][r.exercise].push(r);
+    if(!byDate[r.dateStr])byDate[r.dateStr]={dateStr:r.dateStr,ts:r.ts,block:r.block,exercises:{}};
+    if(!byDate[r.dateStr].exercises[r.exercise])byDate[r.dateStr].exercises[r.exercise]=[];
+    byDate[r.dateStr].exercises[r.exercise].push(r);
   });
-  const dates=Object.keys(byDate).sort((a,b)=>new Date(b)-new Date(a));
-  const el=document.getElementById('sessions-list');
-  if(!dates.length){el.innerHTML='<div style="color:#555;font-size:13px;padding:20px 0">NO MISSIONS ON RECORD</div>';return;}
-  el.innerHTML=dates.slice(0,30).map(date=>{
-    const exs=byDate[date];const cnt=Object.values(exs).flat().length;
-    const block=Object.values(exs).flat()[0].block;
+  const sessions=Object.values(byDate).sort((a,b)=>b.ts-a.ts);
+  document.getElementById('sessions-list').innerHTML=sessions.map(s=>{
+    const exCount=Object.keys(s.exercises).length;
+    const setCount=Object.values(s.exercises).reduce((a,b)=>a+b.length,0);
+    const blockTag=s.block?s.block.substring(0,4).toUpperCase():'';
     return`<div class="session-card">
-      <div class="session-card-header">
-        <span class="session-date">${date.toUpperCase()}</span>
-        <span class="session-meta">${Object.keys(exs).length} EX · ${cnt} SETS · <span class="badge ${block}">${block.slice(0,4).toUpperCase()}</span></span>
+      <div class="session-header">
+        <div class="session-date">${s.dateStr}</div>
+        <div class="session-meta">${exCount} EX &nbsp;·&nbsp; ${setCount} SETS &nbsp;·&nbsp; <span class="block-tag">${blockTag}</span></div>
       </div>
-      <div style="padding:12px 16px">
-        ${Object.entries(exs).map(([ex,sets])=>
-          `<div class="session-ex">${ex.toUpperCase()}</div>`+
-          sets.map(s=>`<div class="session-set">${s.weight>0?s.weight+'lb':'BW'}×${s.reps}${s.rpe?' @'+s.rpe:''}</div>`).join('')
-        ).join('')}
-      </div>
+      ${Object.entries(s.exercises).map(([ex,sets])=>`
+        <div class="session-ex"><strong>${ex.toUpperCase()}</strong></div>
+        ${sets.map(r=>`<div class="session-set">${r.weight}lb×${r.reps}${r.rpe?' @'+r.rpe:''}</div>`).join('')}
+      `).join('')}
     </div>`;
   }).join('');
 }
 
-// ── DATABASE ───────────────────────────────────────────────────────────────
-let sortKey='date',sortDir=-1,filtered=[];
 function applyFilters(){
-  const s=document.getElementById('db-search').value.toLowerCase();
-  const b=document.getElementById('db-block').value;
-  const e=document.getElementById('db-ex').value;
-  filtered=DATA.filter(r=>{
-    if(b&&r.block!==b)return false;
-    if(e&&r.exercise!==e)return false;
-    if(s&&!r.exercise.toLowerCase().includes(s))return false;
-    return true;
-  });doSort();
+  const search=(document.getElementById('db-search').value||'').toLowerCase();
+  const block=document.getElementById('db-block').value;
+  const ex=document.getElementById('db-ex').value;
+  let rows=DATA;
+  if(search)rows=rows.filter(r=>r.exercise.toLowerCase().includes(search));
+  if(block)rows=rows.filter(r=>r.block===block);
+  if(ex)rows=rows.filter(r=>r.exercise===ex);
+  const count=rows.length;
+  document.getElementById('db-count').textContent=count+' records';
+  rows=rows.slice(0,200);
+  document.getElementById('db-body').innerHTML=rows.map(r=>`<tr>
+    <td>${r.dateStr}</td>
+    <td>${r.exercise}</td>
+    <td>${r.weight}lb</td>
+    <td>${r.reps}</td>
+    <td>${r.rpe||'—'}</td>
+    <td>${r.block||'—'}</td>
+  </tr>`).join('');
 }
-function sortBy(key){
-  if(sortKey===key)sortDir*=-1;else{sortKey=key;sortDir=-1;}
-  document.querySelectorAll('[id^=s-]').forEach(el=>el.textContent='');
-  document.getElementById('s-'+key).textContent=sortDir===-1?'↓':'↑';
-  doSort();
-}
-function doSort(){
-  filtered.sort((a,b)=>{
-    let va=a[sortKey],vb=b[sortKey];
-    if(sortKey==='date'){va=a.ts;vb=b.ts;}
-    if(va===null&&vb===null)return 0;if(va===null)return 1;if(vb===null)return -1;
-    if(typeof va==='string')return sortDir*va.localeCompare(vb);
-    return sortDir*(va-vb);
-  });renderDB();
-}
-function renderDB(){
-  const limit=300;
-  document.getElementById('db-body').innerHTML=filtered.slice(0,limit).map(r=>{
-    const wC=r.reps===1?'td-single':'';
-    const rpeC=r.rpe>=9?'td-rpe-high':r.rpe>=8?'td-rpe-med':'td-rpe-low';
-    return`<tr>
-      <td class="td-date">${r.dateStr}</td>
-      <td style="max-width:160px;overflow:hidden;text-overflow:ellipsis;color:#ccccee">${r.exercise}</td>
-      <td class="${wC}">${r.weight>0?r.weight+' lb':'BW'}</td>
-      <td style="color:#aaaacc">${r.reps||'—'}</td>
-      <td class="${rpeC}">${r.rpe??'—'}</td>
-      <td><span class="badge ${r.block}">${r.block.slice(0,4).toUpperCase()}</span></td>
-    </tr>`;
-  }).join('');
-  document.getElementById('db-count').textContent=filtered.length+' RECORDS FOUND';
-  const more=document.getElementById('db-more');
-  if(filtered.length>limit){more.style.display='block';more.textContent='SHOWING '+limit+' OF '+filtered.length+' — USE FILTERS TO NARROW';}
-  else more.style.display='none';
-}
-applyFilters();
 
-// ── PRs ────────────────────────────────────────────────────────────────────
-const KEY_LIFTS=['Comp Bench','Comp Squat','Comp Deadlift'];
-const LIFT_LABELS={'Comp Bench':'BENCH','Comp Squat':'SQUAT','Comp Deadlift':'DEAD'};
+function sortBy(col){applyFilters();}
+
 function renderPRs(){
-  document.getElementById('pr-grid').innerHTML=KEY_LIFTS.map(lift=>{
-    const sets=DATA.filter(r=>r.exercise===lift&&r.reps===1&&r.weight>0).sort((a,b)=>b.weight-a.weight);
-    const pr=sets[0];
-    return`<div class="pr-card">
-      <div class="pr-lift">${LIFT_LABELS[lift]||lift}</div>
-      ${pr?`<div><span class="pr-weight">${pr.weight}</span><span class="pr-unit"> LB</span></div>
-        <div class="pr-date">${pr.dateStr.toUpperCase()}</div>
-        ${pr.rpe?`<div class="pr-rpe">RPE ${pr.rpe}</div>`:''}`:
-        '<div style="color:#444;font-size:13px">NO DATA</div>'}
-    </div>`;
-  }).join('');
-  document.getElementById('pr-recent').innerHTML=KEY_LIFTS.map(lift=>{
-    const sets=DATA.filter(r=>r.exercise===lift&&r.reps===1&&r.weight>0).sort((a,b)=>b.ts-a.ts).slice(0,8);
-    const best=sets.reduce((m,r)=>r.weight>m?r.weight:m,0);
-    if(!sets.length)return'';
-    return`<div class="trend-card">
-      <div class="trend-label">${lift.toUpperCase()} — COMBAT RECORD</div>
-      ${sets.map(r=>`<div class="pr-row">
-        <span style="color:#666">${r.dateStr.toUpperCase()}</span>
-        <span class="${r.weight===best?'pr-row-best':''}">${r.weight} LB</span>
-        ${r.rpe?`<span style="color:#777">@${r.rpe}</span>`:'<span></span>'}
-        <span class="badge ${r.block}">${r.block.slice(0,4).toUpperCase()}</span>
-      </div>`).join('')}
-    </div>`;
-  }).join('');
+  const prs={};
+  DATA.forEach(r=>{
+    if(!prs[r.exercise]||r.weight>prs[r.exercise].weight||(r.weight===prs[r.exercise].weight&&r.reps>prs[r.exercise].reps))
+      prs[r.exercise]={weight:r.weight,reps:r.reps,rpe:r.rpe,date:r.dateStr};
+  });
+  const sorted=Object.entries(prs).sort((a,b)=>b[1].weight-a[1].weight);
+  document.getElementById('pr-grid').innerHTML=sorted.map(([ex,r])=>`
+    <div class="record-card">
+      <div class="record-ex">${ex.toUpperCase()}</div>
+      <div class="record-val">${r.weight}lb × ${r.reps}${r.rpe?' @'+r.rpe:''}</div>
+      <div class="record-date">${r.date}</div>
+    </div>`).join('');
+  const recent=DATA.slice(0,5);
+  document.getElementById('pr-recent').innerHTML=recent.map(r=>`<div class="recent-item">${r.dateStr} — ${r.exercise} ${r.weight}lb×${r.reps}</div>`).join('');
 }
 
-// ── TRENDS ─────────────────────────────────────────────────────────────────
 function renderTrend(){
-  const lift=document.getElementById('trend-lift').value;
-  const repF=document.getElementById('trend-reps').value;
-  if(!lift)return;
-  let sets=DATA.filter(r=>r.exercise===lift&&r.reps>0&&r.weight>0).sort((a,b)=>a.ts-b.ts);
-  if(repF==='1')sets=sets.filter(r=>r.reps===1);
-  else if(repF!=='all')sets=sets.filter(r=>r.reps===parseInt(repF));
-  document.getElementById('trend-title').textContent=lift.toUpperCase()+(repF==='1'?' — SINGLES':repF==='all'?' — ALL SETS':' — '+repF+' REPS');
-  const svg=document.getElementById('trend-svg');
-  const W=340,H=160,pad={l:44,r:12,t:10,b:26},iW=W-pad.l-pad.r,iH=H-pad.t-pad.b;
-  if(!sets.length){
-    svg.innerHTML='<text x="170" y="80" fill="#444" text-anchor="middle" font-size="12" font-family="Oswald">NO DATA ON RECORD</text>';
-    document.getElementById('trend-stats').innerHTML='';document.getElementById('trend-table').innerHTML='';return;
-  }
-  const weights=sets.map(r=>r.weight);
-  const minW=Math.min(...weights)-10,maxW=Math.max(...weights)+10;
-  const minT=Math.min(...sets.map(r=>r.ts)),maxT=Math.max(...sets.map(r=>r.ts));
-  const xS=t=>maxT===minT?pad.l+iW/2:pad.l+((t-minT)/(maxT-minT))*iW;
-  const yS=w=>H-pad.b-((w-minW)/(maxW-minW))*iH;
-  const pts=sets.map(r=>xS(r.ts)+','+yS(r.weight)).join(' ');
-  let grid='',yL='';
-  for(let i=0;i<=3;i++){const t=i/3,y=pad.t+t*iH,v=Math.round(maxW-t*(maxW-minW));
-    grid+='<line x1="'+pad.l+'" y1="'+y+'" x2="'+(W-pad.r)+'" y2="'+y+'" stroke="#1a1a2e" stroke-width="1"/>';
-    yL+='<text x="'+(pad.l-5)+'" y="'+(y+4)+'" fill="#555577" font-size="9" font-family="Share Tech Mono" text-anchor="end">'+v+'</text>';}
-  let xL='';const nT=Math.min(sets.length,5);
-  for(let i=0;i<nT;i++){const idx=Math.round(i*(sets.length-1)/(nT-1||1));
-    const r=sets[idx],x=xS(r.ts),d=new Date(r.ts);
-    xL+='<text x="'+x+'" y="'+(H-pad.b+15)+'" fill="#555577" font-size="9" font-family="Share Tech Mono" text-anchor="middle">'+d.toLocaleDateString('en-US',{month:'short',year:'2-digit'}).toUpperCase()+'</text>';}
-  const lX=xS(sets[sets.length-1].ts),fX=xS(sets[0].ts);
-  const dots=sets.map(r=>'<circle cx="'+xS(r.ts)+'" cy="'+yS(r.weight)+'" r="4" fill="#c9a227" stroke="#050508" stroke-width="1.5"><title>'+r.dateStr+': '+r.weight+'lb x'+r.reps+(r.rpe?' @'+r.rpe:'')+'</title></circle>').join('');
-  const n=sets.length,xs=sets.map(r=>xS(r.ts)),ys=sets.map(r=>yS(r.weight));
-  const mx=xs.reduce((a,v)=>a+v,0)/n,my=ys.reduce((a,v)=>a+v,0)/n;
-  const num=xs.reduce((a,v,i)=>a+(v-mx)*(ys[i]-my),0),den=xs.reduce((a,v)=>a+(v-mx)**2,0);
-  const slope=den?num/den:0,intercept=my-slope*mx;
-  const tx1=xs[0],tx2=xs[n-1],ty1=slope*tx1+intercept,ty2=slope*tx2+intercept;
-  const trendLine='<line x1="'+tx1+'" y1="'+ty1+'" x2="'+tx2+'" y2="'+ty2+'" stroke="#00dd66" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.7"/>';
-  svg.innerHTML='<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#c9a227" stop-opacity="0.3"/><stop offset="100%" stop-color="#c9a227" stop-opacity="0"/></linearGradient><filter id="glow2"><feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>'+
-    grid+yL+xL+
-    '<polygon points="'+pts+' '+lX+','+(H-pad.b)+' '+fX+','+(H-pad.b)+'" fill="url(#g)"/>'+
-    '<polyline points="'+pts+'" fill="none" stroke="#c9a227" stroke-width="2.5" stroke-linejoin="round" filter="url(#glow2)"/>'+
-    trendLine+dots;
-  const best=Math.max(...weights),gain=best-sets[0].weight;
-  document.getElementById('trend-stats').innerHTML=
-    '<div class="stat"><div class="stat-label">FIRST</div><div class="stat-val" style="font-size:18px">'+sets[0].weight+' LB</div><div class="stat-sub">'+sets[0].dateStr.toUpperCase()+'</div></div>'+
-    '<div class="stat"><div class="stat-label">LATEST</div><div class="stat-val gold">'+sets[sets.length-1].weight+' LB</div></div>'+
-    '<div class="stat"><div class="stat-label">BEST</div><div class="stat-val gold">'+best+' LB</div></div>'+
-    '<div class="stat"><div class="stat-label">GAIN</div><div class="stat-val '+(gain>=0?'green':'')+'">'+(gain>=0?'+':'')+gain+' LB</div></div>';
-  document.getElementById('trend-table').innerHTML=[...sets].reverse().slice(0,12).map(r=>
-    '<tr><td class="td-date">'+r.dateStr.toUpperCase()+'</td>'+
-    '<td class="'+(r.reps===1?'td-single':'')+'">'+r.weight+' LB</td>'+
-    '<td style="color:#aaaacc">'+r.reps+'</td>'+
-    '<td class="'+(r.rpe>=9?'td-rpe-high':r.rpe>=8?'td-rpe-med':'td-rpe-low')+'">'+(r.rpe??'—')+'</td>'+
-    '<td><span class="badge '+r.block+'">'+r.block.slice(0,4).toUpperCase()+'</span></td></tr>').join('');
+  const ex=document.getElementById('trend-lift').value;
+  const maxReps=parseInt(document.getElementById('trend-reps').value)||3;
+  if(!ex){document.getElementById('trend-title').textContent='Select a lift';return;}
+  const rows=DATA.filter(r=>r.exercise===ex&&r.reps<=maxReps).sort((a,b)=>a.ts-b.ts);
+  document.getElementById('trend-title').textContent=ex+' — '+rows.length+' sessions';
+  if(!rows.length){document.getElementById('trend-svg').innerHTML='<text x="50%" y="50%" fill="#7777AA" text-anchor="middle">No data</text>';return;}
+  const vals=rows.map(r=>r.weight);
+  const minV=Math.min(...vals),maxV=Math.max(...vals);
+  const W=320,H=160,pad=30;
+  const x=i=>(pad+(W-2*pad)*i/(rows.length-1||1));
+  const y=v=>(H-pad-(H-2*pad)*(v-minV)/(maxV-minV||1));
+  const n=vals.length;
+  const sumX=vals.reduce((_,__,i)=>_+i,0);
+  const sumY=vals.reduce((a,b)=>a+b,0);
+  const sumXY=vals.reduce((a,b,i)=>a+i*b,0);
+  const sumX2=vals.reduce((a,_,i)=>a+i*i,0);
+  const slope=(n*sumXY-sumX*sumY)/(n*sumX2-sumX*sumX)||0;
+  const intercept=(sumY-slope*sumX)/n;
+  const trendPts=vals.map((_,i)=>intercept+slope*i);
+  const pts=rows.map((_,i)=>`${x(i)},${y(vals[i])}`).join(' ');
+  const tPts=rows.map((_,i)=>`${x(i)},${y(trendPts[i])}`).join(' ');
+  document.getElementById('trend-svg').innerHTML=`
+    <polyline points="${pts}" fill="none" stroke="#C9A227" stroke-width="2"/>
+    <polyline points="${tPts}" fill="none" stroke="rgba(201,162,39,0.4)" stroke-width="1.5" stroke-dasharray="4"/>
+    ${rows.map((_,i)=>`<circle cx="${x(i)}" cy="${y(vals[i])}" r="3" fill="#C9A227"/>`).join('')}
+    <text x="${pad}" y="${H-8}" fill="#7777AA" font-size="10">${rows[0].dateStr}</text>
+    <text x="${W-pad}" y="${H-8}" fill="#7777AA" font-size="10" text-anchor="end">${rows[rows.length-1].dateStr}</text>
+    <text x="${pad}" y="${y(maxV)+4}" fill="#C9A227" font-size="10">${maxV}lb</text>`;
+  document.getElementById('trend-stats').textContent=`Peak: ${maxV}lb · Sessions: ${n} · Trend: ${slope>=0?'+':''}${slope.toFixed(1)}lb/session`;
+  const tbl=rows.slice(-10).reverse();
+  document.getElementById('trend-table').innerHTML=tbl.map(r=>`<tr><td>${r.dateStr}</td><td>${r.weight}lb</td><td>${r.reps}</td><td>${r.rpe||'—'}</td><td>${r.block||'—'}</td></tr>`).join('');
 }
 
-// ── INIT ───────────────────────────────────────────────────────────────────
+function showScreen(name,btn){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('screen-'+name).classList.add('active');
+  btn.classList.add('active');
+  if(name==='prs') renderPRs();
+  if(name==='trends') renderTrend();
+  if(name==='sessions') renderSessions();
+  if(name==='database') applyFilters();
+}
+
 renderDayNav();
 renderDayContent();
-</script>
+// Update meta info
+(function(){
+  const total=DATA.length;
+  const exCount=[...new Set(DATA.map(r=>r.exercise))].length;
+  const el=document.getElementById('meta-info');
+  if(el) el.textContent=total.toLocaleString()+' RECORDS · '+exCount+' EXERCISES';
+})();</script>
 
 </body>
 </html>
