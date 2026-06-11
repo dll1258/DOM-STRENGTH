@@ -2813,6 +2813,30 @@ const BASE_DATA=[
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Romanian Deadlift",315,8,6.5,null],
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Barbell Hip Thrust",315,8,6,null],
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Back Raises",45,20,6,null],
+["Wed Jun 10 2026 09:00:00 GMT-0400","strength","Hammer Strength Machine Rows (High Handles)",340,10,7,null],
+["Wed Jun 10 2026 09:00:01 GMT-0400","strength","Hammer Strength Machine Rows (High Handles)",340,10,7,null],
+["Wed Jun 10 2026 09:00:02 GMT-0400","strength","Hammer Strength Machine Rows (High Handles)",340,10,7,null],
+["Wed Jun 10 2026 09:00:00 GMT-0400","strength","Lat Pulldowns",200,10,7,null],
+["Wed Jun 10 2026 09:00:01 GMT-0400","strength","Lat Pulldowns",200,10,null,null],
+["Wed Jun 10 2026 09:00:02 GMT-0400","strength","Lat Pulldowns",200,10,null,null],
+["Wed Jun 10 2026 09:00:03 GMT-0400","strength","Lat Pulldowns",200,10,null,null],
+["Wed Jun 10 2026 09:00:00 GMT-0400","strength","Single Arm Lat Pulldowns",80,12,7,null],
+["Wed Jun 10 2026 09:00:01 GMT-0400","strength","Single Arm Lat Pulldowns",80,12,7,null],
+["Wed Jun 10 2026 09:00:02 GMT-0400","strength","Single Arm Lat Pulldowns",80,12,7,null],
+["Wed Jun 10 2026 09:00:03 GMT-0400","strength","Single Arm Lat Pulldowns",80,12,6.5,null],
+["Wed Jun 10 2026 09:00:00 GMT-0400","strength","DB Rows",130,10,7,null],
+["Wed Jun 10 2026 09:00:01 GMT-0400","strength","DB Rows",130,10,7,null],
+["Wed Jun 10 2026 09:00:02 GMT-0400","strength","DB Rows",130,10,7,null],
+["Wed Jun 10 2026 09:00:00 GMT-0400","strength","DB Side Lateral Raises",20,20,null,null],
+["Wed Jun 10 2026 09:00:01 GMT-0400","strength","DB Side Lateral Raises",20,20,null,null],
+["Wed Jun 10 2026 09:00:02 GMT-0400","strength","DB Side Lateral Raises",20,20,null,null],
+["Wed Jun 10 2026 09:00:00 GMT-0400","strength","Iso Hold Side Laterals",15,8,null,null],
+["Wed Jun 10 2026 09:00:01 GMT-0400","strength","Iso Hold Side Laterals",15,8,null,null],
+["Wed Jun 10 2026 09:00:00 GMT-0400","strength","DB Incline Curls",20,12,null,null],
+["Wed Jun 10 2026 09:00:01 GMT-0400","strength","DB Incline Curls",20,12,null,null],
+["Wed Jun 10 2026 09:00:00 GMT-0400","strength","Iso Hold Hammer Curls",30,12,null,null],
+["Wed Jun 10 2026 09:00:01 GMT-0400","strength","Iso Hold Hammer Curls",30,12,null,null],
+["Wed Jun 10 2026 09:00:02 GMT-0400","strength","Iso Hold Hammer Curls",30,12,null,null],
 ["Tue Jun 09 2026 09:00:00 GMT-0400","strength","Comp Squat",495,1,5,null],
 ["Tue Jun 09 2026 09:00:00 GMT-0400","strength","Comp Squat",545,1,6.5,null],
 ["Tue Jun 09 2026 09:00:00 GMT-0400","strength","Comp Squat",595,1,8.5,null],
@@ -3330,27 +3354,18 @@ const DAYS=[
   {exercise:"GHR",sets:3,note:"240x7 x3 — up 1 rep"},
   {exercise:"Hamstring Curls",sets:3,note:"180x8 @7 x3 — up 10lb from 170"}
 ]},
-{id:"wed_jun10",label:"WED JUN 10",tag:"Back + Biceps + Shoulders",completed:false,datePrefix:"Wed Jun 10 2026",exercises:[
-  {exercise:"Hammer Strength Machine Rows (High Handles)",sets:4,note:"180x10 @6 / 340x10 @7 / 340x10 @7.5 / 340x10 @8 — add a set, primer then 3 working sets at 340"},
-  {exercise:"Lat Pulldowns",sets:4,note:"200x10 @7.5 x4 — Bodyworld: 200lb working standard, 4 sets"},
-  {exercise:"Single Arm Lat Pulldowns",sets:3,note:"90x12 @7.5 x3 — Bodyworld baseline, add a rep from last session"},
-  {exercise:"DB Rows",sets:3,note:"125x10 @7.5 x3 — up 5lb from 120"},
-  {exercise:"Face Pulls or Band Pull-Aparts",sets:4,note:"50x25 x4 — Bodyworld load, add a set"},
-  {exercise:"DB Side Lateral Raises",sets:4,note:"20x20 @6 x4 — maintain volume"},
-  {exercise:"Iso Hold Side Laterals",sets:3,note:"20x8 @7.5 x3 — up 5lb from 15lb"},
-  {exercise:"Barbell Curls",sets:3,note:"70x10 @6.5 / 70x10 @7 / 70x10 @7 — up 5lb from 65, elbow clear"},
-  {exercise:"Iso Hold Hammer Curls",sets:3,note:"40x12 @6.5 x3 — add 2 reps from last session"}
+{id:"wed_jun10",label:"WED JUN 10",tag:"Back + Biceps + Shoulders",completed:true,datePrefix:"Wed Jun 10 2026",exercises:[
+  {exercise:"Hammer Strength Machine Rows (High Handles)",sets:3,note:"340x10 @7 x3"},
+  {exercise:"Lat Pulldowns",sets:4,note:"200x10 @7 / 200x10 x3 — Bodyworld 4 sets"},
+  {exercise:"Single Arm Lat Pulldowns",sets:4,note:"80x12 @7 x3 / 80x12 @6.5 — ⚠ lighter than 90 prescribed, R-elbow"},
+  {exercise:"DB Rows",sets:3,note:"130x10 @7 x3 — up 5lb"},
+  {exercise:"DB Side Lateral Raises",sets:3,note:"20x20 x3"},
+  {exercise:"Iso Hold Side Laterals",sets:2,note:"15x8 x2 — 2 sets only, R-elbow"},
+  {exercise:"DB Incline Curls",sets:2,note:"20x12 x2 — swapped for Barbell Curls, went light (R-elbow)"},
+  {exercise:"Iso Hold Hammer Curls",sets:3,note:"30x12 x3"}
 ]},
-{id:"thu_jun11",label:"THU JUN 11",tag:"Deadlift + Legs + Abs",completed:false,datePrefix:"Thu Jun 11 2026",exercises:[
-  {exercise:"Comp Deadlift",sets:3,note:"515x1 @6.5 / 565x1 @7.5 / 605x1 @8.5 — singles on the ramp, top single up 20lb from last week's double. If 565 @7 or below, go 615"},
-  {exercise:"Barbell Hip Thrust",sets:4,note:"4x8 @335lb @6 — up 20lb from 315, glute overload progression"},
-  {exercise:"Back Raises (45 degree)",sets:3,note:"3x20 @285lb @6 — hold load, lock in RPE before advancing"},
-  {exercise:"Leg Press/Hack Squat",sets:4,note:"315x10 @5 / 365x10 @6.5 / 405x10 @7 / 425x10 @8 — add a fourth set at 425"},
-  {exercise:"DB Side Bends",sets:3,note:"100x12 @7 x3 — standardize 100lb across all sets"},
-  {exercise:"Ab Wheel",sets:3,note:"3x12 — 3sec eccentric"},
-  {exercise:"Weighted Crunches",sets:3,note:"3x15 @100lb @6.5 — returns after skip last week"}
-]},
-{id:"fri_jun12",label:"FRI JUN 12",tag:"CG Floor Press + Bench Assistance + Shoulders",completed:false,datePrefix:"Fri Jun 12 2026",exercises:[
+
+{id:"thu_jun11",label:"THU JUN 11",tag:"CG Floor Press + Bench Assistance + Shoulders",completed:false,datePrefix:"Thu Jun 11 2026",exercises:[
   {exercise:"Tyler Twist (Flexbar)",sets:4,note:"Blue/Black Flexbar x15 x4 — week 9"},
   {exercise:"Close Grip Floor Press",sets:4,note:"225x6 @5 / 265x5 @7 / 305x5 @8 / 225x15 @5-6 — hold 305, drop a rep to 5 and confirm load before advancing to 315"},
   {exercise:"Dips (Chest Emphasis)",sets:3,note:"BW+25lb x12 @7.5 / x12 @7.5 / x12 @8 — belt returns, back to weighted. Consolidate 3x12 @7.5 before 35lb"},
@@ -3359,6 +3374,15 @@ const DAYS=[
   {exercise:"DB Military Press",sets:3,note:"55x10 @7 / 60x10 @7.5 / 65x8 @8 — overhead pressing, ascending"},
   {exercise:"Y-Raise",sets:3,note:"25x12 @7 x3 — lower trap, posterior shoulder health"},
   {exercise:"Tate Press",sets:3,note:"45x15 @7 / 50x15 @7.5 / 50x15 @8 — advance from 45x20, add load"}
+]},
+{id:"fri_jun12",label:"FRI JUN 12",tag:"Deadlift + Legs + Abs",completed:false,datePrefix:"Fri Jun 12 2026",exercises:[
+  {exercise:"Comp Deadlift",sets:3,note:"515x1 @6.5 / 565x1 @7.5 / 605x1 @8.5 — singles on the ramp, top single up 20lb from last week's double. If 565 @7 or below, go 615"},
+  {exercise:"Barbell Hip Thrust",sets:4,note:"4x8 @335lb @6 — up 20lb from 315, glute overload progression"},
+  {exercise:"Back Raises (45 degree)",sets:3,note:"3x20 @285lb @6 — hold load, lock in RPE before advancing"},
+  {exercise:"Leg Press/Hack Squat",sets:4,note:"315x10 @5 / 365x10 @6.5 / 405x10 @7 / 425x10 @8 — add a fourth set at 425"},
+  {exercise:"DB Side Bends",sets:3,note:"100x12 @7 x3 — standardize 100lb across all sets"},
+  {exercise:"Ab Wheel",sets:3,note:"3x12 — 3sec eccentric"},
+  {exercise:"Weighted Crunches",sets:3,note:"3x15 @100lb @6.5 — returns after skip last week"}
 ]}];
 
 // PREFILL — completed sessions pre-loaded
@@ -4062,6 +4086,32 @@ const PREFILL={
     {key:"4_0",exIdx:4,setIdx:0,weight:180,reps:8,rpe:7,logged:true},
     {key:"4_1",exIdx:4,setIdx:1,weight:180,reps:8,rpe:7,logged:true},
     {key:"4_2",exIdx:4,setIdx:2,weight:180,reps:8,rpe:7,logged:true}
+  ],
+  "wed_jun10":[
+    {key:"0_0",exIdx:0,setIdx:0,weight:340,reps:10,rpe:7,logged:true},
+    {key:"0_1",exIdx:0,setIdx:1,weight:340,reps:10,rpe:7,logged:true},
+    {key:"0_2",exIdx:0,setIdx:2,weight:340,reps:10,rpe:7,logged:true},
+    {key:"1_0",exIdx:1,setIdx:0,weight:200,reps:10,rpe:7,logged:true},
+    {key:"1_1",exIdx:1,setIdx:1,weight:200,reps:10,rpe:null,logged:true},
+    {key:"1_2",exIdx:1,setIdx:2,weight:200,reps:10,rpe:null,logged:true},
+    {key:"1_3",exIdx:1,setIdx:3,weight:200,reps:10,rpe:null,logged:true},
+    {key:"2_0",exIdx:2,setIdx:0,weight:80,reps:12,rpe:7,logged:true},
+    {key:"2_1",exIdx:2,setIdx:1,weight:80,reps:12,rpe:7,logged:true},
+    {key:"2_2",exIdx:2,setIdx:2,weight:80,reps:12,rpe:7,logged:true},
+    {key:"2_3",exIdx:2,setIdx:3,weight:80,reps:12,rpe:6.5,logged:true},
+    {key:"3_0",exIdx:3,setIdx:0,weight:130,reps:10,rpe:7,logged:true},
+    {key:"3_1",exIdx:3,setIdx:1,weight:130,reps:10,rpe:7,logged:true},
+    {key:"3_2",exIdx:3,setIdx:2,weight:130,reps:10,rpe:7,logged:true},
+    {key:"4_0",exIdx:4,setIdx:0,weight:20,reps:20,rpe:null,logged:true},
+    {key:"4_1",exIdx:4,setIdx:1,weight:20,reps:20,rpe:null,logged:true},
+    {key:"4_2",exIdx:4,setIdx:2,weight:20,reps:20,rpe:null,logged:true},
+    {key:"5_0",exIdx:5,setIdx:0,weight:15,reps:8,rpe:null,logged:true},
+    {key:"5_1",exIdx:5,setIdx:1,weight:15,reps:8,rpe:null,logged:true},
+    {key:"6_0",exIdx:6,setIdx:0,weight:20,reps:12,rpe:null,logged:true},
+    {key:"6_1",exIdx:6,setIdx:1,weight:20,reps:12,rpe:null,logged:true},
+    {key:"7_0",exIdx:7,setIdx:0,weight:30,reps:12,rpe:null,logged:true},
+    {key:"7_1",exIdx:7,setIdx:1,weight:30,reps:12,rpe:null,logged:true},
+    {key:"7_2",exIdx:7,setIdx:2,weight:30,reps:12,rpe:null,logged:true}
   ]
 };
 
@@ -4206,6 +4256,16 @@ function logSet(exIdx,sIdx){
   const existing=sets.find(s=>s.exIdx===exIdx&&s.setIdx===sIdx);
   if(existing){existing.weight=w;existing.reps=r;existing.rpe=p;existing.logged=true;}
   else{sets.push({key:exIdx+'_'+sIdx,exIdx,setIdx:sIdx,weight:w,reps:r,rpe:p,logged:true});}
+  // Auto-populate subsequent unlogged sets with same weight+reps
+  const totalSets=DAYS[activeDay].exercises[exIdx].sets;
+  for(let next=sIdx+1;next<totalSets;next++){
+    const alreadyLogged=sets.find(s=>s.exIdx===exIdx&&s.setIdx===next&&s.logged);
+    if(!alreadyLogged){
+      const existing2=sets.find(s=>s.exIdx===exIdx&&s.setIdx===next);
+      if(existing2){existing2.weight=w;existing2.reps=r;}
+      else{sets.push({key:exIdx+'_'+next,exIdx,setIdx:next,weight:w,reps:r,rpe:null,logged:false});}
+    }
+  }
   saveSets(activeDay,sets);
   renderDayContent();
 }
