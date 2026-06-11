@@ -4240,8 +4240,8 @@ function renderExercise(ex,exIdx,sets,day){
       </div>`:
       `<div class="set-row">
         <div class="set-num">SET ${sIdx+1}</div>
-        <input class="iw" type="number" placeholder="LB" id="w_${exIdx}_${sIdx}" inputmode="decimal">
-        <input class="ir" type="number" placeholder="REPS" id="r_${exIdx}_${sIdx}" inputmode="decimal">
+        <input class="iw" type="number" placeholder="LB" id="w_${exIdx}_${sIdx}" inputmode="decimal"${s&&s.weight?` value="${s.weight}"`:''}">
+        <input class="ir" type="number" placeholder="REPS" id="r_${exIdx}_${sIdx}" inputmode="decimal"${s&&s.reps?` value="${s.reps}"`:''}">
         <input class="irpe" type="number" placeholder="RPE" id="p_${exIdx}_${sIdx}" inputmode="decimal">
         <button class="log-btn" ontouchend="logSet(${exIdx},${sIdx});event.preventDefault()" onclick="logSet(${exIdx},${sIdx})">LOG</button>
       </div>`;
