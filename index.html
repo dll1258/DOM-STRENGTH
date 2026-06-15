@@ -3432,7 +3432,7 @@ const DAYS=[
   {exercise:"Comp Bench",sets:5,note:"315x3 @6 / 340x2 @6.5 / 385x1 @8.5 / 365x3 @8 / 365x3 @8 — advance submax to 385, volume sets to 365"},
   {exercise:"Scap Pull-Up Holds",sets:3,note:"170x10 x3 — up 10lb from 160"},
   {exercise:"NG DB Press",sets:3,note:"110x8 x3 — mandatory 3sec eccentric"},
-  {exercise:"Pendlay Rows",sets:4,note:"264x5 @6 / 275x7 @7 / 275x7 @7.5 / 275x7 @7.5 — back to 275, elbow management"},
+  {exercise:"DB Rows",sets:3,note:"130x10 @7 / 130x10 @7.5 / 135x10 @7.5 — horizontal pull, elbow-friendly neutral grip"},
   {exercise:"Lat Pulldowns",sets:4,note:"200x10 @7.5 x4 — restore 10 reps"},
   {exercise:"Flat DB Fly",sets:4,note:"85x8 @7.5 x4"},
   {exercise:"JM Press",sets:3,note:"135x10 @7 / 155x10 @7.5 / 165x10 @8 — elbow permitting, sub Tricep Pushdowns 45x25 if needed"}
@@ -3449,7 +3449,7 @@ const DAYS=[
   {exercise:"Hammer Strength Machine Rows (High Handles)",sets:4,note:"180x10 @6 / 340x10 @7 / 340x10 @7.5 / 340x10 @8 — add a set"},
   {exercise:"Lat Pulldowns",sets:4,note:"200x10 @7.5 x4"},
   {exercise:"Single Arm Lat Pulldowns",sets:3,note:"90x12 @7.5 x3 — return to 90lb if elbow clear"},
-  {exercise:"DB Rows",sets:3,note:"130x10 @7.5 x3"},
+  {exercise:"Pendlay Rows",sets:4,note:"264x5 @6 / 275x7 @7 / 275x7 @7.5 / 275x7 @7.5 — back to 275, elbow management. Wed only"},
   {exercise:"Face Pulls or Band Pull-Aparts",sets:4,note:"50x25 x4 — returns"},
   {exercise:"DB Side Lateral Raises",sets:4,note:"20x20 @6 x4"},
   {exercise:"Iso Hold Side Laterals",sets:3,note:"20x8 @7.5 x3 — up 5lb from 15"},
@@ -4345,7 +4345,9 @@ function renderDayContent(){
         <div class="badge">${loggedSets}/${totalSets}</div>
       </div>
     </div>
-    <div class="day-subtitle">▶ ${day.tag.toUpperCase()}</div>
+    <div class="day-subtitle" style="flex:1">▶ ${day.tag.toUpperCase()}</div>
+      <button ontouchend="exportSession();event.preventDefault()" onclick="exportSession()" style="background:#0d1a0d;color:#C9A227;border:1px solid #C9A22770;padding:6px 14px;border-radius:4px;font-size:11px;letter-spacing:.08em;cursor:pointer;white-space:nowrap">⬆ TRANSMIT</button>
+    </div>
     <div class="progress-wrap"><div class="progress-fill" style="width:${pct}%"></div></div>
     ${day.exercises.map((ex,exIdx)=>renderExercise(ex,exIdx,sets,day)).join('')}`;
 }
@@ -4425,7 +4427,32 @@ function exportSession(){
   const day=DAYS[activeDay];
   const sets=getSets(activeDay);
   const payload={session:day.label,tag:day.tag,block:'strength',date:day.datePrefix,sets:sets.filter(s=>s.logged).map(s=>({exercise:DAYS[activeDay].exercises[s.exIdx]?.exercise||'Unknown',weight:s.weight,reps:s.reps,rpe:s.rpe}))};
-  navigator.clipboard.writeText(JSON.stringify(payload,null,2)).then(()=>alert('✓ Copied to clipboard — transmit to Alfred')).catch(()=>alert(JSON.stringify(payload,null,2)));
+  const json=JSON.stringify(payload,null,2);
+  // Try clipboard first, fall back to modal
+  const showModal=()=>{
+    const modal=document.createElement('div');
+    modal.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px';
+    const box=document.createElement('textarea');
+    box.value=json;
+    box.style.cssText='width:100%;height:55vh;background:#0d0d1a;color:#E8E8F0;border:1px solid #C9A227;border-radius:6px;padding:12px;font-size:12px;font-family:monospace;resize:none';
+    const label=document.createElement('div');
+    label.textContent='TAP AND HOLD → SELECT ALL → COPY';
+    label.style.cssText='color:#C9A227;font-size:13px;letter-spacing:.1em;margin-bottom:12px;font-weight:bold';
+    const btn=document.createElement('button');
+    btn.textContent='✕  CLOSE';
+    btn.style.cssText='margin-top:14px;background:#1a0505;color:#ee7777;border:1px solid #cc2200;padding:12px 32px;border-radius:4px;font-size:13px;cursor:pointer;letter-spacing:.08em';
+    btn.onclick=()=>document.body.removeChild(modal);
+    modal.appendChild(label);modal.appendChild(box);modal.appendChild(btn);
+    document.body.appendChild(modal);
+    setTimeout(()=>{box.focus();box.select();},100);
+  };
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(json).then(()=>{
+      alert('✓ TRANSMITTED — paste into chat');
+    }).catch(()=>showModal());
+  } else {
+    showModal();
+  }
 }
 
 function renderSessions(){
@@ -4564,4 +4591,4 @@ renderDayContent();
 })();</script>
 
 </body>
-</html> 
+</html>
