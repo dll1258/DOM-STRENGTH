@@ -264,6 +264,10 @@ body{background:#1a1a1a;color:var(--bat-white);font-family:'Share Tech Mono',mon
 
 <div id="screen-prs" class="screen">
   <div class="section-title">&#9656; COMBAT RECORDS</div>
+  <div style="display:flex;gap:8px;justify-content:flex-end;padding:0 4px 10px">
+    <button id="pr-sort-weight" ontouchend="setPRSort('weight');event.preventDefault()" onclick="setPRSort('weight')" style="background:var(--bat-gold);color:#000;border:1px solid var(--bat-gold);padding:6px 14px;border-radius:4px;font-size:11px;letter-spacing:.08em;cursor:pointer">WT ↓</button>
+    <button id="pr-sort-alpha" ontouchend="setPRSort('alpha');event.preventDefault()" onclick="setPRSort('alpha')" style="background:transparent;color:var(--bat-gold);border:1px solid var(--bat-gold);padding:6px 14px;border-radius:4px;font-size:11px;letter-spacing:.08em;cursor:pointer">A → Z</button>
+  </div>
   <div class="pr-grid" id="pr-grid"></div>
   <div id="pr-recent"></div>
 </div>
@@ -2819,6 +2823,32 @@ const BASE_DATA=[
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Romanian Deadlift",315,8,6.5,null],
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Barbell Hip Thrust",315,8,6,null],
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Back Raises",45,20,6,null],
+["Wed Jun 17 2026 09:00:00 GMT-0400","strength","Single Arm Lat Pulldowns",80,12,6,null],
+["Wed Jun 17 2026 09:00:01 GMT-0400","strength","Single Arm Lat Pulldowns",85,12,7,null],
+["Wed Jun 17 2026 09:00:02 GMT-0400","strength","Single Arm Lat Pulldowns",90,12,7.5,null],
+["Wed Jun 17 2026 09:00:03 GMT-0400","strength","Single Arm Lat Pulldowns",95,12,8,null],
+["Wed Jun 17 2026 09:00:00 GMT-0400","strength","Lat Pulldowns",150,12,5,null],
+["Wed Jun 17 2026 09:00:01 GMT-0400","strength","Lat Pulldowns",160,12,5,null],
+["Wed Jun 17 2026 09:00:02 GMT-0400","strength","Lat Pulldowns",170,12,7,null],
+["Wed Jun 17 2026 09:00:03 GMT-0400","strength","Lat Pulldowns",170,12,8,null],
+["Wed Jun 17 2026 09:00:00 GMT-0400","strength","Pendlay Rows",275,6,7,null],
+["Wed Jun 17 2026 09:00:01 GMT-0400","strength","Pendlay Rows",275,6,8,null],
+["Wed Jun 17 2026 09:00:02 GMT-0400","strength","Pendlay Rows",275,6,8,null],
+["Wed Jun 17 2026 09:00:03 GMT-0400","strength","Pendlay Rows",275,6,8,null],
+["Wed Jun 17 2026 09:00:00 GMT-0400","strength","Hammer Strength Machine Rows (High Handles)",320,5,4,null],
+["Wed Jun 17 2026 09:00:01 GMT-0400","strength","Hammer Strength Machine Rows (High Handles)",370,10,8,null],
+["Wed Jun 17 2026 09:00:02 GMT-0400","strength","Hammer Strength Machine Rows (High Handles)",370,10,8,null],
+["Wed Jun 17 2026 09:00:03 GMT-0400","strength","Hammer Strength Machine Rows (High Handles)",370,10,8,null],
+["Wed Jun 17 2026 09:00:00 GMT-0400","strength","DB Side Lateral Raises",25,20,7,null],
+["Wed Jun 17 2026 09:00:01 GMT-0400","strength","DB Side Lateral Raises",25,20,7.5,null],
+["Wed Jun 17 2026 09:00:02 GMT-0400","strength","DB Side Lateral Raises",25,20,8,null],
+["Wed Jun 17 2026 09:00:03 GMT-0400","strength","DB Side Lateral Raises",25,20,8,null],
+["Wed Jun 17 2026 09:00:00 GMT-0400","strength","Iso Hold Side Laterals",15,8,8,null],
+["Wed Jun 17 2026 09:00:01 GMT-0400","strength","Iso Hold Side Laterals",15,8,null,null],
+["Wed Jun 17 2026 09:00:02 GMT-0400","strength","Iso Hold Side Laterals",15,8,null,null],
+["Wed Jun 17 2026 09:00:00 GMT-0400","strength","DB Incline Curls",15,20,null,null],
+["Wed Jun 17 2026 09:00:01 GMT-0400","strength","DB Incline Curls",15,20,null,null],
+["Wed Jun 17 2026 09:00:02 GMT-0400","strength","DB Incline Curls",15,30,null,null],
 ["Tue Jun 16 2026 09:00:00 GMT-0400","strength","Comp Squat",455,2,4,null],
 ["Tue Jun 16 2026 09:00:01 GMT-0400","strength","Comp Squat",495,2,5,null],
 ["Tue Jun 16 2026 09:00:02 GMT-0400","strength","Comp Squat",545,1,7,null],
@@ -3489,16 +3519,14 @@ const DAYS=[
   {exercise:"GHR",sets:3,note:"240x7 x3"},
   {exercise:"Hamstring Curls",sets:4,note:"180x7 @8.5 / 180x7 x3 — down 1 rep from 8"}
 ]},
-{id:"wed_jun17",label:"WED JUN 17",tag:"Back + Biceps + Shoulders",completed:false,datePrefix:"Wed Jun 17 2026",exercises:[
-  {exercise:"Hammer Strength Machine Rows (High Handles)",sets:4,note:"180x10 @6 / 340x10 @7 / 340x10 @7.5 / 340x10 @8 — add a set"},
-  {exercise:"Lat Pulldowns",sets:4,note:"200x10 @7.5 x4"},
-  {exercise:"Single Arm Lat Pulldowns",sets:3,note:"90x12 @7.5 x3 — return to 90lb if elbow clear"},
-  {exercise:"Pendlay Rows",sets:4,note:"264x5 @6 / 275x7 @7 / 275x7 @7.5 / 275x7 @7.5 — back to 275, elbow management. Wed only"},
-  {exercise:"Face Pulls or Band Pull-Aparts",sets:4,note:"50x25 x4 — returns"},
-  {exercise:"DB Side Lateral Raises",sets:4,note:"20x20 @6 x4"},
-  {exercise:"Iso Hold Side Laterals",sets:3,note:"20x8 @7.5 x3 — up 5lb from 15"},
-  {exercise:"DB Incline Curls",sets:3,note:"25x12 x3 — up 5lb, monitor elbow"},
-  {exercise:"Iso Hold Hammer Curls",sets:3,note:"35x12 x3 — up 5lb from 30"}
+{id:"wed_jun17",label:"WED JUN 17",tag:"Back + Biceps + Shoulders",completed:true,datePrefix:"Wed Jun 17 2026",exercises:[
+  {exercise:"Single Arm Lat Pulldowns",sets:4,note:"80x12 @6 / 85x12 @7 / 90x12 @7.5 / 95x12 @8 — ascending, new top at 95"},
+  {exercise:"Lat Pulldowns",sets:4,note:"150x12 @5 / 160x12 @5 / 170x12 @7 / 170x12 @8 — ascending"},
+  {exercise:"Pendlay Rows",sets:4,note:"275x6 @7 / 275x6 @8 x3 — no elbow complaint"},
+  {exercise:"Hammer Strength Machine Rows (High Handles)",sets:4,note:"320x5 @4 / 370x10 @8 x3 — up 30lb from 340"},
+  {exercise:"DB Side Lateral Raises",sets:4,note:"25x20 @7/@7.5/@8/@8 — up 5lb from 20"},
+  {exercise:"Iso Hold Side Laterals",sets:3,note:"15x8 @8 / 15x8 / 15x8"},
+  {exercise:"DB Incline Curls",sets:3,note:"15x20 / 15x20 / 15x30 — light high rep, elbow management"}
 ]},
 {id:"thu_jun18",label:"THU JUN 18",tag:"Deadlift + Legs + Abs",completed:false,datePrefix:"Thu Jun 18 2026",exercises:[
   {exercise:"Comp Deadlift",sets:3,note:"515x1 @6 / 565x1 @7 / 615x1 @8.5 — singles only. If 565 @6.5 or below go 625"},
@@ -4340,6 +4368,34 @@ const PREFILL={
     {key:"3_1",exIdx:3,setIdx:1,weight:180,reps:7,rpe:null,logged:true},
     {key:"3_2",exIdx:3,setIdx:2,weight:180,reps:7,rpe:null,logged:true},
     {key:"3_3",exIdx:3,setIdx:3,weight:180,reps:7,rpe:null,logged:true}
+  ],
+  "wed_jun17":[
+    {key:"0_0",exIdx:0,setIdx:0,weight:80,reps:12,rpe:6,logged:true},
+    {key:"0_1",exIdx:0,setIdx:1,weight:85,reps:12,rpe:7,logged:true},
+    {key:"0_2",exIdx:0,setIdx:2,weight:90,reps:12,rpe:7.5,logged:true},
+    {key:"0_3",exIdx:0,setIdx:3,weight:95,reps:12,rpe:8,logged:true},
+    {key:"1_0",exIdx:1,setIdx:0,weight:150,reps:12,rpe:5,logged:true},
+    {key:"1_1",exIdx:1,setIdx:1,weight:160,reps:12,rpe:5,logged:true},
+    {key:"1_2",exIdx:1,setIdx:2,weight:170,reps:12,rpe:7,logged:true},
+    {key:"1_3",exIdx:1,setIdx:3,weight:170,reps:12,rpe:8,logged:true},
+    {key:"2_0",exIdx:2,setIdx:0,weight:275,reps:6,rpe:7,logged:true},
+    {key:"2_1",exIdx:2,setIdx:1,weight:275,reps:6,rpe:8,logged:true},
+    {key:"2_2",exIdx:2,setIdx:2,weight:275,reps:6,rpe:8,logged:true},
+    {key:"2_3",exIdx:2,setIdx:3,weight:275,reps:6,rpe:8,logged:true},
+    {key:"3_0",exIdx:3,setIdx:0,weight:320,reps:5,rpe:4,logged:true},
+    {key:"3_1",exIdx:3,setIdx:1,weight:370,reps:10,rpe:8,logged:true},
+    {key:"3_2",exIdx:3,setIdx:2,weight:370,reps:10,rpe:8,logged:true},
+    {key:"3_3",exIdx:3,setIdx:3,weight:370,reps:10,rpe:8,logged:true},
+    {key:"4_0",exIdx:4,setIdx:0,weight:25,reps:20,rpe:7,logged:true},
+    {key:"4_1",exIdx:4,setIdx:1,weight:25,reps:20,rpe:7.5,logged:true},
+    {key:"4_2",exIdx:4,setIdx:2,weight:25,reps:20,rpe:8,logged:true},
+    {key:"4_3",exIdx:4,setIdx:3,weight:25,reps:20,rpe:8,logged:true},
+    {key:"5_0",exIdx:5,setIdx:0,weight:15,reps:8,rpe:8,logged:true},
+    {key:"5_1",exIdx:5,setIdx:1,weight:15,reps:8,rpe:null,logged:true},
+    {key:"5_2",exIdx:5,setIdx:2,weight:15,reps:8,rpe:null,logged:true},
+    {key:"6_0",exIdx:6,setIdx:0,weight:15,reps:20,rpe:null,logged:true},
+    {key:"6_1",exIdx:6,setIdx:1,weight:15,reps:20,rpe:null,logged:true},
+    {key:"6_2",exIdx:6,setIdx:2,weight:15,reps:30,rpe:null,logged:true}
   ]
 };
 
@@ -4613,55 +4669,37 @@ function sortBy(col){
 }
 
 function renderPRs(){
-  const prs={};
-  DATA.forEach(r=>{
+  var prs={};
+  DATA.forEach(function(r){
     if(!prs[r.exercise]||r.weight>prs[r.exercise].weight||(r.weight===prs[r.exercise].weight&&r.reps>prs[r.exercise].reps))
       prs[r.exercise]={weight:r.weight,reps:r.reps,rpe:r.rpe,date:r.dateStr};
   });
-  const sorted=Object.entries(prs).sort((a,b)=>b[1].weight-a[1].weight);
-  document.getElementById('pr-grid').innerHTML=sorted.map(([ex,r])=>`
-    <div class="record-card">
-      <div class="record-ex">${ex.toUpperCase()}</div>
-      <div class="record-val">${r.weight}lb × ${r.reps}${r.rpe?' @'+r.rpe:''}</div>
-      <div class="record-date">${r.date}</div>
-    </div>`).join('');
-  const recent=DATA.slice(0,5);
-  document.getElementById('pr-recent').innerHTML=recent.map(r=>`<div class="recent-item">${r.dateStr} — ${r.exercise} ${r.weight}lb×${r.reps}</div>`).join('');
+  var entries=Object.entries(prs);
+  var mode=window._prSortMode||'weight';
+  if(mode==='alpha'){entries.sort(function(a,b){return a[0].localeCompare(b[0]);});}
+  else{entries.sort(function(a,b){return b[1].weight-a[1].weight;});}
+  var cards=entries.map(function(e){
+    var ex=e[0],r=e[1];
+    return '<div class="record-card">'
+      +'<div class="record-ex">'+ex.toUpperCase()+'</div>'
+      +'<div class="record-val">'+r.weight+'lb × '+r.reps+(r.rpe?' @'+r.rpe:'')+'</div>'
+      +'<div class="record-date">'+r.date+'</div>'
+      +'</div>';
+  }).join('');
+  document.getElementById('pr-grid').innerHTML=cards;
+  document.getElementById('pr-sort-weight').style.cssText=mode==='weight'
+    ?'background:var(--bat-gold);color:#000;border:1px solid var(--bat-gold);padding:6px 14px;border-radius:4px;font-size:11px;letter-spacing:.08em;cursor:pointer'
+    :'background:transparent;color:var(--bat-gold);border:1px solid var(--bat-gold);padding:6px 14px;border-radius:4px;font-size:11px;letter-spacing:.08em;cursor:pointer';
+  document.getElementById('pr-sort-alpha').style.cssText=mode==='alpha'
+    ?'background:var(--bat-gold);color:#000;border:1px solid var(--bat-gold);padding:6px 14px;border-radius:4px;font-size:11px;letter-spacing:.08em;cursor:pointer'
+    :'background:transparent;color:var(--bat-gold);border:1px solid var(--bat-gold);padding:6px 14px;border-radius:4px;font-size:11px;letter-spacing:.08em;cursor:pointer';
+  var recent=DATA.slice(0,5);
+  document.getElementById('pr-recent').innerHTML=recent.map(function(r){
+    return '<div class="recent-item">'+r.dateStr+' — '+r.exercise+' '+r.weight+'lb×'+r.reps+'</div>';
+  }).join('');
 }
+function setPRSort(mode){window._prSortMode=mode;renderPRs();}
 
-function renderTrend(){
-  const ex=document.getElementById('trend-lift').value;
-  const maxReps=parseInt(document.getElementById('trend-reps').value)||3;
-  if(!ex){document.getElementById('trend-title').textContent='Select a lift';return;}
-  const rows=DATA.filter(r=>r.exercise===ex&&r.reps<=maxReps).sort((a,b)=>a.ts-b.ts);
-  document.getElementById('trend-title').textContent=ex+' — '+rows.length+' sessions';
-  if(!rows.length){document.getElementById('trend-svg').innerHTML='<text x="50%" y="50%" fill="#7777AA" text-anchor="middle">No data</text>';return;}
-  const vals=rows.map(r=>r.weight);
-  const minV=Math.min(...vals),maxV=Math.max(...vals);
-  const W=320,H=160,pad=30;
-  const x=i=>(pad+(W-2*pad)*i/(rows.length-1||1));
-  const y=v=>(H-pad-(H-2*pad)*(v-minV)/(maxV-minV||1));
-  const n=vals.length;
-  const sumX=vals.reduce((_,__,i)=>_+i,0);
-  const sumY=vals.reduce((a,b)=>a+b,0);
-  const sumXY=vals.reduce((a,b,i)=>a+i*b,0);
-  const sumX2=vals.reduce((a,_,i)=>a+i*i,0);
-  const slope=(n*sumXY-sumX*sumY)/(n*sumX2-sumX*sumX)||0;
-  const intercept=(sumY-slope*sumX)/n;
-  const trendPts=vals.map((_,i)=>intercept+slope*i);
-  const pts=rows.map((_,i)=>`${x(i)},${y(vals[i])}`).join(' ');
-  const tPts=rows.map((_,i)=>`${x(i)},${y(trendPts[i])}`).join(' ');
-  document.getElementById('trend-svg').innerHTML=`
-    <polyline points="${pts}" fill="none" stroke="#C9A227" stroke-width="2"/>
-    <polyline points="${tPts}" fill="none" stroke="rgba(201,162,39,0.4)" stroke-width="1.5" stroke-dasharray="4"/>
-    ${rows.map((_,i)=>`<circle cx="${x(i)}" cy="${y(vals[i])}" r="3" fill="#C9A227"/>`).join('')}
-    <text x="${pad}" y="${H-8}" fill="#7777AA" font-size="10">${rows[0].dateStr}</text>
-    <text x="${W-pad}" y="${H-8}" fill="#7777AA" font-size="10" text-anchor="end">${rows[rows.length-1].dateStr}</text>
-    <text x="${pad}" y="${y(maxV)+4}" fill="#C9A227" font-size="10">${maxV}lb</text>`;
-  document.getElementById('trend-stats').textContent=`Peak: ${maxV}lb · Sessions: ${n} · Trend: ${slope>=0?'+':''}${slope.toFixed(1)}lb/session`;
-  const tbl=rows.slice(-10).reverse();
-  document.getElementById('trend-table').innerHTML=tbl.map(r=>`<tr><td>${r.dateStr}</td><td>${r.weight}lb</td><td>${r.reps}</td><td>${r.rpe||'—'}</td><td>${r.block||'—'}</td></tr>`).join('');
-}
 
 function showScreen(name,btn){
   document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
