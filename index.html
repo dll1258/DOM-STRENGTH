@@ -2823,6 +2823,24 @@ const BASE_DATA=[
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Romanian Deadlift",315,8,6.5,null],
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Barbell Hip Thrust",315,8,6,null],
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Back Raises",45,20,6,null],
+["Thu Jun 18 2026 09:00:00 GMT-0400","strength","Sumo Deadlift",495,3,4,null],
+["Thu Jun 18 2026 09:00:01 GMT-0400","strength","Sumo Deadlift",565,3,8,null],
+["Thu Jun 18 2026 09:00:02 GMT-0400","strength","Sumo Deadlift",585,1,8,null],
+["Thu Jun 18 2026 09:00:00 GMT-0400","strength","Barbell Hip Thrust",405,10,6,null],
+["Thu Jun 18 2026 09:00:01 GMT-0400","strength","Barbell Hip Thrust",405,10,6,null],
+["Thu Jun 18 2026 09:00:02 GMT-0400","strength","Barbell Hip Thrust",405,10,6,null],
+["Thu Jun 18 2026 09:00:03 GMT-0400","strength","Barbell Hip Thrust",405,10,7,null],
+["Thu Jun 18 2026 09:00:00 GMT-0400","strength","Leg Press/Hack Squat",405,8,7.5,null],
+["Thu Jun 18 2026 09:00:01 GMT-0400","strength","Leg Press/Hack Squat",405,8,7.5,null],
+["Thu Jun 18 2026 09:00:02 GMT-0400","strength","Leg Press/Hack Squat",405,8,7.5,null],
+["Thu Jun 18 2026 09:00:03 GMT-0400","strength","Leg Press/Hack Squat",405,8,7.5,null],
+["Thu Jun 18 2026 09:00:00 GMT-0400","strength","DB Side Bends",100,10,7,null],
+["Thu Jun 18 2026 09:00:01 GMT-0400","strength","DB Side Bends",110,10,8,null],
+["Thu Jun 18 2026 09:00:02 GMT-0400","strength","DB Side Bends",120,10,8.5,null],
+["Thu Jun 18 2026 09:00:00 GMT-0400","strength","Ab Wheel",0,15,null,null],
+["Thu Jun 18 2026 09:00:01 GMT-0400","strength","Ab Wheel",0,15,null,null],
+["Thu Jun 18 2026 09:00:02 GMT-0400","strength","Ab Wheel",0,15,null,null],
+["Thu Jun 18 2026 09:00:03 GMT-0400","strength","Ab Wheel",0,15,null,null],
 ["Fri Jun 19 2026 09:00:00 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
 ["Fri Jun 19 2026 09:00:01 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
 ["Fri Jun 19 2026 09:00:00 GMT-0400","strength","Close Grip Floor Press",225,6,4,null],
@@ -3517,60 +3535,59 @@ const DAYS=[
   {exercise:"Ab Wheel",sets:4,note:"4x15"}
 ]},
 
-// ── WEEK 7 — ACCUMULATION FINAL WEEK ────────────────────────────────────────
-{id:"mon_jun15",label:"MON JUN 15",tag:"Bench + Back + Triceps",completed:true,datePrefix:"Mon Jun 15 2026",exercises:[
-  {exercise:"Tyler Twist (Flexbar)",sets:4,note:"100x15 x4 — week 10"},
+// ── WEEK 8 — INTENSIFICATION BEGINS ─────────────────────────────────────
+{id:"mon_jun22",label:"MON JUN 22",tag:"Bench + Back + Triceps",completed:false,datePrefix:"Mon Jun 22 2026",exercises:[
+  {exercise:"Tyler Twist (Flexbar)",sets:4,note:"100x15 x4 — week 11"},
+  {exercise:"Comp Bench",sets:5,note:"315x3 @6 / 345x1 @6.5 / 390x1 @8.5 / 370x3 @8 / 370x3 @8 — advance submax to 390, volume sets to 370"},
   {exercise:"Scap Pull-Up Holds",sets:3,note:"170x10 x3"},
-  {exercise:"Comp Bench",sets:5,note:"315x3 @6 / 355x1 @7.5 / 385x1 @8.5 / 365x3 @8.5 / 365x3 @8.5"},
-  {exercise:"NG DB Press",sets:3,note:"110x8 @6 / 110x8 @7 / 110x8 @8 — ascending"},
-  {exercise:"Lat Pulldowns",sets:4,note:"170x12 @6 / 170x12 @6.5 / 170x12 @6.5 / 170x12 @7 — different gym"},
-  {exercise:"Flat DB Fly",sets:4,note:"90x8 @8 / 90x8 @7.5 / 90x7 @8 / 90x7 @8 — up 5lb"},
-  {exercise:"DB Rows",sets:3,note:"130x8 @6 / 140x8 @7 / 150x8 @7.5 — ascending, 150 new peak"},
-  {exercise:"Tricep EZ Pushdowns",sets:3,note:"60x20 @5 / 65x20 @6 / 70x20 @7 — elbow tolerating, ascending"}
+  {exercise:"NG DB Press",sets:3,note:"110x8 x3 — 3sec eccentric mandatory"},
+  {exercise:"DB Rows",sets:3,note:"150x8 @7.5 / 155x8 @7.5 / 155x8 @8 — hold 150 top from last week, push toward 155"},
+  {exercise:"Lat Pulldowns",sets:4,note:"200x10 @7.5 x4 — Bodyworld standard, back to 200"},
+  {exercise:"Flat DB Fly",sets:4,note:"90x8 @7.5 x4 — consolidate before 95"},
+  {exercise:"JM Press",sets:3,note:"135x10 @7 / 155x10 @7.5 / 165x10 @8 — elbow permitting, sub Tricep EZ Pushdowns 70x20 if needed"},
+  {exercise:"Tricep EZ Pushdowns",sets:2,note:"70x20 @7 x2 — finisher or sub for JM Press"}
 ]},
-{id:"tue_jun16",label:"TUE JUN 16",tag:"Squat + Legs + RDL",completed:true,datePrefix:"Tue Jun 16 2026",exercises:[
-  {exercise:"Comp Squat",sets:7,note:"455x2 @4 / 495x2 @5 / 545x1 @7 / 585x1 @8 / 605x1 @9 / 555x3 @8.5 / 555x3 @8.5"},
-  {exercise:"Reverse Hack Squat",sets:3,note:"720x10 @7.5 / 810x10 @8 / 860x10 @9 — aggressive ascending"},
+{id:"tue_jun23",label:"TUE JUN 23",tag:"Squat + Legs + RDL",completed:false,datePrefix:"Tue Jun 23 2026",exercises:[
+  {exercise:"Comp Squat",sets:6,note:"455x2 @5 / 525x1 @7 / 615x1 @8.5 / 565x3 @8 / 565x3 @8 — submax to 615, volume to 565. If 615 moves @8 or below go 625."},
+  {exercise:"Reverse Hack Squat",sets:3,note:"720x10 @6 / 860x10 @8 / 900x8 @9 — ascending, test 900"},
+  {exercise:"Romanian Deadlift",sets:4,note:"315x8 @6 / 335x8 @7 / 355x8 @7.5 / 355x8 @8 — RDL returns, non-negotiable"},
+  {exercise:"Leg Extensions",sets:3,note:"155x10 @6.5 x3 — hold load"},
   {exercise:"GHR",sets:3,note:"240x7 x3"},
-  {exercise:"Hamstring Curls",sets:4,note:"180x7 @8.5 / 180x7 x3 — down 1 rep from 8"}
+  {exercise:"Hamstring Curls",sets:4,note:"180x8 @7 x4 — restore 8 reps"}
 ]},
-{id:"wed_jun17",label:"WED JUN 17",tag:"Back + Biceps + Shoulders",completed:true,datePrefix:"Wed Jun 17 2026",exercises:[
-  {exercise:"Single Arm Lat Pulldowns",sets:4,note:"80x12 @6 / 85x12 @7 / 90x12 @7.5 / 95x12 @8 — ascending, new top at 95"},
-  {exercise:"Lat Pulldowns",sets:4,note:"150x12 @5 / 160x12 @5 / 170x12 @7 / 170x12 @8 — ascending"},
-  {exercise:"Pendlay Rows",sets:4,note:"275x6 @7 / 275x6 @8 x3 — no elbow complaint"},
-  {exercise:"Hammer Strength Machine Rows (High Handles)",sets:4,note:"320x5 @4 / 370x10 @8 x3 — up 30lb from 340"},
-  {exercise:"DB Side Lateral Raises",sets:4,note:"25x20 @7/@7.5/@8/@8 — up 5lb from 20"},
-  {exercise:"Iso Hold Side Laterals",sets:3,note:"15x8 @8 / 15x8 / 15x8"},
-  {exercise:"DB Incline Curls",sets:3,note:"15x20 / 15x20 / 15x30 — light high rep, elbow management"}
+{id:"wed_jun24",label:"WED JUN 24",tag:"Back + Biceps + Shoulders",completed:false,datePrefix:"Wed Jun 24 2026",exercises:[
+  {exercise:"Hammer Strength Machine Rows (High Handles)",sets:4,note:"180x10 @5 / 370x10 @7.5 / 370x10 @8 / 370x10 @8 — hold 370 working load, flat across 3 sets"},
+  {exercise:"Pendlay Rows",sets:4,note:"264x5 @6 / 280x6 @7.5 / 280x6 @8 / 280x6 @8 — advance 5lb to 280"},
+  {exercise:"Lat Pulldowns",sets:4,note:"200x10 @7.5 x4 — Bodyworld standard"},
+  {exercise:"Single Arm Lat Pulldowns",sets:4,note:"90x12 @7.5 / 95x12 @8 / 95x12 @8 / 95x12 @8 — advance to 95"},
+  {exercise:"DB Side Lateral Raises",sets:4,note:"25x20 @7.5 x4 — up from @7"},
+  {exercise:"Iso Hold Side Laterals",sets:3,note:"20x8 @7.5 x3 — advance to 20lb"},
+  {exercise:"DB Incline Curls",sets:3,note:"20x15 x3 — up 5lb from 15, controlled reps, monitor elbow"},
+  {exercise:"Iso Hold Hammer Curls",sets:3,note:"35x12 x3 — returns"}
 ]},
-{id:"thu_jun18",label:"THU JUN 18",tag:"Deadlift + Legs + Abs",completed:false,datePrefix:"Thu Jun 18 2026",exercises:[
-  {exercise:"Comp Deadlift",sets:3,note:"495x5 @7 / 525x5 @7.5 / 565x5 @8 — WEEK 1 of 5-rep challenge. Reestablish pattern, no grinding. Bar speed over RPE."},
-  {exercise:"Barbell Hip Thrust",sets:4,note:"405x8 @7 x4 — standardize 405 across all sets"},
-  {exercise:"Back Raises (45 degree)",sets:3,note:"285x20 @6 x3 — return to 285"},
-  {exercise:"Leg Press/Hack Squat",sets:4,note:"315x10 @5 / 365x10 @6.5 / 405x10 @7.5 / 455x10 @8"},
-  {exercise:"DB Side Bends",sets:3,note:"100x12 x3"},
-  {exercise:"Ab Wheel",sets:4,note:"4x15"},
-  {exercise:"Weighted Crunches",sets:3,note:"3x15 @100lb — returns"}
-]},
-{id:"fri_jun19",label:"FRI JUN 19",tag:"CG Floor Press + Bench Assistance + Shoulders",completed:true,datePrefix:"Fri Jun 19 2026",exercises:[
-  {exercise:"Tyler Twist (Flexbar)",sets:2,note:"100x15 x2 — week 10"},
-  {exercise:"Close Grip Floor Press",sets:4,note:"225x6 @4 / 275x6 @6.5 / 315x6 @8 / 335x4 @8 — new top set 335"},
-  {exercise:"Dips (Chest Emphasis)",sets:3,note:"35x12 @6 / 35x12 @6.5 / 45x12 @7.5 — advanced to 45lb"},
-  {exercise:"Neutral Grip Pushup",sets:3,note:"240x20 x3"},
-  {exercise:"Pec Deck",sets:3,note:"130x15 @7 / 130x12 @8 / 130x12 @8.5"}
-,
-
 {id:"thu_jun25",label:"THU JUN 25",tag:"Deadlift + Legs + Abs",completed:false,datePrefix:"Thu Jun 25 2026",exercises:[
-  {exercise:"Comp Deadlift",sets:3,note:"545x5 @7.5 / 565x5 @8 / 585x5 @8.5 — WEEK 2: match all-time 5-rep PR at lower RPE"},
-  {exercise:"Barbell Hip Thrust",sets:4,note:"405x8 @7 x4"},
+  {exercise:"Comp Deadlift",sets:3,note:"495x3 @6 / 545x3 @7 / 565x5 @8 — WEEK 1 of 5-rep challenge. Conventional. Bar speed on all 5."},
+  {exercise:"Barbell Hip Thrust",sets:4,note:"405x10 @7 x4 — standardize at 10 reps"},
   {exercise:"Back Raises (45 degree)",sets:3,note:"285x20 @6 x3"},
-  {exercise:"Leg Press/Hack Squat",sets:4,note:"315x10 / 365x10 / 405x10 / 455x10"},
+  {exercise:"Leg Press/Hack Squat",sets:4,note:"315x10 @5 / 365x10 @6.5 / 405x10 @7.5 / 455x10 @8"},
   {exercise:"DB Side Bends",sets:3,note:"100x12 x3"},
   {exercise:"Ab Wheel",sets:4,note:"4x15"},
   {exercise:"Weighted Crunches",sets:3,note:"3x15 @100lb"}
 ]},
+{id:"fri_jun26",label:"FRI JUN 26",tag:"CG Floor Press + Bench Assistance + Shoulders",completed:false,datePrefix:"Fri Jun 26 2026",exercises:[
+  {exercise:"Tyler Twist (Flexbar)",sets:4,note:"100x15 x4 — week 11"},
+  {exercise:"Close Grip Floor Press",sets:4,note:"225x5 @4 / 275x5 @6.5 / 315x5 @8 / 335x5 @8.5 — advance 335 from 4 reps to 5 reps"},
+  {exercise:"Dips (Chest Emphasis)",sets:3,note:"BW+45x12 @7.5 / x12 @8 / x12 @8 — advance to 45lb"},
+  {exercise:"Neutral Grip Pushup",sets:3,note:"BW x20 @7 x3"},
+  {exercise:"Pec Deck",sets:3,note:"170x8 @7.5 x3 — return to 170lb"},
+  {exercise:"DB Military Press",sets:3,note:"55x10 @7 / 60x10 @7.5 / 65x8 @8"},
+  {exercise:"Y-Raise",sets:3,note:"25x12 @7 x3"},
+  {exercise:"Tate Press",sets:3,note:"45x15 @7 / 50x15 @7.5 / 50x15 @8 — elbow permitting"}
+]},
+,
+
 {id:"thu_jul2",label:"THU JUL 2",tag:"Deadlift + Legs + Abs",completed:false,datePrefix:"Thu Jul 2 2026",exercises:[
-  {exercise:"Comp Deadlift",sets:3,note:"565x5 @7.5 / 585x5 @8 / 600x5 @8.5 — WEEK 3: new territory"},
+  {exercise:"Comp Deadlift",sets:3,note:"495x3 @6 / 545x3 @7 / 585x5 @8 — WEEK 2: up 20lb on the 5-rep top set"},
   {exercise:"Barbell Hip Thrust",sets:4,note:"405x8 @7 x4"},
   {exercise:"Back Raises (45 degree)",sets:3,note:"285x20 @6 x3"},
   {exercise:"Leg Press/Hack Squat",sets:4,note:"315x10 / 365x10 / 405x10 / 455x10"},
@@ -3579,15 +3596,24 @@ const DAYS=[
   {exercise:"Weighted Crunches",sets:3,note:"3x15 @100lb"}
 ]},
 {id:"thu_jul9",label:"THU JUL 9",tag:"Deadlift + Legs + Abs",completed:false,datePrefix:"Thu Jul 9 2026",exercises:[
-  {exercise:"Comp Deadlift",sets:3,note:"565x5 @7 / 595x5 @8 / 615x5 @8.5 — THE CHALLENGE: 615x5 all-time 5-rep PR"},
+  {exercise:"Comp Deadlift",sets:3,note:"495x3 @6 / 555x3 @7 / 605x5 @8.5 — WEEK 3: 605x5 — new 5-rep territory"},
   {exercise:"Barbell Hip Thrust",sets:4,note:"405x8 @7 x4"},
   {exercise:"Back Raises (45 degree)",sets:3,note:"285x20 @6 x3"},
   {exercise:"Leg Press/Hack Squat",sets:4,note:"315x10 / 365x10 / 405x10 / 455x10"},
   {exercise:"DB Side Bends",sets:3,note:"100x12 x3"},
   {exercise:"Ab Wheel",sets:4,note:"4x15"},
   {exercise:"Weighted Crunches",sets:3,note:"3x15 @100lb"}
+]},
+{id:"thu_jul16",label:"THU JUL 16",tag:"Deadlift + Legs + Abs",completed:false,datePrefix:"Thu Jul 16 2026",exercises:[
+  {exercise:"Comp Deadlift",sets:3,note:"495x3 @5 / 565x3 @7 / 615x5 @8.5 — THE CHALLENGE: 615x5 all-time 5-rep PR"},
+  {exercise:"Barbell Hip Thrust",sets:4,note:"405x10 @7 x4"},
+  {exercise:"Back Raises (45 degree)",sets:3,note:"285x20 @6 x3"},
+  {exercise:"Leg Press/Hack Squat",sets:4,note:"315x10 / 365x10 / 405x10 / 455x10"},
+  {exercise:"DB Side Bends",sets:3,note:"100x12 x3"},
+  {exercise:"Ab Wheel",sets:4,note:"4x15"},
+  {exercise:"Weighted Crunches",sets:3,note:"3x15 @100lb"}
 ]}
-]}];
+];
 // PREFILL — completed sessions pre-loaded
 const PREFILL={
   "mon_apr27":[
@@ -4453,6 +4479,26 @@ const PREFILL={
     {key:"4_0",exIdx:4,setIdx:0,weight:130,reps:15,rpe:7,logged:true},
     {key:"4_1",exIdx:4,setIdx:1,weight:130,reps:12,rpe:8,logged:true},
     {key:"4_2",exIdx:4,setIdx:2,weight:130,reps:12,rpe:8.5,logged:true}
+  ],
+  "thu_jun18":[
+    {key:"0_0",exIdx:0,setIdx:0,weight:495,reps:3,rpe:4,logged:true},
+    {key:"0_1",exIdx:0,setIdx:1,weight:565,reps:3,rpe:8,logged:true},
+    {key:"0_2",exIdx:0,setIdx:2,weight:585,reps:1,rpe:8,logged:true},
+    {key:"1_0",exIdx:1,setIdx:0,weight:405,reps:10,rpe:6,logged:true},
+    {key:"1_1",exIdx:1,setIdx:1,weight:405,reps:10,rpe:6,logged:true},
+    {key:"1_2",exIdx:1,setIdx:2,weight:405,reps:10,rpe:6,logged:true},
+    {key:"1_3",exIdx:1,setIdx:3,weight:405,reps:10,rpe:7,logged:true},
+    {key:"2_0",exIdx:2,setIdx:0,weight:405,reps:8,rpe:7.5,logged:true},
+    {key:"2_1",exIdx:2,setIdx:1,weight:405,reps:8,rpe:7.5,logged:true},
+    {key:"2_2",exIdx:2,setIdx:2,weight:405,reps:8,rpe:7.5,logged:true},
+    {key:"2_3",exIdx:2,setIdx:3,weight:405,reps:8,rpe:7.5,logged:true},
+    {key:"3_0",exIdx:3,setIdx:0,weight:100,reps:10,rpe:7,logged:true},
+    {key:"3_1",exIdx:3,setIdx:1,weight:110,reps:10,rpe:8,logged:true},
+    {key:"3_2",exIdx:3,setIdx:2,weight:120,reps:10,rpe:8.5,logged:true},
+    {key:"4_0",exIdx:4,setIdx:0,weight:0,reps:15,rpe:null,logged:true},
+    {key:"4_1",exIdx:4,setIdx:1,weight:0,reps:15,rpe:null,logged:true},
+    {key:"4_2",exIdx:4,setIdx:2,weight:0,reps:15,rpe:null,logged:true},
+    {key:"4_3",exIdx:4,setIdx:3,weight:0,reps:15,rpe:null,logged:true}
   ]
 };
 
@@ -4483,63 +4529,42 @@ function renderDayNav(){
     </div>
     <button class="day-nav-btn" ontouchend="shiftDay(1);event.preventDefault()" onclick="shiftDay(1)">&#8250;</button>`;
 }
-function shiftDay(dir){
-  const next=activeDay+dir;
-  if(next<0||next>=DAYS.length)return;
-  switchDay(next);
-}
+function shiftDay(dir){const next=activeDay+dir;if(next<0||next>=DAYS.length)return;switchDay(next);}
 function switchDay(i){if(i===activeDay&&document.getElementById('day-picker-modal').style.display!=='flex')return;activeDay=i;closeDayPicker();renderDayNav();renderDayContent();}
 function openDayPicker(){
   const weeks={};
   DAYS.forEach((d,i)=>{
-    const parts=d.datePrefix.split(' ');
-    const month=parts[1];
-    const day=parseInt(parts[2]);
-    const weekNum=Math.ceil(day/7);
-    const wk=month+' WK'+weekNum;
-    if(!weeks[wk])weeks[wk]=[];
-    weeks[wk].push({d,i});
+    const parts=d.datePrefix.split(' ');const month=parts[1];const day=parseInt(parts[2]);
+    const weekNum=Math.ceil(day/7);const wk=month+' WK'+weekNum;
+    if(!weeks[wk])weeks[wk]=[];weeks[wk].push({d,i});
   });
   let html='';
   Object.entries(weeks).forEach(([wkLabel,entries])=>{
     html+=`<div class="day-picker-week"><div class="day-picker-week-label">${wkLabel}</div>`;
     entries.forEach(({d,i})=>{
       const cls=['day-picker-item'];
-      if(i===activeDay)cls.push('active-day');
-      else if(d.completed)cls.push('done-item');
+      if(i===activeDay)cls.push('active-day');else if(d.completed)cls.push('done-item');
       html+=`<div class="${cls.join(' ')}" ontouchend="switchDay(${i});event.preventDefault()" onclick="switchDay(${i})">
-        <div class="day-picker-item-left">
-          <div class="day-picker-item-date">${d.label}</div>
-          <div class="day-picker-item-tag">${d.tag}</div>
-        </div>
+        <div class="day-picker-item-left"><div class="day-picker-item-date">${d.label}</div><div class="day-picker-item-tag">${d.tag}</div></div>
         <div class="day-picker-item-right">${d.completed?'✓ DONE':i===activeDay?'▶ NOW':''}</div>
       </div>`;
     });
     html+='</div>';
   });
   document.getElementById('day-picker-scroll').innerHTML=html;
-  const modal=document.getElementById('day-picker-modal');
-  modal.style.display='flex';
+  const modal=document.getElementById('day-picker-modal');modal.style.display='flex';
   setTimeout(()=>{const active=modal.querySelector('.active-day');if(active)active.scrollIntoView({block:'center',behavior:'smooth'});},100);
 }
 function closeDayPicker(){document.getElementById('day-picker-modal').style.display='none';}
 
-function getSets(dayIdx){
-  const key='gotham_v6_'+DAYS[dayIdx].id;
-  try{const s=localStorage.getItem(key);return s?JSON.parse(s):[];}catch(e){return[];}
-}
-function saveSets(dayIdx,sets){
-  const key='gotham_v6_'+DAYS[dayIdx].id;
-  try{localStorage.setItem(key,JSON.stringify(sets));}catch(e){}
-}
+function getSets(dayIdx){const key='gotham_v6_'+DAYS[dayIdx].id;try{const s=localStorage.getItem(key);return s?JSON.parse(s):[];}catch(e){return[];}}
+function saveSets(dayIdx,sets){const key='gotham_v6_'+DAYS[dayIdx].id;try{localStorage.setItem(key,JSON.stringify(sets));}catch(e){}}
 function getInitialSets(dayIdx){
-  const saved=getSets(dayIdx);
-  if(saved.length)return saved;
+  const saved=getSets(dayIdx);if(saved.length)return saved;
   return(PREFILL[DAYS[dayIdx].id]||[]).map(s=>({...s,logged:true}));
 }
 function renderDayContent(){
-  const day=DAYS[activeDay];
-  const sets=getInitialSets(activeDay);
+  const day=DAYS[activeDay];const sets=getInitialSets(activeDay);
   const totalSets=day.exercises.reduce((a,e)=>a+e.sets,0);
   const loggedSets=sets.filter(s=>s.logged).length;
   const pct=totalSets>0?Math.round(loggedSets/totalSets*100):0;
@@ -4552,7 +4577,7 @@ function renderDayContent(){
         <div class="badge">${loggedSets}/${totalSets}</div>
       </div>
     </div>
-    <div class="day-subtitle" style="flex:1">▶ ${day.tag.toUpperCase()}</div>
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px"><div class="day-subtitle" style="flex:1">▶ ${day.tag.toUpperCase()}</div>
       <button ontouchend="exportSession();event.preventDefault()" onclick="exportSession()" style="background:#0d1a0d;color:#C9A227;border:1px solid #C9A22770;padding:6px 14px;border-radius:4px;font-size:11px;letter-spacing:.08em;cursor:pointer;white-space:nowrap">⬆ TRANSMIT</button>
     </div>
     <div class="progress-wrap"><div class="progress-fill" style="width:${pct}%"></div></div>
@@ -4599,7 +4624,6 @@ function logSet(exIdx,sIdx){
   const existing=sets.find(s=>s.exIdx===exIdx&&s.setIdx===sIdx);
   if(existing){existing.weight=w;existing.reps=r;existing.rpe=p;existing.logged=true;}
   else{sets.push({key:exIdx+'_'+sIdx,exIdx,setIdx:sIdx,weight:w,reps:r,rpe:p,logged:true});}
-  // Auto-populate subsequent unlogged sets with same weight+reps
   const totalSets=DAYS[activeDay].exercises[exIdx].sets;
   for(let next=sIdx+1;next<totalSets;next++){
     const alreadyLogged=sets.find(s=>s.exIdx===exIdx&&s.setIdx===next&&s.logged);
@@ -4609,8 +4633,7 @@ function logSet(exIdx,sIdx){
       else{sets.push({key:exIdx+'_'+next,exIdx,setIdx:next,weight:w,reps:r,rpe:null,logged:false});}
     }
   }
-  saveSets(activeDay,sets);
-  renderDayContent();
+  saveSets(activeDay,sets);renderDayContent();
 }
 function undoSet(exIdx,sIdx){
   const sets=getInitialSets(activeDay);
@@ -4631,35 +4654,25 @@ function completeDay(){DAYS[activeDay].completed=true;renderDayNav();renderDayCo
 function uncompleteDay(){DAYS[activeDay].completed=false;renderDayNav();renderDayContent();}
 
 function exportSession(){
-  const day=DAYS[activeDay];
-  const sets=getSets(activeDay);
+  const day=DAYS[activeDay];const sets=getSets(activeDay);
   const payload={session:day.label,tag:day.tag,block:'strength',date:day.datePrefix,sets:sets.filter(s=>s.logged).map(s=>({exercise:DAYS[activeDay].exercises[s.exIdx]?.exercise||'Unknown',weight:s.weight,reps:s.reps,rpe:s.rpe}))};
   const json=JSON.stringify(payload,null,2);
-  // Try clipboard first, fall back to modal
   const showModal=()=>{
     const modal=document.createElement('div');
     modal.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px';
     const box=document.createElement('textarea');
-    box.value=json;
-    box.style.cssText='width:100%;height:55vh;background:#0d0d1a;color:#E8E8F0;border:1px solid #C9A227;border-radius:6px;padding:12px;font-size:12px;font-family:monospace;resize:none';
-    const label=document.createElement('div');
-    label.textContent='TAP AND HOLD → SELECT ALL → COPY';
+    box.value=json;box.style.cssText='width:100%;height:55vh;background:#0d0d1a;color:#E8E8F0;border:1px solid #C9A227;border-radius:6px;padding:12px;font-size:12px;font-family:monospace;resize:none';
+    const label=document.createElement('div');label.textContent='TAP AND HOLD → SELECT ALL → COPY';
     label.style.cssText='color:#C9A227;font-size:13px;letter-spacing:.1em;margin-bottom:12px;font-weight:bold';
-    const btn=document.createElement('button');
-    btn.textContent='✕  CLOSE';
+    const btn=document.createElement('button');btn.textContent='✕  CLOSE';
     btn.style.cssText='margin-top:14px;background:#1a0505;color:#ee7777;border:1px solid #cc2200;padding:12px 32px;border-radius:4px;font-size:13px;cursor:pointer;letter-spacing:.08em';
     btn.onclick=()=>document.body.removeChild(modal);
-    modal.appendChild(label);modal.appendChild(box);modal.appendChild(btn);
-    document.body.appendChild(modal);
+    modal.appendChild(label);modal.appendChild(box);modal.appendChild(btn);document.body.appendChild(modal);
     setTimeout(()=>{box.focus();box.select();},100);
   };
   if(navigator.clipboard&&navigator.clipboard.writeText){
-    navigator.clipboard.writeText(json).then(()=>{
-      alert('✓ TRANSMITTED — paste into chat');
-    }).catch(()=>showModal());
-  } else {
-    showModal();
-  }
+    navigator.clipboard.writeText(json).then(()=>alert('✓ TRANSMITTED — paste into chat')).catch(()=>showModal());
+  } else {showModal();}
 }
 
 function renderSessions(){
@@ -4671,14 +4684,10 @@ function renderSessions(){
   });
   const sessions=Object.values(byDate).sort((a,b)=>b.ts-a.ts);
   document.getElementById('sessions-list').innerHTML=sessions.map(s=>{
-    const exCount=Object.keys(s.exercises).length;
-    const setCount=Object.values(s.exercises).reduce((a,b)=>a+b.length,0);
-    const blockTag=s.block?s.block.substring(0,4).toUpperCase():'';
+    const exCount=Object.keys(s.exercises).length;const setCount=Object.values(s.exercises).reduce((a,b)=>a+b.length,0);
     return`<div class="session-card">
-      <div class="session-header">
-        <div class="session-date">${s.dateStr}</div>
-        <div class="session-meta">${exCount} EX &nbsp;·&nbsp; ${setCount} SETS &nbsp;·&nbsp; <span class="block-tag">${blockTag}</span></div>
-      </div>
+      <div class="session-header"><div class="session-date">${s.dateStr}</div>
+      <div class="session-meta">${exCount} EX &nbsp;·&nbsp; ${setCount} SETS</div></div>
       ${Object.entries(s.exercises).map(([ex,sets])=>`
         <div class="session-ex"><strong>${ex.toUpperCase()}</strong></div>
         ${sets.map(r=>`<div class="session-set">${r.weight}lb×${r.reps}${r.rpe?' @'+r.rpe:''}</div>`).join('')}
@@ -4687,7 +4696,6 @@ function renderSessions(){
   }).join('');
 }
 
-let dbSortCol='ts';let dbSortDir=-1;
 function applyFilters(){
   const search=(document.getElementById('db-search').value||'').toLowerCase();
   const block=document.getElementById('db-block').value;
@@ -4696,20 +4704,12 @@ function applyFilters(){
   if(search)rows=rows.filter(r=>r.exercise.toLowerCase().includes(search));
   if(block)rows=rows.filter(r=>r.block===block);
   if(ex)rows=rows.filter(r=>r.exercise===ex);
-  rows.sort((a,b)=>{
-    let av=a[dbSortCol],bv=b[dbSortCol];
-    if(av==null)av=dbSortDir>0?Infinity:-Infinity;
-    if(bv==null)bv=dbSortDir>0?Infinity:-Infinity;
-    return dbSortDir*(av>bv?1:av<bv?-1:0);
-  });
   const count=rows.length;
+  const mode=window._dbSortCol||'ts';const dir=window._dbSortDir||-1;
+  rows.sort((a,b)=>{let av=a[mode],bv=b[mode];if(av==null)av=dir>0?Infinity:-Infinity;if(bv==null)bv=dir>0?Infinity:-Infinity;return dir*(av>bv?1:av<bv?-1:0);});
   document.getElementById('db-count').textContent=count+' records';
-  // Update header arrows
-  ['ts','exercise','weight','reps','rpe'].forEach(col=>{
-    const el=document.getElementById('dbh-'+col);
-    if(el)el.textContent=col==='ts'?'DATE':col==='weight'?'WT':col.toUpperCase();
-    if(el&&col===dbSortCol)el.textContent+=(dbSortDir>0?' ↑':' ↓');
-  });
+  const activeStyle='background:var(--bat-gold);color:#000;border:1px solid var(--bat-gold);padding:6px 14px;border-radius:4px;font-size:11px;letter-spacing:.08em;cursor:pointer';
+  const inactiveStyle='background:transparent;color:var(--bat-gold);border:1px solid var(--bat-gold);padding:6px 14px;border-radius:4px;font-size:11px;letter-spacing:.08em;cursor:pointer';
   rows=rows.slice(0,200);
   document.getElementById('db-body').innerHTML=rows.map(r=>`<tr>
     <td style="padding:7px 4px 7px 4px;font-size:10px;color:var(--bat-dim);word-break:break-word;line-height:1.3">${r.dateStr}</td>
@@ -4717,14 +4717,15 @@ function applyFilters(){
     <td style="padding:7px 6px;font-size:12px;color:var(--bat-gold);white-space:nowrap">${r.weight}lb</td>
     <td style="padding:7px 6px;font-size:12px;white-space:nowrap">×${r.reps}</td>
     <td style="padding:7px 6px;font-size:11px;color:var(--bat-dim);white-space:nowrap">${r.rpe||'—'}</td>
-
   </tr>`).join('');
 }
 function sortBy(col){
-  if(dbSortCol===col){dbSortDir*=-1;}else{dbSortCol=col;dbSortDir=col==='exercise'?1:-1;}
+  if(window._dbSortCol===col){window._dbSortDir=(window._dbSortDir||-1)*-1;}
+  else{window._dbSortCol=col;window._dbSortDir=col==='exercise'?1:-1;}
   applyFilters();
 }
 
+var prSortMode='weight';
 function renderPRs(){
   var prs={};
   DATA.forEach(function(r){
@@ -4740,8 +4741,7 @@ function renderPRs(){
     return '<div class="record-card">'
       +'<div class="record-ex">'+ex.toUpperCase()+'</div>'
       +'<div class="record-val">'+r.weight+'lb × '+r.reps+(r.rpe?' @'+r.rpe:'')+'</div>'
-      +'<div class="record-date">'+r.date+'</div>'
-      +'</div>';
+      +'<div class="record-date">'+r.date+'</div></div>';
   }).join('');
   document.getElementById('pr-grid').innerHTML=cards;
   document.getElementById('pr-sort-weight').style.cssText=mode==='weight'
@@ -4757,6 +4757,36 @@ function renderPRs(){
 }
 function setPRSort(mode){window._prSortMode=mode;renderPRs();}
 
+let trendChart=null;
+function renderTrend(){
+  const ex=document.getElementById('trend-lift').value;
+  const maxReps=parseInt(document.getElementById('trend-reps').value)||3;
+  if(!ex){document.getElementById('trend-title').textContent='Select a lift';return;}
+  const rows=DATA.filter(r=>r.exercise===ex&&r.reps<=maxReps).sort((a,b)=>a.ts-b.ts);
+  document.getElementById('trend-title').textContent=ex+' — '+rows.length+' sessions';
+  if(!rows.length){document.getElementById('trend-svg').innerHTML='<text x="50%" y="50%" fill="#7777AA" text-anchor="middle">No data</text>';return;}
+  const vals=rows.map(r=>r.weight);const minV=Math.min(...vals),maxV=Math.max(...vals);
+  const W=320,H=160,pad=30;
+  const x=i=>(pad+(W-2*pad)*i/(rows.length-1||1));
+  const y=v=>(H-pad-(H-2*pad)*(v-minV)/(maxV-minV||1));
+  const n=vals.length;
+  const sumX=vals.reduce((_,__,i)=>_+i,0);const sumY=vals.reduce((a,b)=>a+b,0);
+  const sumXY=vals.reduce((a,b,i)=>a+i*b,0);const sumX2=vals.reduce((a,_,i)=>a+i*i,0);
+  const slope=(n*sumXY-sumX*sumY)/(n*sumX2-sumX*sumX)||0;const intercept=(sumY-slope*sumX)/n;
+  const trendPts=vals.map((_,i)=>intercept+slope*i);
+  const pts=rows.map((_,i)=>`${x(i)},${y(vals[i])}`).join(' ');
+  const tPts=rows.map((_,i)=>`${x(i)},${y(trendPts[i])}`).join(' ');
+  document.getElementById('trend-svg').innerHTML=`
+    <polyline points="${pts}" fill="none" stroke="#C9A227" stroke-width="2"/>
+    <polyline points="${tPts}" fill="none" stroke="rgba(201,162,39,0.4)" stroke-width="1.5" stroke-dasharray="4"/>
+    ${rows.map((_,i)=>`<circle cx="${x(i)}" cy="${y(vals[i])}" r="3" fill="#C9A227"/>`).join('')}
+    <text x="${pad}" y="${H-8}" fill="#7777AA" font-size="10">${rows[0].dateStr}</text>
+    <text x="${W-pad}" y="${H-8}" fill="#7777AA" font-size="10" text-anchor="end">${rows[rows.length-1].dateStr}</text>
+    <text x="${pad}" y="${y(maxV)+4}" fill="#C9A227" font-size="10">${maxV}lb</text>`;
+  document.getElementById('trend-stats').textContent=`Peak: ${maxV}lb · Sessions: ${n} · Trend: ${slope>=0?'+':''}${slope.toFixed(1)}lb/session`;
+  const tbl=rows.slice(-10).reverse();
+  document.getElementById('trend-table').innerHTML=tbl.map(r=>`<tr><td>${r.dateStr}</td><td>${r.weight}lb</td><td>${r.reps}</td><td>${r.rpe||'—'}</td><td>${r.block||'—'}</td></tr>`).join('');
+}
 
 function showScreen(name,btn){
   document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
@@ -4771,13 +4801,13 @@ function showScreen(name,btn){
 
 renderDayNav();
 renderDayContent();
-// Update meta info
 (function(){
   const total=DATA.length;
   const exCount=[...new Set(DATA.map(r=>r.exercise))].length;
   const el=document.getElementById('meta-info');
   if(el) el.textContent=total.toLocaleString()+' RECORDS · '+exCount+' EXERCISES';
-})();</script>
+})();
+</script>
 
 </body>
-</html>
+</html>];
