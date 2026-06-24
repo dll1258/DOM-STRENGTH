@@ -2841,6 +2841,26 @@ const BASE_DATA=[
 ["Thu Jun 18 2026 09:00:01 GMT-0400","strength","Ab Wheel",0,15,null,null],
 ["Thu Jun 18 2026 09:00:02 GMT-0400","strength","Ab Wheel",0,15,null,null],
 ["Thu Jun 18 2026 09:00:03 GMT-0400","strength","Ab Wheel",0,15,null,null],
+["Fri Jun 26 2026 09:00:00 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
+["Fri Jun 26 2026 09:00:01 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
+["Fri Jun 26 2026 09:00:02 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
+["Fri Jun 26 2026 09:00:03 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
+["Fri Jun 26 2026 09:00:00 GMT-0400","strength","Close Grip Floor Press",295,3,null,null],
+["Fri Jun 26 2026 09:00:01 GMT-0400","strength","Close Grip Floor Press",225,10,null,null],
+["Fri Jun 26 2026 09:00:00 GMT-0400","strength","Neutral Grip Pushup",0,15,null,null],
+["Fri Jun 26 2026 09:00:01 GMT-0400","strength","Neutral Grip Pushup",0,15,null,null],
+["Fri Jun 26 2026 09:00:02 GMT-0400","strength","Neutral Grip Pushup",0,15,null,null],
+["Fri Jun 26 2026 09:00:03 GMT-0400","strength","Neutral Grip Pushup",0,15,null,null],
+["Fri Jun 26 2026 09:00:00 GMT-0400","strength","Pec Deck",130,15,null,null],
+["Fri Jun 26 2026 09:00:01 GMT-0400","strength","Pec Deck",140,15,null,null],
+["Fri Jun 26 2026 09:00:02 GMT-0400","strength","Pec Deck",150,12,null,null],
+["Fri Jun 26 2026 09:00:03 GMT-0400","strength","Pec Deck",160,10,null,null],
+["Fri Jun 26 2026 09:00:00 GMT-0400","strength","NG DB Press",80,8,null,null],
+["Fri Jun 26 2026 09:00:01 GMT-0400","strength","NG DB Press",80,8,null,null],
+["Fri Jun 26 2026 09:00:02 GMT-0400","strength","NG DB Press",80,8,null,null],
+["Fri Jun 26 2026 09:00:00 GMT-0400","strength","Rope Iso Hold Tricep Extension",0,45,null,null],
+["Fri Jun 26 2026 09:00:01 GMT-0400","strength","Rope Iso Hold Tricep Extension",0,60,null,null],
+["Fri Jun 26 2026 09:00:02 GMT-0400","strength","Rope Iso Hold Tricep Extension",0,90,null,null],
 ["Fri Jun 19 2026 09:00:00 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
 ["Fri Jun 19 2026 09:00:01 GMT-0400","strength","Tyler Twist (Flexbar)",100,15,null,null],
 ["Fri Jun 19 2026 09:00:00 GMT-0400","strength","Close Grip Floor Press",225,6,4,null],
@@ -3616,18 +3636,14 @@ const DAYS=[
   {exercise:"Ab Wheel",sets:4,note:"4x15"},
   {exercise:"Weighted Crunches",sets:3,note:"3x15 @100lb"}
 ]},
-{id:"fri_jun26",label:"FRI JUN 26",tag:"CG Floor Press + Bench Assistance + Shoulders",completed:false,datePrefix:"Fri Jun 26 2026",exercises:[
+{id:"fri_jun26",label:"FRI JUN 26",tag:"CG Floor Press + Bench Assistance + Shoulders",completed:true,datePrefix:"Fri Jun 26 2026",exercises:[
   {exercise:"Tyler Twist (Flexbar)",sets:4,note:"100x15 x4 — week 11"},
-  {exercise:"Close Grip Floor Press",sets:4,note:"225x5 @4 / 275x5 @6.5 / 315x5 @8 / 335x5 @8.5 — advance 335 from 4 reps to 5 reps"},
-  {exercise:"Dips (Chest Emphasis)",sets:3,note:"BW+45x12 @7.5 / x12 @8 / x12 @8 — advance to 45lb"},
-  {exercise:"Neutral Grip Pushup",sets:3,note:"BW x20 @7 x3"},
-  {exercise:"Pec Deck",sets:3,note:"170x8 @7.5 x3 — return to 170lb"},
-  {exercise:"DB Military Press",sets:3,note:"55x10 @7 / 60x10 @7.5 / 65x8 @8"},
-  {exercise:"Y-Raise",sets:3,note:"25x12 @7 x3"},
-  {exercise:"Tate Press",sets:3,note:"45x15 @7 / 50x15 @7.5 / 50x15 @8 — elbow permitting"}
+  {exercise:"Close Grip Floor Press",sets:2,note:"295x3 / 225x10 — ELBOW CLICKING WITH PAIN on each rep. Session modified."},
+  {exercise:"Neutral Grip Pushup",sets:4,note:"4x15 BW — up from 3x20 prescription"},
+  {exercise:"Pec Deck",sets:4,note:"15x130 / 15x140 / 12x150 / 10x160 — ascending load, descending reps"},
+  {exercise:"NG DB Press",sets:3,note:"3x8x80 — sub for dips/military press due to elbow"},
+  {exercise:"Rope Iso Hold Tricep Extension",sets:3,note:"45sec / 60sec / 90sec — isometric holds, elbow management"}
 ]},
-,
-
 {id:"thu_jul2",label:"THU JUL 2",tag:"Deadlift + Legs + Abs",completed:false,datePrefix:"Thu Jul 2 2026",exercises:[
   {exercise:"Comp Deadlift",sets:3,note:"495x3 @6 / 545x3 @7 / 585x5 @8 — WEEK 2: up 20lb on the 5-rep top set"},
   {exercise:"Barbell Hip Thrust",sets:4,note:"405x8 @7 x4"},
@@ -4591,6 +4607,28 @@ const PREFILL={
     {key:"5_1",exIdx:5,setIdx:1,weight:25,reps:15,rpe:null,logged:true},
     {key:"5_2",exIdx:5,setIdx:2,weight:25,reps:15,rpe:null,logged:true},
     {key:"5_3",exIdx:5,setIdx:3,weight:25,reps:15,rpe:null,logged:true}
+  ],
+  "fri_jun26":[
+    {key:"0_0",exIdx:0,setIdx:0,weight:100,reps:15,rpe:null,logged:true},
+    {key:"0_1",exIdx:0,setIdx:1,weight:100,reps:15,rpe:null,logged:true},
+    {key:"0_2",exIdx:0,setIdx:2,weight:100,reps:15,rpe:null,logged:true},
+    {key:"0_3",exIdx:0,setIdx:3,weight:100,reps:15,rpe:null,logged:true},
+    {key:"1_0",exIdx:1,setIdx:0,weight:295,reps:3,rpe:null,logged:true},
+    {key:"1_1",exIdx:1,setIdx:1,weight:225,reps:10,rpe:null,logged:true},
+    {key:"2_0",exIdx:2,setIdx:0,weight:0,reps:15,rpe:null,logged:true},
+    {key:"2_1",exIdx:2,setIdx:1,weight:0,reps:15,rpe:null,logged:true},
+    {key:"2_2",exIdx:2,setIdx:2,weight:0,reps:15,rpe:null,logged:true},
+    {key:"2_3",exIdx:2,setIdx:3,weight:0,reps:15,rpe:null,logged:true},
+    {key:"3_0",exIdx:3,setIdx:0,weight:130,reps:15,rpe:null,logged:true},
+    {key:"3_1",exIdx:3,setIdx:1,weight:140,reps:15,rpe:null,logged:true},
+    {key:"3_2",exIdx:3,setIdx:2,weight:150,reps:12,rpe:null,logged:true},
+    {key:"3_3",exIdx:3,setIdx:3,weight:160,reps:10,rpe:null,logged:true},
+    {key:"4_0",exIdx:4,setIdx:0,weight:80,reps:8,rpe:null,logged:true},
+    {key:"4_1",exIdx:4,setIdx:1,weight:80,reps:8,rpe:null,logged:true},
+    {key:"4_2",exIdx:4,setIdx:2,weight:80,reps:8,rpe:null,logged:true},
+    {key:"5_0",exIdx:5,setIdx:0,weight:0,reps:45,rpe:null,logged:true},
+    {key:"5_1",exIdx:5,setIdx:1,weight:0,reps:60,rpe:null,logged:true},
+    {key:"5_2",exIdx:5,setIdx:2,weight:0,reps:90,rpe:null,logged:true}
   ]
 };
 
