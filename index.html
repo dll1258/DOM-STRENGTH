@@ -2856,6 +2856,27 @@ const BASE_DATA=[
 ["Fri Jun 19 2026 09:00:00 GMT-0400","strength","Pec Deck",130,15,7,null],
 ["Fri Jun 19 2026 09:00:01 GMT-0400","strength","Pec Deck",130,12,8,null],
 ["Fri Jun 19 2026 09:00:02 GMT-0400","strength","Pec Deck",130,12,8.5,null],
+["Wed Jun 24 2026 09:00:00 GMT-0400","strength","Lat Pulldowns",200,10,null,null],
+["Wed Jun 24 2026 09:00:01 GMT-0400","strength","Lat Pulldowns",200,10,null,null],
+["Wed Jun 24 2026 09:00:02 GMT-0400","strength","Lat Pulldowns",200,10,null,null],
+["Wed Jun 24 2026 09:00:03 GMT-0400","strength","Lat Pulldowns",200,10,null,null],
+["Wed Jun 24 2026 09:00:00 GMT-0400","strength","Single Arm Lat Pulldowns",90,12,null,null],
+["Wed Jun 24 2026 09:00:01 GMT-0400","strength","Single Arm Lat Pulldowns",100,15,null,null],
+["Wed Jun 24 2026 09:00:02 GMT-0400","strength","Single Arm Lat Pulldowns",100,15,null,null],
+["Wed Jun 24 2026 09:00:00 GMT-0400","strength","Cable Rows",180,15,null,null],
+["Wed Jun 24 2026 09:00:01 GMT-0400","strength","Cable Rows",200,15,null,null],
+["Wed Jun 24 2026 09:00:02 GMT-0400","strength","Cable Rows",220,15,null,null],
+["Wed Jun 24 2026 09:00:00 GMT-0400","strength","Hammer Strength Machine Rows (High Handles)",360,10,null,null],
+["Wed Jun 24 2026 09:00:01 GMT-0400","strength","Hammer Strength Machine Rows (High Handles)",380,10,null,null],
+["Wed Jun 24 2026 09:00:02 GMT-0400","strength","Hammer Strength Machine Rows (High Handles)",410,10,null,null],
+["Wed Jun 24 2026 09:00:00 GMT-0400","strength","Cable Side Lateral Raises",10,10,null,null],
+["Wed Jun 24 2026 09:00:01 GMT-0400","strength","Cable Side Lateral Raises",10,10,null,null],
+["Wed Jun 24 2026 09:00:02 GMT-0400","strength","Cable Side Lateral Raises",15,10,null,null],
+["Wed Jun 24 2026 09:00:03 GMT-0400","strength","Cable Side Lateral Raises",15,10,null,null],
+["Wed Jun 24 2026 09:00:00 GMT-0400","strength","Hi Cable Curls",20,15,null,null],
+["Wed Jun 24 2026 09:00:01 GMT-0400","strength","Hi Cable Curls",25,15,null,null],
+["Wed Jun 24 2026 09:00:02 GMT-0400","strength","Hi Cable Curls",25,15,null,null],
+["Wed Jun 24 2026 09:00:03 GMT-0400","strength","Hi Cable Curls",25,15,null,null],
 ["Wed Jun 17 2026 09:00:00 GMT-0400","strength","Single Arm Lat Pulldowns",80,12,6,null],
 ["Wed Jun 17 2026 09:00:01 GMT-0400","strength","Single Arm Lat Pulldowns",85,12,7,null],
 ["Wed Jun 17 2026 09:00:02 GMT-0400","strength","Single Arm Lat Pulldowns",90,12,7.5,null],
@@ -3578,15 +3599,13 @@ const DAYS=[
   {exercise:"GHR",sets:3,note:"240x7 x3"},
   {exercise:"Hamstring Curls",sets:4,note:"180x8 @7 x4 — restore 8 reps"}
 ]},
-{id:"wed_jun24",label:"WED JUN 24",tag:"Back + Biceps + Shoulders",completed:false,datePrefix:"Wed Jun 24 2026",exercises:[
-  {exercise:"Hammer Strength Machine Rows (High Handles)",sets:4,note:"180x10 @5 / 370x10 @7.5 / 370x10 @8 / 370x10 @8 — hold 370 working load, flat across 3 sets"},
-  {exercise:"Pendlay Rows",sets:4,note:"264x5 @6 / 280x6 @7.5 / 280x6 @8 / 280x6 @8 — advance 5lb to 280"},
-  {exercise:"Lat Pulldowns",sets:4,note:"200x10 @7.5 x4 — Bodyworld standard"},
-  {exercise:"Single Arm Lat Pulldowns",sets:4,note:"90x12 @7.5 / 95x12 @8 / 95x12 @8 / 95x12 @8 — advance to 95"},
-  {exercise:"DB Side Lateral Raises",sets:4,note:"25x20 @7.5 x4 — up from @7"},
-  {exercise:"Iso Hold Side Laterals",sets:3,note:"20x8 @7.5 x3 — advance to 20lb"},
-  {exercise:"DB Incline Curls",sets:3,note:"20x15 x3 — up 5lb from 15, controlled reps, monitor elbow"},
-  {exercise:"Iso Hold Hammer Curls",sets:3,note:"35x12 x3 — returns"}
+{id:"wed_jun24",label:"WED JUN 24",tag:"Back + Biceps + Shoulders",completed:true,datePrefix:"Wed Jun 24 2026",exercises:[
+  {exercise:"Lat Pulldowns",sets:4,note:"4x10x200"},
+  {exercise:"Single Arm Lat Pulldowns",sets:3,note:"1x12x90 / 2x15x100 — new top at 100"},
+  {exercise:"Cable Rows",sets:3,note:"15x180 / 15x200 / 15x220 — ascending"},
+  {exercise:"Hammer Strength Machine Rows (High Handles)",sets:3,note:"10x360 / 10x380 / 10x410 — 410 new top set"},
+  {exercise:"Cable Side Lateral Raises",sets:4,note:"10x10 / 10x10 / 15x10 / 15x10 — ascending"},
+  {exercise:"Hi Cable Curls",sets:4,note:"15x20 / 15x25 / 15x25 / 15x25 — ascending"}
 ]},
 {id:"thu_jun25",label:"THU JUN 25",tag:"Deadlift + Legs + Abs",completed:false,datePrefix:"Thu Jun 25 2026",exercises:[
   {exercise:"Comp Deadlift",sets:3,note:"495x3 @6 / 545x3 @7 / 565x5 @8 — WEEK 1 of 5-rep challenge. Conventional. Bar speed on all 5."},
@@ -4549,6 +4568,29 @@ const PREFILL={
     {key:"6_0",exIdx:6,setIdx:0,weight:150,reps:8,rpe:7.5,logged:true},
     {key:"6_1",exIdx:6,setIdx:1,weight:150,reps:8,rpe:7.5,logged:true},
     {key:"6_2",exIdx:6,setIdx:2,weight:150,reps:8,rpe:8,logged:true}
+  ],
+  "wed_jun24":[
+    {key:"0_0",exIdx:0,setIdx:0,weight:200,reps:10,rpe:null,logged:true},
+    {key:"0_1",exIdx:0,setIdx:1,weight:200,reps:10,rpe:null,logged:true},
+    {key:"0_2",exIdx:0,setIdx:2,weight:200,reps:10,rpe:null,logged:true},
+    {key:"0_3",exIdx:0,setIdx:3,weight:200,reps:10,rpe:null,logged:true},
+    {key:"1_0",exIdx:1,setIdx:0,weight:90,reps:12,rpe:null,logged:true},
+    {key:"1_1",exIdx:1,setIdx:1,weight:100,reps:15,rpe:null,logged:true},
+    {key:"1_2",exIdx:1,setIdx:2,weight:100,reps:15,rpe:null,logged:true},
+    {key:"2_0",exIdx:2,setIdx:0,weight:180,reps:15,rpe:null,logged:true},
+    {key:"2_1",exIdx:2,setIdx:1,weight:200,reps:15,rpe:null,logged:true},
+    {key:"2_2",exIdx:2,setIdx:2,weight:220,reps:15,rpe:null,logged:true},
+    {key:"3_0",exIdx:3,setIdx:0,weight:360,reps:10,rpe:null,logged:true},
+    {key:"3_1",exIdx:3,setIdx:1,weight:380,reps:10,rpe:null,logged:true},
+    {key:"3_2",exIdx:3,setIdx:2,weight:410,reps:10,rpe:null,logged:true},
+    {key:"4_0",exIdx:4,setIdx:0,weight:10,reps:10,rpe:null,logged:true},
+    {key:"4_1",exIdx:4,setIdx:1,weight:10,reps:10,rpe:null,logged:true},
+    {key:"4_2",exIdx:4,setIdx:2,weight:15,reps:10,rpe:null,logged:true},
+    {key:"4_3",exIdx:4,setIdx:3,weight:15,reps:10,rpe:null,logged:true},
+    {key:"5_0",exIdx:5,setIdx:0,weight:20,reps:15,rpe:null,logged:true},
+    {key:"5_1",exIdx:5,setIdx:1,weight:25,reps:15,rpe:null,logged:true},
+    {key:"5_2",exIdx:5,setIdx:2,weight:25,reps:15,rpe:null,logged:true},
+    {key:"5_3",exIdx:5,setIdx:3,weight:25,reps:15,rpe:null,logged:true}
   ]
 };
 
@@ -4860,4 +4902,4 @@ renderDayContent();
 </script>
 
 </body>
-</html>]; 
+</html>];
