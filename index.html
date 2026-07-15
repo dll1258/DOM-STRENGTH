@@ -3042,6 +3042,22 @@ const BASE_DATA=[
 ["Thu Jun 25 2026 09:00:00 GMT-0400","strength","DB Side Bends",120,10,7,null],
 ["Thu Jun 25 2026 09:00:01 GMT-0400","strength","DB Side Bends",120,10,7,null],
 ["Thu Jun 25 2026 09:00:02 GMT-0400","strength","DB Side Bends",120,10,8,null],
+["Tue Jul 14 2026 09:00:00 GMT-0400","strength","Comp Squat",495,1,null,null],
+["Tue Jul 14 2026 09:00:01 GMT-0400","strength","Comp Squat",575,1,7.5,null],
+["Tue Jul 14 2026 09:00:02 GMT-0400","strength","Comp Squat",610,1,8.5,null],
+["Tue Jul 14 2026 09:00:03 GMT-0400","strength","Comp Squat",625,1,9,null],
+["Tue Jul 14 2026 09:00:00 GMT-0400","strength","Machine Plate Squat (Massfit)",455,10,5,null],
+["Tue Jul 14 2026 09:00:01 GMT-0400","strength","Machine Plate Squat (Massfit)",495,10,6.5,null],
+["Tue Jul 14 2026 09:00:02 GMT-0400","strength","Machine Plate Squat (Massfit)",585,10,7.5,null],
+["Tue Jul 14 2026 09:00:00 GMT-0400","strength","Leg Extensions",120,15,6,null],
+["Tue Jul 14 2026 09:00:01 GMT-0400","strength","Leg Extensions",120,15,7.5,null],
+["Tue Jul 14 2026 09:00:02 GMT-0400","strength","Leg Extensions",120,15,8,null],
+["Tue Jul 14 2026 09:00:00 GMT-0400","strength","Hamstring Curls",90,15,6,null],
+["Tue Jul 14 2026 09:00:01 GMT-0400","strength","Hamstring Curls",100,15,7.5,null],
+["Tue Jul 14 2026 09:00:02 GMT-0400","strength","Hamstring Curls",111,12,7.5,null],
+["Tue Jul 14 2026 09:00:00 GMT-0400","strength","GHR",240,8,null,null],
+["Tue Jul 14 2026 09:00:01 GMT-0400","strength","GHR",240,7,null,null],
+["Tue Jul 14 2026 09:00:02 GMT-0400","strength","GHR",240,7,null,null],
 ["Tue Jul 7 2026 09:00:00 GMT-0400","strength","Comp Squat",495,1,5,null],
 ["Tue Jul 7 2026 09:00:01 GMT-0400","strength","Comp Squat",545,1,7,null],
 ["Tue Jul 7 2026 09:00:02 GMT-0400","strength","Comp Squat",585,1,8,null],
@@ -3974,13 +3990,12 @@ const DAYS=[
   {exercise:"Lat Pulldowns",sets:4,note:"200x12 @7 / 200x10 @7 x3"},
   {exercise:"Tricep EZ Pushdowns",sets:3,note:"25x25 x3 — iso holds first/last rep"}
 ]},
-{id:"tue_jul14",label:"TUE JUL 14",tag:"Squat + Legs + RDL",completed:false,datePrefix:"Tue Jul 14 2026",exercises:[
-  {exercise:"Comp Squat",sets:6,note:"495x1 @5 / 545x1 @7 / 625x1 @8.5 / 575x3 @8 / 575x3 @8 — 625 ALL-TIME PR ATTEMPT. If 545 @6.5 or below go 635."},
-  {exercise:"Machine Plate Squat (Massfit)",sets:3,note:"315x15 x3 — or Reverse Hack 860x10 x3 if at Bodyworld"},
-  {exercise:"Romanian Deadlift",sets:4,note:"225x8 @6 / 275x8 @7 / 315x8 @7.5 / 315x8 @8 — barbell RDL back to working weight"},
-  {exercise:"Leg Extensions",sets:3,note:"250x12 x3 — hold top working weight"},
-  {exercise:"90 Degree Back Extension",sets:3,note:"240x20 x3"},
-  {exercise:"Hamstring Curls",sets:4,note:"120x10 x4 — advance from 90"}
+{id:"tue_jul14",label:"TUE JUL 14",tag:"Squat + Legs + RDL",completed:true,datePrefix:"Tue Jul 14 2026",exercises:[
+  {exercise:"Comp Squat",sets:4,note:"495x1 / 575x1 @7.5 / 610x1 @8.5 / 625x1 @9 — MATCHED ALL-TIME PR at @9. Massfit."},
+  {exercise:"Machine Plate Squat (Massfit)",sets:3,note:"455x10 @5 / 495x10 @6.5 / 585x10 @7.5 — new top 585"},
+  {exercise:"Leg Extensions",sets:3,note:"120x15 @6 / @7.5 / @8"},
+  {exercise:"Hamstring Curls",sets:3,note:"90x15 @6 / 100x15 @7.5 / 111x12 @7.5 — new top 111"},
+  {exercise:"GHR",sets:3,note:"240x8 / 240x7 / 240x7"}
 ]},
 {id:"wed_jul15",label:"WED JUL 15",tag:"Back + Biceps + Shoulders",completed:false,datePrefix:"Wed Jul 15 2026",exercises:[
   {exercise:"Lat Pulldowns",sets:4,note:"200x10 @7.5 x4 — first, elbow warm-up in full extension"},
@@ -4927,6 +4942,24 @@ const PREFILL={
     {key:"4_0",exIdx:4,setIdx:0,weight:90,reps:12,rpe:6,logged:true},
     {key:"4_1",exIdx:4,setIdx:1,weight:90,reps:12,rpe:7,logged:true},
     {key:"4_2",exIdx:4,setIdx:2,weight:90,reps:12,rpe:null,logged:true}
+  ],
+  "tue_jul14":[
+    {key:"0_0",exIdx:0,setIdx:0,weight:495,reps:1,rpe:null,logged:true},
+    {key:"0_1",exIdx:0,setIdx:1,weight:575,reps:1,rpe:7.5,logged:true},
+    {key:"0_2",exIdx:0,setIdx:2,weight:610,reps:1,rpe:8.5,logged:true},
+    {key:"0_3",exIdx:0,setIdx:3,weight:625,reps:1,rpe:9,logged:true},
+    {key:"1_0",exIdx:1,setIdx:0,weight:455,reps:10,rpe:5,logged:true},
+    {key:"1_1",exIdx:1,setIdx:1,weight:495,reps:10,rpe:6.5,logged:true},
+    {key:"1_2",exIdx:1,setIdx:2,weight:585,reps:10,rpe:7.5,logged:true},
+    {key:"2_0",exIdx:2,setIdx:0,weight:120,reps:15,rpe:6,logged:true},
+    {key:"2_1",exIdx:2,setIdx:1,weight:120,reps:15,rpe:7.5,logged:true},
+    {key:"2_2",exIdx:2,setIdx:2,weight:120,reps:15,rpe:8,logged:true},
+    {key:"3_0",exIdx:3,setIdx:0,weight:90,reps:15,rpe:6,logged:true},
+    {key:"3_1",exIdx:3,setIdx:1,weight:100,reps:15,rpe:7.5,logged:true},
+    {key:"3_2",exIdx:3,setIdx:2,weight:111,reps:12,rpe:7.5,logged:true},
+    {key:"4_0",exIdx:4,setIdx:0,weight:240,reps:8,rpe:null,logged:true},
+    {key:"4_1",exIdx:4,setIdx:1,weight:240,reps:7,rpe:null,logged:true},
+    {key:"4_2",exIdx:4,setIdx:2,weight:240,reps:7,rpe:null,logged:true}
   ],
   "tue_jun23":[
     {key:"0_0",exIdx:0,setIdx:0,weight:455,reps:2,rpe:5,logged:true},
