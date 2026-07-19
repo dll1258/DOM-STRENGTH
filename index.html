@@ -2823,6 +2823,28 @@ const BASE_DATA=[
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Romanian Deadlift",315,8,6.5,null],
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Barbell Hip Thrust",315,8,6,null],
 ["Sat May 16 2026 09:00:00 GMT-0400","strength","Back Raises",45,20,6,null],
+["Fri Jul 17 2026 09:00:00 GMT-0400","strength","Comp Deadlift",455,5,null,null],
+["Fri Jul 17 2026 09:00:01 GMT-0400","strength","Comp Deadlift",495,5,6,null],
+["Fri Jul 17 2026 09:00:02 GMT-0400","strength","Comp Deadlift",565,4,8.5,null],
+["Fri Jul 17 2026 09:00:00 GMT-0400","strength","Barbell Hip Thrust",315,10,null,null],
+["Fri Jul 17 2026 09:00:01 GMT-0400","strength","Barbell Hip Thrust",405,10,null,null],
+["Fri Jul 17 2026 09:00:02 GMT-0400","strength","Barbell Hip Thrust",455,10,null,null],
+["Fri Jul 17 2026 09:00:03 GMT-0400","strength","Barbell Hip Thrust",475,10,null,null],
+["Fri Jul 17 2026 09:00:00 GMT-0400","strength","Leg Press/Hack Squat",315,8,null,null],
+["Fri Jul 17 2026 09:00:01 GMT-0400","strength","Leg Press/Hack Squat",405,10,null,null],
+["Fri Jul 17 2026 09:00:02 GMT-0400","strength","Leg Press/Hack Squat",405,10,null,null],
+["Fri Jul 17 2026 09:00:03 GMT-0400","strength","Leg Press/Hack Squat",405,10,null,null],
+["Fri Jul 17 2026 09:00:00 GMT-0400","strength","DB RDLs",80,10,null,null],
+["Fri Jul 17 2026 09:00:01 GMT-0400","strength","DB RDLs",100,10,null,null],
+["Fri Jul 17 2026 09:00:02 GMT-0400","strength","DB RDLs",120,10,null,null],
+["Fri Jul 17 2026 09:00:03 GMT-0400","strength","DB RDLs",120,10,null,null],
+["Fri Jul 17 2026 09:00:00 GMT-0400","strength","Weighted Crunches",100,12,null,null],
+["Fri Jul 17 2026 09:00:01 GMT-0400","strength","Weighted Crunches",100,12,null,null],
+["Fri Jul 17 2026 09:00:02 GMT-0400","strength","Weighted Crunches",100,12,null,null],
+["Fri Jul 17 2026 09:00:03 GMT-0400","strength","Weighted Crunches",100,12,null,null],
+["Fri Jul 17 2026 09:00:00 GMT-0400","strength","Hanging Leg Raises",240,8,null,null],
+["Fri Jul 17 2026 09:00:01 GMT-0400","strength","Hanging Leg Raises",240,8,null,null],
+["Fri Jul 17 2026 09:00:02 GMT-0400","strength","Hanging Leg Raises",240,8,null,null],
 ["Fri Jul 10 2026 09:00:00 GMT-0400","strength","Comp Deadlift",495,5,6.5,null],
 ["Fri Jul 10 2026 09:00:01 GMT-0400","strength","Comp Deadlift",545,5,8,null],
 ["Fri Jul 10 2026 09:00:00 GMT-0400","strength","Barbell Hip Thrust",405,10,7,null],
@@ -4066,16 +4088,60 @@ const DAYS=[
   {exercise:"SA Cable Side Lateral Raise",sets:4,note:"10x20 x4"},
   {exercise:"DB Side Bends",sets:3,note:"120x10 x3"}
 ]},
-{id:"fri_jul17",label:"FRI JUL 17",tag:"Deadlift 5-Rep Week 2 + Legs + Abs",completed:false,datePrefix:"Fri Jul 17 2026",exercises:[
-  {exercise:"Comp Deadlift",sets:3,note:"495x3 @6 / 545x3 @7 / 585x5 @8 — 5-REP WEEK 2. 585 matches all-time 5-rep PR. Bar speed on all 5."},
-  {exercise:"Barbell Hip Thrust",sets:4,note:"405x10 @7 x4"},
+{id:"fri_jul17",label:"FRI JUL 17",tag:"Deadlift 5-Rep Week 2 + Legs + Abs",completed:true,datePrefix:"Fri Jul 17 2026",exercises:[
+  {exercise:"Comp Deadlift",sets:3,note:"455x5 / 495x5 @6 / 565x4 @8.5 — top set heavier per rep, stopped at 4"},
+  {exercise:"Barbell Hip Thrust",sets:4,note:"315x10 / 405x10 / 455x10 / 475x10 — ascending, new top 475"},
   {exercise:"Leg Press/Hack Squat",sets:4,note:"315x8 / 405x10 x3"},
-  {exercise:"DB RDLs",sets:3,note:"80x10 x3 — or barbell RDL if hamstring ready"},
-  {exercise:"DB Side Bends",sets:3,note:"100x12 x3"},
-  {exercise:"Weighted Crunches",sets:3,note:"100x12 x3"},
+  {exercise:"DB RDLs",sets:4,note:"80x10 / 100x10 / 120x10 / 120x10 — ascending"},
+  {exercise:"Weighted Crunches",sets:4,note:"100x12 x4"},
+  {exercise:"Hanging Leg Raises",sets:3,note:"3x8"}
+]},
+
+// ── WEEK 12 — INTENSIFICATION PEAK ───────────────────────────────────────────
+{id:"mon_jul20",label:"MON JUL 20",tag:"Bench + Back + Triceps",completed:false,datePrefix:"Mon Jul 20 2026",exercises:[
+  {exercise:"Flexbar Isometric Hold",sets:3,note:"45sec x3 — isometric protocol"},
+  {exercise:"Scap Pull-Up Holds",sets:3,note:"180x8 x3"},
+  {exercise:"Comp Bench",sets:5,note:"315x2 @5 / 365x1 @7 / 415x1 @9 — TIE/BREAK COMP PR. If 385 build @7.5 or below, go 420. / 385x2 @8 / 385x2 @8. Soft lockout."},
+  {exercise:"Incline DB Press",sets:3,note:"110x10 x3 — CAP at 110, 120 clicks. Soft lockout."},
+  {exercise:"Machine Chest Supported Row",sets:3,note:"225x10 x3"},
+  {exercise:"Lat Pulldowns",sets:4,note:"200x10 @7 x4"},
+  {exercise:"Incline DB Fly",sets:3,note:"65x10 x3 — soft lockout"},
+  {exercise:"Tricep EZ Pushdowns",sets:3,note:"25x25 x3 — iso holds first/last rep, no hard lockout"}
+]},
+{id:"tue_jul21",label:"TUE JUL 21",tag:"Squat + Legs + RDL",completed:false,datePrefix:"Tue Jul 21 2026",exercises:[
+  {exercise:"Comp Squat",sets:5,note:"495x1 @5 / 575x1 @7 / 635x1 @9 — NEW ALL-TIME PR ATTEMPT. If 575 @6.5 or below go 640-645. / 585x3 @8 / 585x3 @8"},
+  {exercise:"Machine Plate Squat (Massfit)",sets:3,note:"455x10 / 495x10 / 585x10 — match last week"},
+  {exercise:"Romanian Deadlift",sets:4,note:"225x8 / 275x8 / 315x8 @7.5 / 315x8 @8 — barbell RDL, hamstring fully recovered"},
+  {exercise:"Leg Extensions",sets:3,note:"120x15 x3"},
+  {exercise:"Hamstring Curls",sets:4,note:"111x12 x4 — hold new top weight"}
+]},
+{id:"wed_jul22",label:"WED JUL 22",tag:"Back + Biceps + Shoulders",completed:false,datePrefix:"Wed Jul 22 2026",exercises:[
+  {exercise:"Single Arm Lat Pulldowns",sets:4,note:"100x10 / 110x10 @7.5 x3 — elbow warm-up first, full extension"},
+  {exercise:"Lat Pulldowns",sets:4,note:"160x10 @8 x4 — stretch elbow before rows"},
+  {exercise:"Hammer Strength SA Row",sets:3,note:"230x8 @7.5 x3"},
+  {exercise:"Hammer Strength High Rows",sets:3,note:"405x8 @7 x3"},
+  {exercise:"DB Side Lateral Raises",sets:3,note:"20x20 @6 x3"},
+  {exercise:"Face Pulls",sets:3,note:"50x20 x3"},
+  {exercise:"DB Incline Curls",sets:4,note:"15x12 / 25x15 x3"}
+]},
+{id:"thu_jul23",label:"THU JUL 23",tag:"Shoulders",completed:false,datePrefix:"Thu Jul 23 2026",exercises:[
+  {exercise:"DB Military Press",sets:6,note:"45x10 / 55x10 / 65x10 / 75x10 / 85x8 @8 / 65x8 @7.5 — push 85 top set, need to get better at these"},
+  {exercise:"Neutral Grip Pushup",sets:4,note:"BW x15 @6 x4 — superset with DB Military"},
+  {exercise:"Pec Deck Fly",sets:3,note:"150x10 @7 / 150x10 @8 / 150x13 @9 — match last week"},
+  {exercise:"CrossBody SA Tricep Ext.",sets:3,note:"15x20 x3 — elbow-safe"},
+  {exercise:"Overhead SA Tricep Ext.",sets:4,note:"10x20 x4 — elbow-safe, soft lockout"},
+  {exercise:"SA Cable Side Lateral Raise",sets:4,note:"10x20 x4"},
+  {exercise:"DB Side Bends",sets:3,note:"120x10 x3"}
+]},
+{id:"fri_jul24",label:"FRI JUL 24",tag:"Deadlift 5-Rep Week 3 + Legs + Abs",completed:false,datePrefix:"Fri Jul 24 2026",exercises:[
+  {exercise:"Comp Deadlift",sets:3,note:"495x3 @6 / 545x3 @7 / 585x5 @8.5 — 5-REP WEEK 3. 585x5 is the target that eluded last week. Bar speed on all 5."},
+  {exercise:"Barbell Hip Thrust",sets:4,note:"315x10 / 405x10 / 455x10 / 475x10 — match new top"},
+  {exercise:"Leg Press/Hack Squat",sets:4,note:"315x8 / 405x10 x3"},
+  {exercise:"DB RDLs",sets:4,note:"80x10 / 100x10 / 120x10 / 120x10"},
+  {exercise:"Weighted Crunches",sets:4,note:"100x12 x4"},
   {exercise:"Hanging Leg Raises",sets:3,note:"3x8"}
 ]}
-];;
+];
 // PREFILL — completed sessions pre-loaded
 const PREFILL={
   "mon_apr27":[
@@ -5178,6 +5244,30 @@ const PREFILL={
     {key:"5_1",exIdx:5,setIdx:1,weight:25,reps:15,rpe:null,logged:true},
     {key:"5_2",exIdx:5,setIdx:2,weight:25,reps:15,rpe:null,logged:true},
     {key:"5_3",exIdx:5,setIdx:3,weight:25,reps:15,rpe:null,logged:true}
+  ],
+  "fri_jul17":[
+    {key:"0_0",exIdx:0,setIdx:0,weight:455,reps:5,rpe:null,logged:true},
+    {key:"0_1",exIdx:0,setIdx:1,weight:495,reps:5,rpe:6,logged:true},
+    {key:"0_2",exIdx:0,setIdx:2,weight:565,reps:4,rpe:8.5,logged:true},
+    {key:"1_0",exIdx:1,setIdx:0,weight:315,reps:10,rpe:null,logged:true},
+    {key:"1_1",exIdx:1,setIdx:1,weight:405,reps:10,rpe:null,logged:true},
+    {key:"1_2",exIdx:1,setIdx:2,weight:455,reps:10,rpe:null,logged:true},
+    {key:"1_3",exIdx:1,setIdx:3,weight:475,reps:10,rpe:null,logged:true},
+    {key:"2_0",exIdx:2,setIdx:0,weight:315,reps:8,rpe:null,logged:true},
+    {key:"2_1",exIdx:2,setIdx:1,weight:405,reps:10,rpe:null,logged:true},
+    {key:"2_2",exIdx:2,setIdx:2,weight:405,reps:10,rpe:null,logged:true},
+    {key:"2_3",exIdx:2,setIdx:3,weight:405,reps:10,rpe:null,logged:true},
+    {key:"3_0",exIdx:3,setIdx:0,weight:80,reps:10,rpe:null,logged:true},
+    {key:"3_1",exIdx:3,setIdx:1,weight:100,reps:10,rpe:null,logged:true},
+    {key:"3_2",exIdx:3,setIdx:2,weight:120,reps:10,rpe:null,logged:true},
+    {key:"3_3",exIdx:3,setIdx:3,weight:120,reps:10,rpe:null,logged:true},
+    {key:"4_0",exIdx:4,setIdx:0,weight:100,reps:12,rpe:null,logged:true},
+    {key:"4_1",exIdx:4,setIdx:1,weight:100,reps:12,rpe:null,logged:true},
+    {key:"4_2",exIdx:4,setIdx:2,weight:100,reps:12,rpe:null,logged:true},
+    {key:"4_3",exIdx:4,setIdx:3,weight:100,reps:12,rpe:null,logged:true},
+    {key:"5_0",exIdx:5,setIdx:0,weight:240,reps:8,rpe:null,logged:true},
+    {key:"5_1",exIdx:5,setIdx:1,weight:240,reps:8,rpe:null,logged:true},
+    {key:"5_2",exIdx:5,setIdx:2,weight:240,reps:8,rpe:null,logged:true}
   ],
   "fri_jul10":[
     {key:"0_0",exIdx:0,setIdx:0,weight:495,reps:5,rpe:6.5,logged:true},
